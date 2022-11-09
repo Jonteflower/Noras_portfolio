@@ -12,7 +12,7 @@ const ColumnContainer = styled.div`
     height: auto;
     gap:15px;
     width: 50%;
-
+    margin-top: 30px;
     @media screen and (max-width:1200px) {
         align-items: flex-start;
   }
@@ -21,6 +21,7 @@ const ColumnContainer = styled.div`
         align-items: center;
       justify-content: center;
       width:100%;
+      gap:20px;
       
     } 
 
@@ -29,7 +30,7 @@ const ColumnContainer = styled.div`
 const StyledArticle = styled.article`
     width: 65%;
     @media screen and (max-width:1100px) {
-      width:100%;
+      width:95%;
       text-align: center;
     } 
 `
@@ -66,17 +67,33 @@ const BoxText = styled.p`
   } 
 `
 
+
+const ImageContainer = styled.div`
+    position: relative;
+    width:300px;
+    height:200px;
+
+  @media screen and (max-width:600px) {
+    width:200px;
+    height:150px;
+    } 
+
+`
+
+
 function TextSection() {
     return (
         <ColumnContainer>
-            <Image
+        <ImageContainer>
+        <Image
                 src={'/images/general/person.svg'}
-                width={300}
-                height={200}
+                layout={'fill'}
                 objectFit={'contain'}
                 alt="silhouette of a person"
                 quality={90}
             />
+        </ImageContainer>
+          
             <StyledArticle>
                 <BoxTitle>Full Stack developer</BoxTitle>
                 <BoxText>

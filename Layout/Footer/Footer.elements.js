@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const FooterContainer = styled.div`
-  position:fixed;
+  position: ${props => props.position};
   bottom:0;
   left:0;
   right:0;
@@ -15,6 +15,7 @@ export const FooterContainer = styled.div`
   max-height:220px;
   z-index: 999;
   height: 130px;
+  transition: 1s;
   @media screen and (max-width: 1000px) {
     
     width: 100%;

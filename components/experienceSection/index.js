@@ -49,12 +49,12 @@ const Title = styled.h2`
   }
     }
 
-    @media screen and (max-width:400px) {
-      font-size: 2.5rem;
+    @media screen and (max-width:600px) {
+      font-size: 3rem;
       ::before{
     content: '';
     border-bottom: 18px solid #ff4d5a;
-    width: 12rem;
+    width: 18rem;
     display: block;
     margin: 0 auto;
     position: relative;

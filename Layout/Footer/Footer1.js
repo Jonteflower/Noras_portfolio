@@ -1,3 +1,4 @@
+import { positions } from '@mui/system';
 import React from 'react';
 import { FaDiscord, FaInstagram, FaLinkedinIn, FaMediumM, FaTwitter } from 'react-icons/fa';
 import {
@@ -5,10 +6,10 @@ import {
   SocialMediaWrap, WebsiteRights
 } from './Footer.elements';
 
-function Footer() {
+function Footer({scroll}) {
   return (
     <>
-      <FooterContainer>
+      <FooterContainer position={scroll == 0 ? 'fixed' : 'absolute'}>
         <SocialMedia>
           <SocialMediaWrap>
             <SocialIcons>

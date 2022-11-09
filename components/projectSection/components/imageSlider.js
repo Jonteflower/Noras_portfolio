@@ -14,10 +14,8 @@ const SwiperContainer = styled.div`
   height: 40vh; 
   @media (max-width: 900px)  {
         height: fit-content;
-       
     }
 `
-
 
 const ImageContainer = styled.div`
   position: relative;
@@ -25,7 +23,12 @@ const ImageContainer = styled.div`
   height: 500px;
   border-radius: 10px;
   @media (max-width: 900px)  {
-        height: 60vh;
+        width: 90vw;
+        height: 90vw;
+    }
+    @media (max-width: 900px)  {
+        width: 90vw;
+        height: 250px;
     }
 `
 const VideoContainert = styled.div`
@@ -44,6 +47,7 @@ const SlideContainer = styled.div`
   align-items: center;
   width: 100%;
   height:100%;
+
 
 `
 

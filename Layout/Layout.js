@@ -2,7 +2,7 @@ import Footer from "./Footer/Footer1";
 import NavMenu from "./Header/NavBar";
 import styled from "styled-components";
 import { motion, useScroll } from "framer-motion"
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 
 const ProgressContainer = styled(motion.div)`
@@ -17,12 +17,11 @@ const ProgressContainer = styled(motion.div)`
 `;
 
 export default function Layout({ children }) {
-  const { scrollYProgress } = useScroll();
   const { scrollY } = useScroll()
-
+  const [scroll, setScroll] = useState('')
   useEffect(() => {
     return scrollY.onChange((latest) => {
-      console.log("Page scroll: ", latest)
+      setScroll(latest)
     })
   }, [])
 
@@ -39,7 +38,7 @@ export default function Layout({ children }) {
 
       <NavMenu />
       {children}
-      <Footer />
+      <Footer scroll={scroll}/>
     </div>
   );
 }

@@ -40,6 +40,8 @@ const Title = styled.h2`
 
     @media screen and (max-width:700px) {
       font-size: 3.5rem;
+      margin-top: 0rem;
+      margin-bottom: 0;
       ::before{
     content: '';
     border-bottom: 18px solid #ff4d5a;
@@ -53,17 +55,18 @@ const Title = styled.h2`
   }
     }
 
-    @media screen and (max-width:400px) {
-      font-size: 2.5rem;
+    @media screen and (max-width:600px) {
+      font-size: 3rem;
+      margin: 0;
       ::before{
     content: '';
     border-bottom: 18px solid #ff4d5a;
-    width: 10rem;
+    width: 12rem;
     display: block;
     margin: 0 auto;
     position: relative;
     left:1.5rem;
-    top: 3rem;
+    top: 3.2rem;
     z-index: -1;
   }
     }
