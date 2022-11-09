@@ -47,6 +47,12 @@ const TextWrap = styled.div`
 
 `;
 
+
+const TextBox = styled(motion.h3)`
+        
+`;
+
+
 function TextAnimation({ line1, line2, }) {
     const sentance = {
         hidden: { opacity: 1 },
@@ -66,10 +72,6 @@ function TextAnimation({ line1, line2, }) {
             y: 0
         }
     }
-
-    const TextBox = styled(motion.h3)`
-        
-    `;
 
     return (
         <TextBox

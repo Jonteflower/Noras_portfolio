@@ -69,7 +69,6 @@ export default function NavMenu() {
         <HeaderInner>
         
           <ButtonsInner>
-            <Toggle ></Toggle>
             {language == 'eng' ?
               <MiddleButton><Link href='/admin'> About</Link>
               </MiddleButton>

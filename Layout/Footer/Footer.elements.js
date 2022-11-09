@@ -52,7 +52,6 @@ export const TermsWrap = styled.div`
   height: 30px;
   gap:20px;
   @media screen and (max-width: 1000px) {
-    
     margin: 0px auto 0 auto;
   }
 `;
@@ -113,5 +112,11 @@ export const SocialIconLink = styled.a`
 
   &:hover{
     color:#ff4d5a;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 20px;
+    padding-left: 3px;
+  padding-right: 3px;
   }
 `;

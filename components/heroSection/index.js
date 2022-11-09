@@ -43,7 +43,9 @@ const OuterDiv = styled.div`
   gap: 20px;
 
   @media screen and (max-width:800px) {
-    justify-content:center;
+    justify-content:flex-start;
+    height:53%;
+   
   }
 `;
 
