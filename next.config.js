@@ -1,5 +1,5 @@
 
-module.exports = withImages({
+module.exports = {
   reactStrictMode: true,
   //concurrentFeatures: true,
   swcMinify: true,
@@ -8,4 +8,4 @@ module.exports = withImages({
     styledComponents: true,
   },
   //future: { webpack5: true },
-})
+}
