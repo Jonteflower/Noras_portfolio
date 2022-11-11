@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import { animationItemsList } from './animationObjects'
 import PyramidSkills from './skillsPyramid'
 import TextSection from './textSection'
-import SkillsHexagon from './skillsHExagon'
+import SkillsHexagon from './skillsHexagon'
 
 
 const OuterContainer = styled.div`
