@@ -11,7 +11,7 @@ const ColumnContainer = styled.div`
     justify-content: space-evenly;
     height: auto;
     gap:15px;
-    width: 50%;
+    width: fit-content;
     margin-top: 30px;
     @media screen and (max-width:1200px) {
         align-items: flex-start;
@@ -28,7 +28,7 @@ const ColumnContainer = styled.div`
 `
 
 const StyledArticle = styled.article`
-    width: 65%;
+    width: 100%;
     @media screen and (max-width:1100px) {
       width:95%;
       text-align: center;

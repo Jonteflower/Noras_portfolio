@@ -28,7 +28,7 @@ const ImageContainer = styled.div`
     }
     @media (max-width: 900px)  {
         width: 90vw;
-        height: 250px;
+        height: 300px;
     }
 `
 const VideoContainert = styled.div`
@@ -36,7 +36,8 @@ const VideoContainert = styled.div`
   width: 100%;
   height: 500px;
   @media (max-width: 900px)  {
-        height: 50vh;
+        width: 90vw;
+        height: 300px;
     }
 `
 

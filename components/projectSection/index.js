@@ -16,7 +16,7 @@ const OuterDiv = styled.section`
 
 const Title = styled.h2`
   position: relative;
-  font-size: 5rem;
+  font-size: 4.5rem;
   font-weight: 600;
   margin-top: 7rem;
   margin-bottom: 5rem;
@@ -24,12 +24,12 @@ const Title = styled.h2`
   ::before{
     content: '';
     border-bottom: 18px solid #ff4d5a;
-    width: 19rem;
+    width: 17rem;
     display: block;
     margin: 0 auto;
     position: relative;
     left:2rem;
-    top: 5.3rem;
+    top: 4.7rem;
     z-index: -1;
   }
 

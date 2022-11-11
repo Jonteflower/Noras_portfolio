@@ -14,7 +14,11 @@ const Buttonsdiv = styled.div`
     box-sizing: border-box;
     gap: 2px;
     width: 100%;
-    height: fit-content;
+    height: 350px;
+    @media screen and (max-width:400px) {
+       
+        height: 220px;
+  }
 `;
 
 const ImageWrapper = styled.div`
@@ -28,7 +32,7 @@ const ImageWrapper = styled.div`
 
     @media screen and (max-width:400px) {
         width: 200px;
-        height: 150px;
+        height: 120px;
   }
 
 `;
@@ -44,11 +48,12 @@ export default function ImageCarousel({ }) {
                 spaceBetween={10}
                 speed={15000}
                 loop={true}
-                observer={true}
-                allowTouchMove={false}
+                observer={false}
+                allowTouchMove={true}
                 freemode={{ enabled: true }}
-                watchSlidesProgress={true}
-                resizeObserver={true}
+                watchSlidesProgress={false}
+                resizeObserver={false}
+
                 effect={'fade'}
                 autoplay={{
                     delay: 0,
@@ -62,17 +67,17 @@ export default function ImageCarousel({ }) {
                 breakpoints={{
                     320: {
                         slidesPerView: 1,
-                        spaceBetween: 20
+                        spaceBetween: 0
                     },
                     // when window width is >= 320px
                     320: {
                         slidesPerView: 1.2,
-                        spaceBetween: 20
+                        spaceBetween: 0
                     },
                     // when window width is >= 480px
                     480: {
                         slidesPerView: 1.8,
-                        spaceBetween: 30
+                        spaceBetween: 10
                     },
                     // when window width is >= 640px
                     640: {

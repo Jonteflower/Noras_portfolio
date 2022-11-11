@@ -2,8 +2,6 @@ import Link from 'next/link';
 import React, { useContext } from 'react';
 import styled from 'styled-components';
 import { useRouter } from 'next/router'
-import Toggle from '../../components/utils/Toggle';
-import LanguageContext from '../../stores/languageContext';
 
 const HeaderContainer = styled.div`
   display: flex;
@@ -61,7 +59,8 @@ const MiddleButton = styled.span`
 
 
 export default function NavMenu() {
-  const { language } = useContext(LanguageContext);
+  const router = useRouter()
+  const path = router.pathname
 
   return (
     <>
@@ -69,11 +68,10 @@ export default function NavMenu() {
         <HeaderInner>
         
           <ButtonsInner>
-            {language == 'eng' ?
-              <MiddleButton><Link href='/admin'> About</Link>
-              </MiddleButton>
+            {path == '/about' ?
+              <MiddleButton><Link href='/'> Home</Link></MiddleButton>
               :
-              <MiddleButton><Link href='/admin'> Om</Link></MiddleButton>}
+              <MiddleButton><Link href='/about'> About</Link></MiddleButton>}
           </ButtonsInner>
         </HeaderInner>
       </HeaderContainer>

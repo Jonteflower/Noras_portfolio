@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import ReadMore from './readMore'
 
 const ColumnContainer = styled.div`
     display: flex;
@@ -17,6 +18,7 @@ const ColumnContainer = styled.div`
 
 const StyledArticle = styled.article`
     width: 70%;
+    max-width: 1000px;
     @media screen and (max-width:1100px) {
         width: 95%;
     }
@@ -61,7 +63,7 @@ const SlideTitle = styled.h2`
 `
 
 
-function TextSection({textObject}) {
+function TextSection({ textObject }) {
 
 
 
@@ -70,7 +72,9 @@ function TextSection({textObject}) {
             <StyledArticle>
                 <SlideTitle>{textObject.title}</SlideTitle>
                 <BoxText>
-                   {textObject.text}
+                    <ReadMore>
+                        {textObject.text}
+                    </ReadMore>
                 </BoxText>
             </StyledArticle >
 

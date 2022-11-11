@@ -10,7 +10,7 @@ const OuterContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     height: fit-content;
     gap: 40px;
     width: 100%;
