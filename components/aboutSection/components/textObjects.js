@@ -1,5 +1,4 @@
 export const fullTixyNftText = `
-My love for technology has always been a constant in my life. From building my first computer to writing my first program, computers, science, and technology have been a source of immense curiosity for me. 
 \nAfter being part of two startups that never managed to get out the door. I founded Tixy-NFT in early 2022 together with my Co-Founders Alrashid and Nora. After spending the previous 5 years of my life juggling parallel degrees, bartending in some of Stockholm's luxurious bars and restaurants, doing assurance at PWC, or managing warehouse logistics. 
 \nIt was finally time to take the leap into entrepreneurship, putting my MSc degree in Applied Mathmatics on hold to focus solely on running Tixy-NFT. The immense scope of building, deploying, and running a tech startup taught me more lessons than all my years in school combined. 
 \nBeing a part of KTH-Innovation and Sting, was of great benefit when trying to navigate the stormy waters of entrepreneurship. However, the hardest part of launching a tech startup was still left. Actually developing the tech. 
@@ -22,10 +21,5 @@ My love for technology has always been a constant in my life. From building my f
 
 
 export const fullLogisticsText = `
-      lorem ipsum....
+Due to the recent happening in the crypto markets and general economic outlook working in a growth driven space is diffuclt.
 `
-
-export const TopLogisticsText = `
-        Due to the recent happening in the crypto markets and general economic outlook working in a growth driven space is diffuclt.
-        `
-
