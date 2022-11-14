@@ -65,8 +65,6 @@ const SlideTitle = styled.h2`
 
 function TextSection({ textObject }) {
 
-
-
     return (
         <ColumnContainer>
             <StyledArticle>

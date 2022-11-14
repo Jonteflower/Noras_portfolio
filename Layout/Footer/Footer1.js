@@ -1,4 +1,4 @@
-import { positions } from '@mui/system';
+import { useRouter } from 'next/router';
 import React from 'react';
 import { FaDiscord, FaInstagram, FaLinkedinIn, FaMediumM, FaTwitter } from 'react-icons/fa';
 import {
@@ -6,7 +6,13 @@ import {
   SocialMediaWrap, WebsiteRights
 } from './Footer.elements';
 
-function Footer({scroll}) {
+
+
+
+function Footer({ scroll }) {
+  const router = useRouter()
+  const path = router.pathname
+  path == '/about' ? scroll = 1 : scroll = scroll
   return (
     <>
       <FooterContainer position={scroll == 0 ? 'fixed' : 'absolute'}>

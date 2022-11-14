@@ -20,8 +20,9 @@ const ReadMore = ({ children }) => {
         setIsReadMore(!isReadMore);
     };
 
-    const ComponentToshow = () => {
-        if (text?.length > 150) {
+
+    const ShowReadMore = () => {
+        if (text?.length > 100) {
             return (
                 < InlineText >
                     {isReadMore ? text?.slice(0, 150) : text}
@@ -29,8 +30,6 @@ const ReadMore = ({ children }) => {
                         {isReadMore ? " ...read more" : " show less"}
                     </ ReadOrHide>
                 </InlineText >
-
-
             )
         }
         else {
@@ -39,7 +38,7 @@ const ReadMore = ({ children }) => {
     }
 
     return (
-        ComponentToshow()
+        ShowReadMore()
     );
 };
 
