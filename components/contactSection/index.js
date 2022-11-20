@@ -14,9 +14,8 @@ const OuterDiv = styled.section`
   clip-path: polygon(0 35%,100% 0,100% 100%,0 100%);
   padding-top: 2rem;
   @media screen and (max-width:1000px) {
-       padding-left: 15px;
-       padding-right: 15px;
        gap: 5px;
+       padding-top: 4rem;
   }
 `;
 
