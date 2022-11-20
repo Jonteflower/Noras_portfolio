@@ -11,21 +11,19 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 const SwiperContainer = styled.div`
   width: 100%;
-  height: 40vh; 
+  min-height: 40vh; 
+  height: fit-content;
   @media (max-width: 900px)  {
-        height: fit-content;
+        
     }
 `
 
 const ImageContainer = styled.div`
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 400px;
   border-radius: 10px;
-  @media (max-width: 900px)  {
-        width: 90vw;
-        height: 90vw;
-    }
+
     @media (max-width: 900px)  {
         width: 90vw;
         height: 300px;
@@ -34,7 +32,7 @@ const ImageContainer = styled.div`
 const VideoContainert = styled.div`
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 400px;
   @media (max-width: 900px)  {
         width: 90vw;
         height: 300px;
@@ -48,8 +46,6 @@ const SlideContainer = styled.div`
   align-items: center;
   width: 100%;
   height:100%;
-
-
 `
 
 
@@ -63,20 +59,17 @@ function ImageSlider({ setIndex }) {
                 centeredSlides={true}
                 slidesPerView="auto"
                 breakpoints={{
-                    320: {
-                        slidesPerView: 1,
-                        spaceBetween: 0,
-                    },
+                 
                     400: {
-                        slidesPerView: 1.2,
-                        spaceBetween: 20,
+                        slidesPerView: 1.8,
+                        spaceBetween: 5,
                     },
                     768: {
-                        slidesPerView: 2.2,
+                        slidesPerView: 2.1,
                         spaceBetween: 0,
                     },
                     1024: {
-                        slidesPerView: 2.4,
+                        slidesPerView: 2.5,
                         spaceBetween: 0,
                     },
                     2000: {

@@ -14,6 +14,9 @@ const ColumnContainer = styled.div`
    @media screen and (max-width:1100px) {
         height: 100%;
     }
+    @media screen and (max-width:600px) {
+        margin-top:0;
+    }
 `
 
 const StyledArticle = styled.article`

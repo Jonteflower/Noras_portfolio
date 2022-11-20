@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import styled from 'styled-components'
 
+/* //Alternative design
 const SkillsBox = styled.div`
     display: flex;
     flex-direction: column;
@@ -21,17 +22,19 @@ const SkillsBox = styled.div`
     box-sizing: border-box;
     width: 100%;
 `
+*/
+
 
 const BoxTitle = styled.span`
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 16px;
     transition: all 0.2s;
     letter-spacing: 1px;
     text-transform: uppercase;
 
     @media (max-width: 550px)  {
-        font-size: 11px;
+        font-size: 12px;
         text-align: center;
         line-height: 16px;
     }
@@ -41,19 +44,38 @@ const BoxTitle = styled.span`
 const ImageContainer = styled.div`
   position: relative;
   width: 100%;
-  margin-top: 5px;
-  margin-bottom: 5px;
-    height:90%;
+  margin-bottom: 8px;
+  height:55%;
   @media (max-width: 400px)  {
     margin-top: 2px;
     margin-bottom: 2px;
     }
 `
 
+const HexagonContent = styled.div `
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  width: 130px;
+  aspect-ratio: calc(1/0.866);
+  background:#1a1a1a;
+  box-sizing: border-box;
+  padding: 0;
+  clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+  -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+  @media (max-width: 400px)  {
+        width:30vw;
+    }
+`
+
+
 function SkillsComponent({ item }) {
 
     return (
-        <SkillsBox>
+        <HexagonContent>
             <ImageContainer>
                 <Image
                     src={item.image}
@@ -65,7 +87,7 @@ function SkillsComponent({ item }) {
             </ImageContainer>
 
             <BoxTitle>{item.title}</BoxTitle>
-        </SkillsBox>
+        </HexagonContent>
 
     )
 }

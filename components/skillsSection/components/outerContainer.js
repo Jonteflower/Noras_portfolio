@@ -3,9 +3,9 @@ import React, { useEffect, useState } from 'react'
 import { useInView } from 'react-intersection-observer'
 import styled from 'styled-components'
 import { animationItemsList } from './animationObjects'
-import PyramidSkills from './skillsPyramid'
-import TextSection from './textSection'
-import SkillsHexagon from './skillsHexagon'
+import PyramidSkills from './pyramidGrid'
+import TextSection from './textComponent'
+import SkillsHexagon from './hexagonGrid'
 
 
 const OuterContainer = styled.div`

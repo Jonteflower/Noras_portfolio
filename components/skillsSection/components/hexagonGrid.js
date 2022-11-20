@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 import styled from 'styled-components'
-import SkillsComponent from './skillsComponent'
-import { BackendObjects, frontEndObjects, PlatformObjects } from './skillsObjects'
+import SkillsComponent from './gridTile'
+import { BackendObjects, frontEndObjects, PlatformObjects } from './tileObjects'
 
 const MotionBox = styled(motion.div)`
     width: 140px;
@@ -23,11 +23,8 @@ const RowContainer = styled.div`
     align-items: center;
     justify-content: center;
     height: auto;
-    gap:15px;
+    gap:0px;
     width: auto;
-    @media (max-width: 480px)  {
-        gap:10px;
-    }
    
 `
 const ColumnContainer = styled.div`
@@ -39,6 +36,7 @@ const ColumnContainer = styled.div`
     height: auto;
     width: auto;
     gap:10px;
+    
     @media (max-width: 480px)  {
         gap:8px;
     }

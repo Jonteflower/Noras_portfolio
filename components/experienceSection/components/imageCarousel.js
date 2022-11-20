@@ -6,7 +6,7 @@ import 'swiper/css/autoplay';
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from 'next/image';
 
-const Buttonsdiv = styled.div`
+const WrapperDiv = styled.div`
     position: relative;
     display: flex;
     justify-content: center;
@@ -14,9 +14,11 @@ const Buttonsdiv = styled.div`
     box-sizing: border-box;
     gap: 2px;
     width: 100%;
-    height: 350px;
+    height: fit-content;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
     @media screen and (max-width:400px) {
-       
+       margin: 0px;
         height: 220px;
   }
 `;
@@ -27,12 +29,11 @@ const ImageWrapper = styled.div`
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    width: 300px;
-    height: 150px;
+    width: 220px;
+    aspect-ratio: 1.5;
 
     @media screen and (max-width:400px) {
-        width: 200px;
-        height: 120px;
+        width: 30vw;
   }
 
 `;
@@ -41,8 +42,9 @@ export default function ImageCarousel({ }) {
     const items = ['/images/logos/kth1.png', '/images/logos/logistics1.png', '/images/logos/pwcLogo.png', '/images/logos/speedGroup.png', '/images/logos/StingWhite.png', '/images/logos/StockholmUni.png', '/images/logos/tixySmall.webp', '/images/logos/uppsala.png']
 
     return (
-        <Buttonsdiv>
+        <WrapperDiv>
             <Swiper
+            className='swiperCarousell'
                 modules={[Autoplay]}
                 slidesPerView={'auto'}
                 spaceBetween={10}
@@ -74,6 +76,12 @@ export default function ImageCarousel({ }) {
                         slidesPerView: 1.2,
                         spaceBetween: 0
                     },
+                    // when window width is >= 400px
+
+                    400: {
+                        slidesPerView: 1.8,
+                        spaceBetween: 5
+                    },
                     // when window width is >= 480px
                     480: {
                         slidesPerView: 1.8,
@@ -98,7 +106,7 @@ export default function ImageCarousel({ }) {
                 {
                     items.map((item, i) =>
 
-                        <SwiperSlide className="slide" key={i}>
+                        <SwiperSlide  key={i}>
 
                             <ImageWrapper>
                                 <Image 
@@ -117,7 +125,7 @@ export default function ImageCarousel({ }) {
 
             </Swiper>
 
-        </Buttonsdiv>
+        </WrapperDiv>
     )
 }
 

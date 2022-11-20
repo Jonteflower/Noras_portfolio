@@ -12,7 +12,7 @@ export const frontEndObjects = [
     {
         image: '/images/coding/javascript.png',
         alt: 'javascript logo',
-        title: 'javascript'
+        title: 'js'
     },
 
 ]
@@ -26,7 +26,7 @@ export const PlatformObjects = [
     {
         image: '/images/coding/gcloud.png',
         alt: 'Google cloud Logo',
-        title: 'Google Cloud'
+        title: 'GCP'
     },
     {
         image: '/images/coding/firebase.png',
@@ -55,7 +55,7 @@ export const BackendObjects = [
     {
         image: '/images/coding/typescript.svg',
         alt: 'javascript logo',
-        title: 'typescript'
+        title: 'Ts'
     },
 
 ]

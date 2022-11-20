@@ -1,14 +1,15 @@
 import React, { useEffect, useRef } from 'react'
-import styled from 'styled-components'
 import ExperienceSection from './experienceSection'
 import HeroSection from './heroSection'
-import ProjectSection from './projectSection'
+import ProjectSection from './founderSection'
 import SkillsSection from './skillsSection'
+import ContactSection from './contactSection'
+import styled from 'styled-components'
 
 
 function Home() {
     const ref = useRef(null);
-    
+
 
     const handleClick = () => {
         ref.current?.scrollIntoView({ behavior: 'smooth' });
@@ -20,6 +21,7 @@ function Home() {
             <SkillsSection scrollRef={ref} />
             <ProjectSection />
             <ExperienceSection />
+            <ContactSection />
 
         </>
     )

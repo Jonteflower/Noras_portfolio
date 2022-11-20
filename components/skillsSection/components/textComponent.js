@@ -29,6 +29,7 @@ const ColumnContainer = styled.div`
 
 const StyledArticle = styled.article`
     width: 100%;
+    max-width: 600px;
     @media screen and (max-width:1100px) {
       width:95%;
       text-align: center;

@@ -11,7 +11,6 @@ const OuterDiv = styled.section`
   min-height:50vh;
   height: fit-content;
   gap: 20px;
-
 `;
 
 const Title = styled.h2`
@@ -50,17 +49,17 @@ const Title = styled.h2`
     }
 
     @media screen and (max-width:600px) {
-      font-size: 3rem;
-      margin: 0px;
-      ::before{
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+       ::before{
     content: '';
-    border-bottom: 18px solid #ff4d5a;
-    width: 18rem;
+    border-bottom: 14px solid #ff4d5a;
+    width: 14.5rem;
     display: block;
     margin: 0 auto;
     position: relative;
-    left:1.5rem;
-    top: 3rem;
+    left:1.3rem;
+    top: 2.85rem;
     z-index: -1;
   }
     }

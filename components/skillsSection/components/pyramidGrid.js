@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 import styled from 'styled-components'
-import SkillsComponent from './skillsComponent'
-import { BackendObjects, PlatformObjects, pyramidOne, pyramidTwo } from './skillsObjects'
+import SkillsComponent from './gridTile'
+import { BackendObjects, PlatformObjects, pyramidOne, pyramidTwo } from './tileObjects'
 
 const MotionBox = styled(motion.div)`
     width: 140px;
@@ -21,6 +21,7 @@ const RowContainer = styled.div`
     justify-content: center;
     height: auto;
     gap:15px;
+    
     @media (max-width: 480px)  {
         gap:5px;
     }

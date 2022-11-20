@@ -32,9 +32,9 @@ const Wrapper = styled.span`
 export default function TextChanger({play}) {
   const { language } = useContext(LanguageContext);
 
-  const [count, setCount] = useState(0)
-  const items = language == 'eng' ? ['Founder', 'Developer', 'Creator'] : ['Grundare', 'Utvecklare', 'Skapare']
-  const [item, setItem] = useState(items[0])
+  const [count, setCount] = useState(0);
+  const items = ['Founder', 'Developer', 'Creator'];
+  const [item, setItem] = useState(items[0]);
 
 
   useInterval(

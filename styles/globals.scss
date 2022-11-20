@@ -17,23 +17,19 @@ body {
 
 .content {
   position: relative;
-
   display: flex;
   flex-direction: column;
   justify-content:flex-start;
   align-items:center;
   width: 100%;
   min-height: 100vh;
-  height: auto;
+  height: fit-content;
   margin-left: auto;
   margin-right: auto;
-  padding: 0;
   margin: 0;
   background: linear-gradient(180deg, #070f1b70 0%, rgba(20, 37, 63, 70) 42.09%),
   linear-gradient(180deg, rgba(0, 0, 0, 70) 82.61%);
   padding-bottom: 150px;
-  //background: linear-gradient(180deg, rgba(7, 9, 27, 0.14) -131.19%, #07091B 93.46%);
-  //background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1100' height='6000' preserveAspectRatio='none' viewBox='0 0 1100 6000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1010%26quot%3b)' fill='none'%3e%3cpath d='M518.36-863.42C377.93-113.8 699.51 947.77 292.15 2178.83-115.21 3409.89 96.41 3807.1-160.27 4278.83' stroke='rgba(23%2c 203%2c 164%2c 0.5019607843137255)' stroke-width='2'%3e%3c/path%3e%3cpath d='M534.43-945.21C301.55 150.22 579.07 2812.05 157.22 3518.53-264.63 4225.01-18.92 2518.7-219.99 2258.53' stroke='rgba(23%2c 203%2c 164%2c 0.5019607843137255)' stroke-width='2'%3e%3c/path%3e%3cpath d='M712.77-584.65C550.95 329.52 859.81 2642.65 452.69 3119.77 45.57 3596.89 190.33 2043.4-67.46 1799.77' stroke='rgba(23%2c 203%2c 164%2c 0.5019607843137255)' stroke-width='2'%3e%3c/path%3e%3cpath d='M469.29-496.9C286.73 97.35 527.7 955.77 166.94 1971.3-193.82 2986.83 41.89 3350.85-135.41 3771.3' stroke='rgba(23%2c 203%2c 164%2c 0.5019607843137255)' stroke-width='2'%3e%3c/path%3e%3cpath d='M734.95-632.67C492.66 332.17 812.7 1952.72 339.05 3326.78-134.61 4700.84 167.03 4724.08-56.86 5126.78' stroke='rgba(23%2c 203%2c 164%2c 0.5019607843137255)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1010'%3e%3crect width='1100' height='6000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
 }
 
 a {
@@ -78,4 +74,11 @@ a {
 .swiper-slide-active {
   opacity: 1;
   z-index: 1;
+}
+
+//Swiper 
+.swiperCarousell {
+  @media (max-width: 400px)  {
+    height: 150px;
+}
 }

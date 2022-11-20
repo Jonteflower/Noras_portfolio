@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { useState } from 'react';
-import ReadMore from '../../projectSection/components/readMore';
+import ReadMore from '../../founderSection/components/readMore';
 
 export const TextBox = styled.p`
   color:#d4d4d4;

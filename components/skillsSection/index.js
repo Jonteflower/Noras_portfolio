@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import SkillsContainer from './components/skillsContainer';
+import SkillsContainer from './components/outerContainer';
 
 const OuterDiv = styled.section`
   display: flex;
@@ -59,18 +59,19 @@ const Title = styled.h2`
     }
 
     @media screen and (max-width:600px) {
-      font-size: 3rem;
+      font-size: 2.5rem;
       margin-bottom: 1rem;
+      margin-top: 1rem;
 
       ::before{
     content: '';
-    border-bottom: 18px solid #ff4d5a;
-    width: 14rem;
+    border-bottom: 14px solid #ff4d5a;
+    width: 11rem;
     display: block;
     margin: 0 auto;
     position: relative;
-    left:1.5rem;
-    top: 3.2rem;
+    left:1.3rem;
+    top: 2.85rem;
     z-index: -1;
   }
     }
