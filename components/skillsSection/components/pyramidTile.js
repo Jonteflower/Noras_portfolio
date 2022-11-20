@@ -2,12 +2,12 @@ import Image from 'next/image'
 import React from 'react'
 import styled from 'styled-components'
 
-/* //Alternative design
+
 const SkillsBox = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     border: double 3px transparent;
     border-image-slice: 1;
     border-width: 3px;
@@ -20,11 +20,11 @@ const SkillsBox = styled.div`
     font-size: 0.9rem;
     aspect-ratio: 8 / 6;
     box-sizing: border-box;
-    width: 100%;
+    width: 140px;
+    @media (max-width: 650px)  {
+        width: 22vw;
+    }
 `
-*/
-
-
 const BoxTitle = styled.span`
     font-size: 13px;
     font-weight: 600;
@@ -36,7 +36,7 @@ const BoxTitle = styled.span`
     @media (max-width: 550px)  {
         font-size: 12px;
         text-align: center;
-        line-height: 16px;
+        line-height: 14px;
     }
 
 `
@@ -47,37 +47,16 @@ const ImageContainer = styled.div`
   margin-bottom: 8px;
   height:55%;
   @media (max-width: 400px)  {
-    margin-top: -3px;
-    margin-bottom: 2px;
-    }
-`
-
-const HexagonContent = styled.div `
-   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  position: relative;
-  width: 130px;
-  aspect-ratio: calc(1/0.866);
-  background:#1a1a1a;
-  box-sizing: border-box;
-  padding: 0;
-  clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
-  -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
-  @media (max-width: 400px)  {
-        width:30vw;
-        margin:0;
-        padding: 0;
+    margin-top: 3px;
     }
 `
 
 
-function SkillsComponent({ item }) {
+
+function PyramidTile({ item }) {
 
     return (
-        <HexagonContent>
+        <SkillsBox>
             <ImageContainer>
                 <Image
                     src={item.image}
@@ -89,9 +68,9 @@ function SkillsComponent({ item }) {
             </ImageContainer>
 
             <BoxTitle>{item.title}</BoxTitle>
-        </HexagonContent>
+        </SkillsBox>
 
     )
 }
 
-export default SkillsComponent
+export default PyramidTile

@@ -1,15 +1,14 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 import styled from 'styled-components'
-import SkillsComponent from './gridTile'
+import SkillsComponent from './hexagonTile'
 import { BackendObjects, PlatformObjects, pyramidOne, pyramidTwo } from './tileObjects'
+import PyramidTile from './pyramidTile'
 
 const MotionBox = styled(motion.div)`
-    width: 140px;
-    @media (max-width: 600px)  {
-        width: 23vw;
-        font-size: 0.7rem;
-    }
+  width: fit-content;
+    height: fit-content;
+    margin: auto;
 `
 
 
@@ -23,7 +22,7 @@ const RowContainer = styled.div`
     gap:15px;
     
     @media (max-width: 480px)  {
-        gap:5px;
+        gap:7px;
     }
    
 `
@@ -55,7 +54,7 @@ function PyramidSkills({ animationItems, motionRef, controls, clickHandler }) {
                     viewport={{ once: false }}
                     key={pyramidOne.image}
                 >
-                    <SkillsComponent item={pyramidOne} key={pyramidOne.image}></SkillsComponent>
+                    <PyramidTile item={pyramidOne} key={pyramidOne.image}></PyramidTile>
                 </MotionBox>
             </RowContainer>
             <RowContainer>
@@ -68,7 +67,7 @@ function PyramidSkills({ animationItems, motionRef, controls, clickHandler }) {
                         viewport={{ once: false }}
                         key={item.image}
                     >
-                        <SkillsComponent item={item} key={item.image}></SkillsComponent>
+                        <PyramidTile item={item} key={item.image}></PyramidTile>
                     </MotionBox>
                 )
                 }
@@ -85,7 +84,7 @@ function PyramidSkills({ animationItems, motionRef, controls, clickHandler }) {
                         viewport={{ once: false }}
                         key={item.image}
                     >
-                        <SkillsComponent item={item} key={item.image}></SkillsComponent>
+                        <PyramidTile item={item} key={item.image}></PyramidTile>
                     </MotionBox>
                 )
                 }
@@ -101,7 +100,7 @@ function PyramidSkills({ animationItems, motionRef, controls, clickHandler }) {
                         key={item.image}
 
                     >
-                        <SkillsComponent item={item} key={item.image}></SkillsComponent>
+                        <PyramidTile item={item} key={item.image}></PyramidTile>
                     </MotionBox>
                 )
                 }

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 import styled from 'styled-components'
-import SkillsComponent from './gridTile'
+import SkillsComponent from './hexagonTile'
 import { BackendObjects, frontEndObjects, PlatformObjects } from './tileObjects'
 
 const MotionBox = styled(motion.div)`

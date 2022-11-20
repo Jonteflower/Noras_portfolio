@@ -83,7 +83,8 @@ function ContactSection() {
             </div>
 
             <Button>
-                Contact me
+            <a href = "mailto: jonathan@tixynft.com">Send Email</a>
+
             </Button>
 
         </OuterDiv>

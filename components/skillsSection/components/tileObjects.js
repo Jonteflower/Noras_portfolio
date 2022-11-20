@@ -79,5 +79,5 @@ export const pyramidOne =
 {
     image: '/images/coding/javascript.png',
     alt: 'javascript logo',
-    title: 'javascript'
+    title: 'Js'
 }
