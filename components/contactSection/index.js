@@ -35,11 +35,13 @@ const Title = styled.h2`
 
 const SectionText = styled.p`
   position: relative;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 500;
 `;
 
-const Button = styled.button`
+const StyledInput = styled.a`
+  text-align: center;
+  padding: 12px;
   background-color: transparent;
   border: 2px solid white;
   font-size: 1rem;
@@ -63,24 +65,24 @@ const Button = styled.button`
 
 
 function ContactSection() {
-    return (
-        <OuterDiv>
-            <div>
-                <Title>
-                    Contact
-                </Title>
-                <SectionText>
-                   {` Any questions? Don't hesitate to contact me`}
-                </SectionText>
-            </div>
+  return (
+    <OuterDiv>
+      <div>
+        <Title>
+          Contact
+        </Title>
+        <SectionText>
+          {` Any questions? Don't hesitate to contact me`}
+        </SectionText>
+      </div>
+      
+        <StyledInput type="button" href={'mailto: jonathan@tixynft.com'}>
+          Contact me
+        </StyledInput>
 
-            <Button>
-            <a href = "mailto: jonathan@tixynft.com">Send Email</a>
 
-            </Button>
-
-        </OuterDiv>
-    )
+    </OuterDiv>
+  )
 }
 
 export default ContactSection
