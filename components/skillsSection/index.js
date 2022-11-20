@@ -14,8 +14,6 @@ const OuterDiv = styled.section`
   margin-bottom: 150px;
   @media screen and (max-width:1200px) {
        //box-sizing: border-box;
-       padding-left: 15px;
-       padding-right: 15px;
   }
 `;
 

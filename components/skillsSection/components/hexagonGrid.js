@@ -5,15 +5,11 @@ import SkillsComponent from './gridTile'
 import { BackendObjects, frontEndObjects, PlatformObjects } from './tileObjects'
 
 const MotionBox = styled(motion.div)`
-    width: 140px;
-    @media (max-width: 600px)  {
-        width: 120px;
-        font-size: 0.7rem;
-    }
-    @media (max-width: 50px)  {
-        width: 27vw;
-        font-size: 0.7rem;
-    }
+
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+
 `
 
 const RowContainer = styled.div`
@@ -23,8 +19,11 @@ const RowContainer = styled.div`
     align-items: center;
     justify-content: center;
     height: auto;
-    gap:0px;
+    gap:10px;
     width: auto;
+    @media (max-width: 480px)  {
+        gap:0px;
+    }
    
 `
 const ColumnContainer = styled.div`
@@ -38,7 +37,7 @@ const ColumnContainer = styled.div`
     gap:10px;
     
     @media (max-width: 480px)  {
-        gap:8px;
+        gap:7px;
     }
    
 `

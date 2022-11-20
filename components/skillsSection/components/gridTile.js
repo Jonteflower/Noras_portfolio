@@ -47,7 +47,7 @@ const ImageContainer = styled.div`
   margin-bottom: 8px;
   height:55%;
   @media (max-width: 400px)  {
-    margin-top: 2px;
+    margin-top: -3px;
     margin-bottom: 2px;
     }
 `
@@ -68,6 +68,8 @@ const HexagonContent = styled.div `
   -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
   @media (max-width: 400px)  {
         width:30vw;
+        margin:0;
+        padding: 0;
     }
 `
 
