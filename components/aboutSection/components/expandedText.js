@@ -18,15 +18,16 @@ export const TextBox = styled.span`
 `;
 
 const ArticleTitle = styled.h2`
-  color:#FFFFFF;
+  color:#ffffff;
   margin-bottom: 0rem;
   margin-top: 0px;
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.5rem;
+
   @media screen and (max-width:800px) {
-    font-size: 1rem;
-    line-height: 1.4rem;
+    font-size: 1.5rem;
+    line-height: 1rem;
   }
 `;
 

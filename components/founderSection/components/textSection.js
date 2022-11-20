@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 import styled from 'styled-components'
 import ReadMore from './readMore'
@@ -71,7 +72,14 @@ function TextSection({ textObject }) {
     return (
         <ColumnContainer>
             <StyledArticle>
-                <SlideTitle>{textObject.title}</SlideTitle>
+                {
+                    textObject.title == 'Tixy-NFT' ?
+
+                        <a href={'https://www.tixynft.com/'}><SlideTitle>{textObject.title}</SlideTitle></a>
+                        :
+                        <SlideTitle>{textObject.title}</SlideTitle>
+
+                }
                 <BoxText>
                     <ReadMore>
                         {textObject.text}

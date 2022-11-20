@@ -1,5 +1,9 @@
 html,
 
+:root {
+  --swiper-theme-color:red;
+}
+
 body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
@@ -84,7 +88,6 @@ a {
 
 .swiper-pagination-bullet {
   width: 6px;
-  height: 6px;
   background: transparent;
   border: 1px solid #ffffff;
   opacity: 1;
@@ -95,6 +98,7 @@ a {
   height: 6px;
   transition: width 0.5s;
   border-radius: 5px;
-  background: #ff4d5a;
+  background: #ff4d5a !important;
   border: 1px solid transparent;
+  
 }

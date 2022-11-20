@@ -25,8 +25,8 @@ const ImageContainer = styled.div`
   border-radius: 10px;
 
     @media (max-width: 900px)  {
-        width: 90vw;
-        height: 300px;
+        width: 90%;
+        height: 350px;
     }
 `
 const VideoContainert = styled.div`
@@ -104,7 +104,7 @@ function ImageSlider({ setIndex }) {
                     <SlideContainer>
                         <ImageContainer>
                             <Image
-                                src="/images/websites/logistics.jpg"
+                                src="/images/websites/logistics.png"
                                 layout='fill'
                                 objectFit='contain'
                             />

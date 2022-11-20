@@ -35,7 +35,7 @@ const ColumnContainer = styled.div`
   align-items:center;
   width: fit-content;
   height: fit-content;
-  gap:15px;
+  gap:${props => props.gap};
   @media screen and (max-width:800px) {
     justify-content:center;
   }
@@ -99,7 +99,7 @@ function TextAndImage() {
 
   return (
     <Container>
-      <ColumnContainer>
+      <ColumnContainer gap={'15px'}>
         <ImageContainer>
           <Image
             src={'/images/general/jonathan.jpeg'}
@@ -114,9 +114,10 @@ function TextAndImage() {
         </div>
       </ColumnContainer>
 
-      <ColumnContainer>
-        <Article>
-          <TextBox>{UpperText}</TextBox>
+      <ColumnContainer gap={'2rem'}>
+       
+      <Article>
+          <ExpandedText  fullText={UpperText} title={'Background'}></ExpandedText>
         </Article>
 
         <Article>
@@ -124,7 +125,7 @@ function TextAndImage() {
         </Article>
 
         <Article>
-          <ExpandedText fullText={fullLogisticsText} title={'Tixy-NFT'}></ExpandedText>
+          <ExpandedText fullText={fullLogisticsText} title={'Tixy-Logistics'}></ExpandedText>
         </Article>
 
       </ColumnContainer>

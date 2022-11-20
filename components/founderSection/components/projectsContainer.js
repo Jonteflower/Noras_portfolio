@@ -20,9 +20,9 @@ function SkillsContainer() {
     const [index, setIndex] = useState(0)
     const [textObject, setTextObject] = useState({})
     
-    const tixyWebObject = {title: 'Tixy-NFT', text: 'Text related to Tixy'}
-    const tixyAppObject = {title: 'Tixy-NFT Flutter App', text:  `The Tixy app was built with Flutter right after the release of Tixy’s web app. Since most of the infrastructure behind Tixy was hosted on Google Cloud, implementing the same features on the app could be done swiftly. Due to Reacts Natives' close proximity to React.js seemed like the obvious choice for expanindg the Tixy ecosystem to mobile. However in the end scrapping the NAtive app and opting to dive into Flutter was a choice well made. `}
-    const logisticsObject = {title: 'Lager Algo', text: 'Text related to lagerAlgo'}
+    const tixyWebObject = {title: 'Tixy-NFT', text: 'Tixy was and still is one of the most user-friendly and fastest ways of deploying, buying and selling NFTs. By leveraging our own encrypted custodian wallets together with Stripe we managed to revolutionize the way NFT transactions were conducted.'}
+    const tixyAppObject = {title: 'Tixy-NFT Flutter App', text:  `The Tixy app was built with Flutter right after the release of Tixy’s web app. Since most of the infrastructure behind Tixy was hosted on Google Cloud, implementing the same features on the app could be done swiftly. Due to Reacts Natives' close proximity to React.js seemed like the obvious choice for expanindg the Tixy ecosystem to mobile. However in the end scrapping the Native app and opting to dive into Flutter was a choice well made. `}
+    const logisticsObject = {title: 'Tixy-Logistics', text: 'Tixy-Logistics is a built with mathmatical models and AI in order to optimize work flow and decision making in warehouses and logistical facilites. A Beta version is currently being tested in a > 30 thousand sqm facility outisde of Stockholm with promising results '}
 
 
     useEffect(() => {

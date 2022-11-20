@@ -8,7 +8,7 @@ const InlineText = styled.p`
 `
 
 const ReadOrHide = styled.span`
-  color: rgb(192,192,192);
+  color: #ffffff;
   cursor: pointer;
 `
 

@@ -21,21 +21,23 @@ const OuterContainer = styled.div`
     @media screen and (max-width:1100px) {
       flex-direction: column;
       justify-content: center;
-      gap: 30px;
+      gap: 0px;
   } 
    
 `
 const AnimationContainer = styled.div`
   width: fit-content;
+ 
   @media screen and (max-width:1100px) {
       width: 100%;
+      padding-top: 30px;
   } 
    
 `
 
 
 function SkillsContainer() {
-    const [ref, inView] = useInView()
+    const [ref, inView] = useInView({ threshold: 0})
     const [showHexagon, setShowHexagon] = useState(true)
     const controlsPyramid = useAnimationControls()
     const controlsHexagon = useAnimationControls()

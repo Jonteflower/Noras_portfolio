@@ -10,7 +10,6 @@ const OuterDiv = styled.section`
   width: 100%;
   min-height:50vh;
   height: fit-content;
-  gap: 20px;
   margin-bottom: 150px;
   @media screen and (max-width:1200px) {
        //box-sizing: border-box;
