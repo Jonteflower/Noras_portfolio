@@ -68,7 +68,7 @@ function HeroSection({scrollToNext}) {
     <Section>
       <OuterDiv>
         <TextAnimation line1={`Hi, I'm Jonathan`} line2={`and I'm a`}></TextAnimation>
-        <StyledButton onClick={scrollToNext}><a>Learn more</a>
+        <StyledButton onClick={scrollToNext}>Learn more
           <ArrowDownwardIcon></ArrowDownwardIcon>
         </StyledButton>
       </OuterDiv>

@@ -107,6 +107,8 @@ function ImageSlider({ setIndex }) {
                                 src="/images/websites/logistics.png"
                                 layout='fill'
                                 objectFit='contain'
+                                alt={'Picture of Tixy Logistics webapp'}
+
                             />
 
                         </ImageContainer>

@@ -117,7 +117,7 @@ function TextAndImage() {
       <ColumnContainer gap={'2rem'}>
        
       <Article>
-          <ExpandedText  fullText={UpperText} title={'Background'}></ExpandedText>
+          <ExpandedText fullText={UpperText} title={'Background'}></ExpandedText>
         </Article>
 
         <Article>

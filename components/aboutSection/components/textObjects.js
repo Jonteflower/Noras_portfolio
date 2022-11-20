@@ -8,8 +8,7 @@ After being part of two startups that never managed to get out the door. I found
 `
 
 export const UpperText = `
-If I could summarize myself in two words they would definitely be. Forever curious.
-\nMy love for technology has always been a constant in my life. From building my first computer to writing my first program, computers, science, and technology have been a source of immense curiosity for me.`
+If I could summarize myself in two words they would definitely be. Forever curious. My love for technology has always been a constant in my life. From building my first computer to writing my first program, computers, science, and technology have been a source of immense curiosity for me.`
 
 
 export const fullLogisticsText = `
