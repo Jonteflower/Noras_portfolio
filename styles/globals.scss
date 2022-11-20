@@ -80,5 +80,21 @@ a {
 .swiperCarousell {
   @media (max-width: 400px)  {
     height: 150px;
+}}
+
+.swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  background: transparent;
+  border: 1px solid #ffffff;
+  opacity: 1;
 }
+
+.swiper-pagination-bullet-active {
+  width: 20px;
+  height: 6px;
+  transition: width 0.5s;
+  border-radius: 5px;
+  background: #ff4d5a;
+  border: 1px solid transparent;
 }

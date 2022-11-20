@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Autoplay } from "swiper";
+import { Autoplay, Pagination } from "swiper";
 import "swiper/css";
 import 'swiper/css/autoplay';
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -45,7 +45,7 @@ export default function ImageCarousel({ }) {
         <WrapperDiv>
             <Swiper
                 className='swiperCarousell'
-                modules={[Autoplay]}
+                modules={[Autoplay, Pagination]}
                 slidesPerView={'auto'}
                 spaceBetween={10}
                 speed={15000}
@@ -55,8 +55,7 @@ export default function ImageCarousel({ }) {
                 freemode={{ enabled: true }}
                 watchSlidesProgress={false}
                 resizeObserver={false}
-                navigation
-                pagination={{ clickable: true }}
+                
                 effect={'fade'}
                 autoplay={{
                     delay: 0,

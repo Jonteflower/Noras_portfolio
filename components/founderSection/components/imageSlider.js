@@ -58,12 +58,11 @@ function ImageSlider({ setIndex }) {
                 grabCursor={true}
                 centeredSlides={true}
                 slidesPerView="auto"
+                navigation
+                pagination={{ clickable: true }}
+                modules={[ Pagination, EffectCoverflow]}
+
                 breakpoints={{
-                 
-                    400: {
-                        slidesPerView: 1.8,
-                        spaceBetween: 5,
-                    },
                     768: {
                         slidesPerView: 2.1,
                         spaceBetween: 0,
@@ -89,7 +88,6 @@ function ImageSlider({ setIndex }) {
                 loop={true}
                 //loopFillGroupWithBlank={true}
                 onSlideChange={(swiper) => setIndex(swiper.realIndex)}
-                modules={[EffectCoverflow]}
             >
                 <SwiperSlide>
                     <SlideContainer>
