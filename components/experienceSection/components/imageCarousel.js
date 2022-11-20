@@ -33,7 +33,7 @@ const ImageWrapper = styled.div`
     aspect-ratio: 1.5;
 
     @media screen and (max-width:400px) {
-        width: 30vw;
+        width: 50vw;
   }
 
 `;
@@ -44,7 +44,7 @@ export default function ImageCarousel({ }) {
     return (
         <WrapperDiv>
             <Swiper
-            className='swiperCarousell'
+                className='swiperCarousell'
                 modules={[Autoplay]}
                 slidesPerView={'auto'}
                 spaceBetween={10}
@@ -55,7 +55,8 @@ export default function ImageCarousel({ }) {
                 freemode={{ enabled: true }}
                 watchSlidesProgress={false}
                 resizeObserver={false}
-
+                navigation
+                pagination={{ clickable: true }}
                 effect={'fade'}
                 autoplay={{
                     delay: 0,
@@ -69,7 +70,8 @@ export default function ImageCarousel({ }) {
                 breakpoints={{
                     320: {
                         slidesPerView: 1,
-                        spaceBetween: 0
+                        spaceBetween: 0,
+                    
                     },
                     // when window width is >= 320px
                     320: {
@@ -106,10 +108,10 @@ export default function ImageCarousel({ }) {
                 {
                     items.map((item, i) =>
 
-                        <SwiperSlide  key={i}>
+                        <SwiperSlide key={i}>
 
                             <ImageWrapper>
-                                <Image 
+                                <Image
                                     src={item}
                                     layout={'fill'}
                                     objectFit={'contain'}
