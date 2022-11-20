@@ -58,6 +58,23 @@ const MiddleButton = styled.span`
 `;
 
 
+const Title = styled.span`
+  text-align: left;
+  flex: 1;
+  position: relative;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0px;
+  @media (min-width: 480px)  {
+        height: 0px;
+        font-size: 0;
+        width: 0px;
+    }
+
+`;
+
+
+
 export default function NavMenu() {
   const router = useRouter()
   const path = router.pathname
@@ -66,10 +83,16 @@ export default function NavMenu() {
     <>
       <HeaderContainer>
         <HeaderInner>
-        
+
           <ButtonsInner>
             {path == '/about' ?
-              <MiddleButton><Link href='/'> Home</Link></MiddleButton>
+              <>
+                <Title>
+                  About me
+                </Title>
+                <MiddleButton><Link href='/'> Home</Link></MiddleButton>
+              </>
+
               :
               <MiddleButton><Link href='/about'> About</Link></MiddleButton>}
           </ButtonsInner>

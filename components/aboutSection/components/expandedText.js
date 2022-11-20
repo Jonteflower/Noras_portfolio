@@ -1,9 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import { useState } from 'react';
 import ReadMore from '../../founderSection/components/readMore';
 
-export const TextBox = styled.p`
+export const TextBox = styled.span`
   color:#d4d4d4;
   margin-bottom: 1.25rem;
   margin-top: 0px;
