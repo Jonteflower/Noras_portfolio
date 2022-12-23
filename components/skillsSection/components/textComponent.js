@@ -12,7 +12,6 @@ const ColumnContainer = styled.div`
     height: auto;
     gap:15px;
     width: fit-content;
-    margin-top: 30px;
     @media screen and (max-width:1200px) {
         align-items: flex-start;
   }
@@ -96,7 +95,7 @@ function TextSection() {
         </ImageContainer>
           
             <StyledArticle>
-                <BoxTitle>Full Stack developer</BoxTitle>
+                <BoxTitle>Full Stack Developer</BoxTitle>
                 <BoxText>
                     A full stack web developer is a person who can develop both client and server software.
                     In addition to mastering HTML and CSS, he/she also knows how to
