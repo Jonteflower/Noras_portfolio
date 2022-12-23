@@ -104,6 +104,7 @@ function TextAndImage() {
           <Image
             src={'/images/general/jonathan.jpeg'}
             layout={'fill'}
+            alt={'Picture of me Jonathan'}
             objectFit={'cover'}
           />
         </ImageContainer>
