@@ -12,6 +12,10 @@ If I could summarize myself in two words they would definitely be. Forever curio
 
 
 export const fullLogisticsText = `
-Due to the recent happening in the crypto markets and general economic outlook working in a growth driven "Blockchain" spaced became hard. Billion dollar companies are currently failing left and right in a way that has not been seen since 2008 or maybe more similarly 2001. 
-However with economic times worsening new opportunities arise in fields of optimization, recourse allocation and optimization... To be continued
+When the gears of the world economy start to run slower new opportunities also present themselves!
+Companies are more than ever looking for effective cost-cutting measures. This means that the mathematical field of optimization becomes more and more relevant. 
+However, the number of companies producing practical value from the theoretical models in the optimization space is few and far in between. 
+\nWith Tixy-Logistics I bring the experience of building a user-focused platform to the B2B logistics space. 
+By combining this experience with a high-level understanding of theoretical Mathematics I have created huge value in optimizing resource allocation in our first live beta tests. 
+
 `
