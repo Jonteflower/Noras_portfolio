@@ -90,7 +90,7 @@ function TextSection() {
                 fill
                 style={{objectFit:"contain"}}
                 alt="silhouette of a person"
-                quality={90}
+                
             />
         </ImageContainer>
           

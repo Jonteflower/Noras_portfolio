@@ -63,7 +63,7 @@ function PyramidTile({ item }) {
                     fill
                     style={{objectFit:"contain"}}
                     alt={item.alt}
-                    quality={90}
+                    
                 />
             </ImageContainer>
 
