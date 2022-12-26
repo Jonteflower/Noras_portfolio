@@ -104,7 +104,10 @@ function TextAndImage() {
             src={'https://firebasestorage.googleapis.com/v0/b/tixy-a9bac.appspot.com/o/jonathan.webp?alt=media&token=4eb6a7f9-18c6-4ed5-833a-6c5527a0c350'}
             fill
             alt={'Picture of me Jonathan'}
-             style={{objectFit:"contain"}}
+            style={{ objectFit: "contain" }}
+            placeholder="blur"
+            priority
+
           />
         </ImageContainer>
         <div>
