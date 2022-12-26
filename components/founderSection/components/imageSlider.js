@@ -96,6 +96,7 @@ function ImageSlider({ setIndex }) {
                                 src="/images/websites/tixyLanding.webp"
                                 fill
                                 style={{objectFit:"contain"}}
+                                quality={80}
                                 alt='Image of my previous startup Tixy-NFT'
                             />
                         </ImageContainer>
@@ -108,6 +109,7 @@ function ImageSlider({ setIndex }) {
                                 src="/images/websites/logistics.webp"
                                 fill
                                 style={{objectFit:"contain"}}
+                                quality={80}
                                 alt={'Picture of Tixy Logistics webapp'}
                             />
                         </ImageContainer>

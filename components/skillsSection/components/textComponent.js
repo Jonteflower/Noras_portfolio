@@ -88,7 +88,7 @@ function TextSection() {
         <Image
                 src={'/images/general/person.svg'}
                 fill
-                 style={{objectFit:"contain"}}
+                style={{objectFit:"contain"}}
                 alt="silhouette of a person"
                 quality={90}
             />

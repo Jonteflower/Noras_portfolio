@@ -80,7 +80,7 @@ function SkillsComponent({ item }) {
                 <Image
                     src={item.image}
                     fill
-                     style={{objectFit:"contain"}}
+                    style={{objectFit:"contain"}}
                     alt={item.alt}
                     quality={90}
                 />
