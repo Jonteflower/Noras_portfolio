@@ -84,21 +84,26 @@ const ImageContainer = styled.div`
 function TextSection() {
     return (
         <ColumnContainer>
-        <ImageContainer>
-        <Image
-                src={'/images/general/person.svg'}
-                fill
-                style={{objectFit:"contain"}}
-                alt="silhouette of a person"
-                
-            />
-        </ImageContainer>
-          
+            <ImageContainer>
+                <Image
+                    src={'/images/general/person.svg'}
+                    fill
+                    style={{ objectFit: "contain" }}
+                    alt="silhouette of a person"
+
+                />
+            </ImageContainer>
+
             <StyledArticle>
                 <BoxTitle>Full Stack Developer</BoxTitle>
                 <BoxText>
-                    A full stack web developer is a person who can develop both client and server software.
-                    In addition to mastering HTML and CSS, he/she also knows how to
+                    {
+                        `
+                        I am passionate about solving complex problems by leveraging modern software stacks.
+                        I've built multiple full-stack web and mobile applications from the ground up by myself. 
+                        I also have experience in recruiting and leading developer teams. 
+                        `
+                    }
                 </BoxText>
             </StyledArticle >
 
