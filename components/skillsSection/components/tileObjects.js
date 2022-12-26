@@ -1,16 +1,16 @@
 export const frontEndObjects = [
     {
-        image: '/images/coding/html.png',
+        image: '/images/coding/html.webp',
         alt: 'html Logo',
         title: 'html'
     },
     {
-        image: '/images/coding/css.png',
+        image: '/images/coding/css.webp',
         alt: 'css Logo',
         title: 'css'
     },
     {
-        image: '/images/coding/javascript.png',
+        image: '/images/coding/javascript.webp',
         alt: 'javascript logo',
         title: 'js'
     },
@@ -24,17 +24,17 @@ export const PlatformObjects = [
         title: 'Next.js'
     },
     {
-        image: '/images/coding/gcloud.png',
+        image: '/images/coding/gcloud.webp',
         alt: 'Google cloud Logo',
         title: 'GCP'
     },
     {
-        image: '/images/coding/firebase.png',
+        image: '/images/coding/firebase.webp',
         alt: 'Firebase logo',
         title: 'Firebase'
     },
     {
-        image: '/images/coding/git.png',
+        image: '/images/coding/git.webp',
         alt: 'Git',
         title: 'git'
     },
@@ -43,12 +43,12 @@ export const PlatformObjects = [
 
 export const BackendObjects = [
     {
-        image: '/images/coding/node.png',
+        image: '/images/coding/node.webp',
         alt: 'html Logo',
         title: 'node.js'
     },
     {
-        image: '/images/coding/python.png',
+        image: '/images/coding/python.webp',
         alt: 'css Logo',
         title: 'python'
     },
@@ -63,12 +63,12 @@ export const BackendObjects = [
 
 export const pyramidTwo = [
     {
-        image: '/images/coding/html.png',
+        image: '/images/coding/html.webp',
         alt: 'html Logo',
         title: 'html'
     },
     {
-        image: '/images/coding/css.png',
+        image: '/images/coding/css.webp',
         alt: 'css Logo',
         title: 'css'
     },
@@ -77,7 +77,7 @@ export const pyramidTwo = [
 
 export const pyramidOne =
 {
-    image: '/images/coding/javascript.png',
+    image: '/images/coding/javascript.webp',
     alt: 'javascript logo',
     title: 'Js'
 }

@@ -1,9 +1,8 @@
 import Image from 'next/image';
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import ExpandedText from './expandedText';
-import { fullTixyNftText,  UpperText, fullLogisticsText } from './textObjects';
-import { TextBox } from './expandedText';
+import { fullLogisticsText, fullTixyNftText, UpperText } from './textObjects';
 
 const Container = styled.div`
   display: flex;
@@ -102,7 +101,7 @@ function TextAndImage() {
       <ColumnContainer gap={'15px'}>
         <ImageContainer>
           <Image
-            src={'/images/general/jonathan.webp'}
+            src={'https://firebasestorage.googleapis.com/v0/b/tixy-a9bac.appspot.com/o/jonathan.webp?alt=media&token=4eb6a7f9-18c6-4ed5-833a-6c5527a0c350'}
             layout={'fill'}
             alt={'Picture of me Jonathan'}
             objectFit={'cover'}
@@ -114,23 +113,17 @@ function TextAndImage() {
           <SubTitle>Tixy AB </SubTitle>
         </div>
       </ColumnContainer>
-
       <ColumnContainer gap={'2rem'}>
-       
-      <Article>
+        <Article>
           <ExpandedText fullText={UpperText} title={'Background'}></ExpandedText>
         </Article>
-
         <Article>
-          <ExpandedText  fullText={fullTixyNftText} title={'Tixy-NFT'}></ExpandedText>
+          <ExpandedText fullText={fullTixyNftText} title={'Tixy-NFT'}></ExpandedText>
         </Article>
-
         <Article>
           <ExpandedText fullText={fullLogisticsText} title={'Tixy-Logistics'}></ExpandedText>
         </Article>
-
       </ColumnContainer>
-
     </Container >
   )
 
