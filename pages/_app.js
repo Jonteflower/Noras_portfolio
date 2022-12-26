@@ -29,7 +29,7 @@ export default function MyApp({ Component, pageProps }) {
         </Head>
 
         <div id="globalLoader">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif" alt="" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Youtube_loading_symbol_1_(wobbly).gif" alt="page loading gif of a spinning progress wheel" />
         </div>
         {getLayout(<Component {...pageProps} />)}
 
