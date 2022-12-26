@@ -17,10 +17,8 @@ export const FooterContainer = styled.div`
   max-height:220px;
   z-index: 999;
   height: 130px;
-  transition: 1s;
 
   @media screen and (max-width: 1000px) {
-    
     width: 100%;
     justify-content: space-between;
     padding: 1rem 0 1rem 0;
