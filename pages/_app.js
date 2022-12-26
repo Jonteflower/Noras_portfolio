@@ -34,7 +34,7 @@ export default function MyApp({ Component, pageProps }) {
         <meta name='Jonathan Nairn Tallen' content='Jonathans portfolio website'></meta>
       </Head>
       <div id='globalLoader'>
-        <img src={'https://samherbert.net/svg-loaders/svg-loaders/ball-triangle.svg'}></img>
+        <img src={'https://samherbert.net/svg-loaders/svg-loaders/ball-triangle.svg'} alt='loading image'></img>
       </div>
       <LanguageContextProvider>
         {getLayout(<Component {...pageProps} />)}
