@@ -12,6 +12,9 @@ module.exports = {
     // ssr and displayName are configured by default
     styledComponents: true,
   },
+  httpAgentOptions: {
+    keepAlive: true,
+  },
   images: {
     domains: ['firebasestorage.googleapis.com'],
 }
