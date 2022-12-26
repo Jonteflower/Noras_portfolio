@@ -3,7 +3,6 @@ import Image from "next/image";
 import React, { useEffect } from 'react';
 import { LanguageContextProvider } from "../stores/languageContext";
 import '../styles/globals.scss';
-import { Html } from "next/document";
 export default function MyApp({ Component, pageProps }) {
   // Use the layout defined at the page level, if available
   const getLayout = Component.getLayout || ((page) => page)
@@ -19,7 +18,7 @@ export default function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
-    <Html lang="en">
+    <html lang="eng">
       <LanguageContextProvider>
         <Head>
           <title>Jonathan Nairn Tallen</title>
@@ -33,7 +32,7 @@ export default function MyApp({ Component, pageProps }) {
         </div>
         {getLayout(<Component {...pageProps} />)}
       </LanguageContextProvider >
-    </Html>
+    </html>
 
   )
 }
