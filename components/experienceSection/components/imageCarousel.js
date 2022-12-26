@@ -55,7 +55,7 @@ export default function ImageCarousel({ }) {
                 freemode={{ enabled: true }}
                 watchSlidesProgress={false}
                 resizeObserver={false}
-                
+
                 effect={'fade'}
                 autoplay={{
                     delay: 0,
@@ -70,7 +70,7 @@ export default function ImageCarousel({ }) {
                     320: {
                         slidesPerView: 1,
                         spaceBetween: 0,
-                    
+
                     },
                     // when window width is >= 320px
                     320: {
@@ -106,20 +106,15 @@ export default function ImageCarousel({ }) {
             >
                 {
                     items.map((item, i) =>
-
                         <SwiperSlide key={i}>
-
                             <ImageWrapper>
                                 <Image
                                     src={item}
                                     layout={'fill'}
                                     objectFit={'contain'}
-                                    alt={'Company logo i have worked with'}
+                                    alt={'Logo of a company i have worked wtij'}
                                 />
                             </ImageWrapper>
-
-
-
                         </SwiperSlide>
                     )
                 }

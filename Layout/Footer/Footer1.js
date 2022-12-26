@@ -6,9 +6,6 @@ import {
   SocialMediaWrap, WebsiteRights
 } from './Footer.elements';
 
-
-
-
 function Footer({ scroll }) {
   const router = useRouter()
   const path = router.pathname

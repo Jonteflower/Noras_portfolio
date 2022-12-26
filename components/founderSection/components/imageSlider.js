@@ -96,6 +96,7 @@ function ImageSlider({ setIndex }) {
                                 src="/images/websites/tixyLanding.webp"
                                 layout='fill'
                                 objectFit='contain'
+                                alt='Image of my previous startup Tixy-NFT'
                             />
                         </ImageContainer>
                     </SlideContainer>
@@ -108,15 +109,13 @@ function ImageSlider({ setIndex }) {
                                 layout='fill'
                                 objectFit='contain'
                                 alt={'Picture of Tixy Logistics webapp'}
-
                             />
-
                         </ImageContainer>
                     </SlideContainer>
                 </SwiperSlide>
                 <SwiperSlide>
                     <VideoContainert>
-                        <video muted autoPlay={true} loop style={{ width: '100%', height: '100%' }}>
+                        <video muted autoPlay={true} loop style={{ width: '100%', height: '100%' }} alt='Video of the Tixy-NFT Flutter app'>
                             <source src="./images/websites/tixyCropped.mp4" />
                         </video>
                     </VideoContainert>
