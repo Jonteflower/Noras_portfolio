@@ -1,15 +1,13 @@
-import React, { useEffect, useRef } from 'react'
-import ExperienceSection from './experienceSection'
-import HeroSection from './heroSection'
-import ProjectSection from './founderSection'
-import SkillsSection from './skillsSection'
+import React, { useRef } from 'react'
 import ContactSection from './contactSection'
-import styled from 'styled-components'
+import ExperienceSection from './experienceSection'
+import ProjectSection from './founderSection'
+import HeroSection from './heroSection'
+import SkillsSection from './skillsSection'
 
 
 function Home() {
     const ref = useRef(null);
-
 
     const handleClick = () => {
         ref.current?.scrollIntoView({ behavior: 'smooth' });
@@ -22,7 +20,6 @@ function Home() {
             <ProjectSection />
             <ExperienceSection />
             <ContactSection />
-
         </>
     )
 }

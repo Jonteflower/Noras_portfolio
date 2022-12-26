@@ -94,8 +94,8 @@ function ImageSlider({ setIndex }) {
                         <ImageContainer>
                             <Image
                                 src="/images/websites/tixyLanding.webp"
-                                layout='fill'
-                                objectFit='contain'
+                                fill
+                                style={{objectFit:"contain"}}
                                 alt='Image of my previous startup Tixy-NFT'
                             />
                         </ImageContainer>
@@ -106,8 +106,8 @@ function ImageSlider({ setIndex }) {
                         <ImageContainer>
                             <Image
                                 src="/images/websites/logistics.webp"
-                                layout='fill'
-                                objectFit='contain'
+                                fill
+                                style={{objectFit:"contain"}}
                                 alt={'Picture of Tixy Logistics webapp'}
                             />
                         </ImageContainer>

@@ -3,7 +3,6 @@ import React from 'react';
 import styled from 'styled-components';
 import TextAnimation from './components/textAnimation';
 
-
 const StyledButton = styled.div`
     position: relative;
     display: flex;
@@ -30,7 +29,6 @@ const StyledButton = styled.div`
     }
    
 `
-
 
 const OuterDiv = styled.div`
   display: flex;
@@ -62,7 +60,7 @@ const Section = styled.section`
   }
 `;
 
-function HeroSection({scrollToNext}) {
+function HeroSection({ scrollToNext }) {
 
   return (
     <Section>

@@ -60,8 +60,8 @@ function PyramidTile({ item }) {
             <ImageContainer>
                 <Image
                     src={item.image}
-                    layout='fill'
-                    objectFit={'contain'}
+                    fill
+                     style={{objectFit:"contain"}}
                     alt={item.alt}
                     quality={90}
                 />

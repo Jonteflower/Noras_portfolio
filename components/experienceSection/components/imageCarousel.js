@@ -110,8 +110,8 @@ export default function ImageCarousel({ }) {
                             <ImageWrapper>
                                 <Image
                                     src={item}
-                                    layout={'fill'}
-                                    objectFit={'contain'}
+                                    fill
+                                     style={{objectFit:"contain"}}
                                     alt={'Logo of a company i have worked wtij'}
                                 />
                             </ImageWrapper>

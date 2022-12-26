@@ -15,8 +15,12 @@ module.exports = {
   httpAgentOptions: {
     keepAlive: true,
   },
+  i18n: {
+    locales: ['en'],
+    defaultLocale: 'en',
+  },
   images: {
-    domains: ['firebasestorage.googleapis.com'],
+    domains: ['firebasestorage.googleapis.com', 'upload.wikimedia.org'],
 }
   //future: { webpack5: true },
 }

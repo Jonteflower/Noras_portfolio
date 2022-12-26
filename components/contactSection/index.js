@@ -71,7 +71,7 @@ function ContactSection() {
           Contact
         </Title>
         <SectionText>
-          {` Any questions? Don't hesitate to contact me`}
+          Any questions? Don't hesitate to contact me
         </SectionText>
       </div>
       

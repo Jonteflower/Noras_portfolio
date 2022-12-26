@@ -72,7 +72,6 @@ const HexagonContent = styled.div `
     }
 `
 
-
 function SkillsComponent({ item }) {
 
     return (
@@ -80,8 +79,8 @@ function SkillsComponent({ item }) {
             <ImageContainer>
                 <Image
                     src={item.image}
-                    layout='fill'
-                    objectFit={'contain'}
+                    fill
+                     style={{objectFit:"contain"}}
                     alt={item.alt}
                     quality={90}
                 />
