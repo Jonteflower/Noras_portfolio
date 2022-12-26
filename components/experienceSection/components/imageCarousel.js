@@ -39,7 +39,7 @@ const ImageWrapper = styled.div`
 `;
 
 export default function ImageCarousel({ }) {
-    const items = ['/images/logos/kth1.png', '/images/logos/logistics1.png', '/images/logos/pwcLogo.png', '/images/logos/speedGroup.png', '/images/logos/StingWhite.png', '/images/logos/StockholmUni.png', '/images/logos/tixySmall.webp', '/images/logos/uppsala.png']
+    const items = ['/images/logos/kth1.webp', '/images/logos/logistics1.webp', '/images/logos/pwcLogo.webp', '/images/logos/speedGroup.webp', '/images/logos/StingWhite.webp', '/images/logos/StockholmUni.webp', '/images/logos/tixySmall.webp', '/images/logos/uppsala.webp']
 
     return (
         <WrapperDiv>

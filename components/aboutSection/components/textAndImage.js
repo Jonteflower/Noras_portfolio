@@ -102,7 +102,7 @@ function TextAndImage() {
       <ColumnContainer gap={'15px'}>
         <ImageContainer>
           <Image
-            src={'/images/general/jonathan.jpeg'}
+            src={'/images/general/jonathan.webp'}
             layout={'fill'}
             alt={'Picture of me Jonathan'}
             objectFit={'cover'}

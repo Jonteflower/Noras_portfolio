@@ -93,7 +93,7 @@ function ImageSlider({ setIndex }) {
                     <SlideContainer>
                         <ImageContainer>
                             <Image
-                                src="/images/websites/tixyLanding.jpg"
+                                src="/images/websites/tixyLanding.webp"
                                 layout='fill'
                                 objectFit='contain'
                             />
@@ -104,7 +104,7 @@ function ImageSlider({ setIndex }) {
                     <SlideContainer>
                         <ImageContainer>
                             <Image
-                                src="/images/websites/logistics.png"
+                                src="/images/websites/logistics.webp"
                                 layout='fill'
                                 objectFit='contain'
                                 alt={'Picture of Tixy Logistics webapp'}
