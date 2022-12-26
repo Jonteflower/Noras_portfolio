@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useEffect } from 'react';
 import { LanguageContextProvider } from "../stores/languageContext";
 import '../styles/globals.scss';
+import { Html } from "next/document";
 export default function MyApp({ Component, pageProps }) {
   // Use the layout defined at the page level, if available
   const getLayout = Component.getLayout || ((page) => page)
@@ -18,9 +19,8 @@ export default function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
-
-    <LanguageContextProvider>
-     
+    <Html lang="en">
+      <LanguageContextProvider>
         <Head>
           <title>Jonathan Nairn Tallen</title>
           <meta name="description" content="Swedish full stack developer and startup founder" />
@@ -28,12 +28,12 @@ export default function MyApp({ Component, pageProps }) {
           <link rel="apple-touch-icon" type="image/png" href="logo192.png" />
           <meta name='Jonathan Nairn Tallen' content='Jonathans portfolio website'></meta>
         </Head>
-
         <div id="globalLoader">
           <Image layout={'fill'} src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Youtube_loading_symbol_1_(wobbly).gif" alt="page loading gif of a spinning progress wheel" />
         </div>
         {getLayout(<Component {...pageProps} />)}
-    </LanguageContextProvider >
+      </LanguageContextProvider >
+    </Html>
 
   )
 }
