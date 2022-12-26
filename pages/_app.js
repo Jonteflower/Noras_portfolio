@@ -1,4 +1,5 @@
-import { Head, Html } from 'next/document';
+import { Html } from 'next/document';
+import Head from "next/head";
 import React, { useEffect } from 'react';
 import { LanguageContextProvider } from "../stores/languageContext";
 import '../styles/globals.scss';
