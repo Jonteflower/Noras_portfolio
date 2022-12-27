@@ -36,7 +36,7 @@ function Footer({ scroll }) {
         <Divider />
         {
           scroll == 0 ? 
-          <WebsiteRights>Or reach out to: <a href = "mailto: jonathan@tixynft.com">jonathan@tixynft.com</a></WebsiteRights>
+          <WebsiteRights> <a href = "mailto: jonathan@tixynft.com">jonathan@tixynft.com</a></WebsiteRights>
           :
           <></>
         }

@@ -58,7 +58,7 @@ const Title = styled.h2`
 
     @media screen and (max-width:600px) {
       font-size: 2.5rem;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
       margin-top: 1rem;
 
       ::before{

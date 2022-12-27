@@ -64,6 +64,7 @@ const BoxText = styled.p`
     margin-inline-end: 0px;
     @media screen and (max-width:1100px) {
         width:100%;
+        margin-block-end: 0em;
   } 
 `
 
