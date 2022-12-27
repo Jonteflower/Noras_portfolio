@@ -32,7 +32,7 @@ const BoxTitle = styled.span`
     transition: all 0.2s;
     letter-spacing: 1px;
     text-transform: uppercase;
-
+    color:white;
     @media (max-width: 550px)  {
         font-size: 12px;
         text-align: center;
