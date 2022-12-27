@@ -84,6 +84,12 @@ export const SocialIcons = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 300px;
+
+  @media screen and (max-width: 800px) {
+    width: 80%;
+    justify-content: space-around;
+  }
+
 `;
 
 export const LogoDiv = styled.div`
@@ -92,7 +98,6 @@ export const LogoDiv = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 150px;
-
   height: 40px;
 `;
 
