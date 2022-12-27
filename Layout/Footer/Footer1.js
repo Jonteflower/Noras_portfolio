@@ -34,7 +34,13 @@ function Footer({ scroll }) {
           </SocialMediaWrap>
         </SocialMedia>
         <Divider />
-        <WebsiteRights>Or reach out to: <a href = "mailto: jonathan@tixynft.com">jonathan@tixynft.com</a></WebsiteRights>
+        {
+          scroll == 0 ? 
+          <WebsiteRights>Or reach out to: <a href = "mailto: jonathan@tixynft.com">jonathan@tixynft.com</a></WebsiteRights>
+          :
+          <></>
+        }
+       
       </FooterContainer>
     </>
   );
