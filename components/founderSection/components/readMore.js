@@ -5,6 +5,7 @@ import { useState } from 'react'
 const InlineText = styled.p`
   display: inline;
   width: 100%;
+  text-align: center;
 `
 
 const ReadOrHide = styled.span`
