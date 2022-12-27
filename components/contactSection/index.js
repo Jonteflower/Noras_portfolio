@@ -26,6 +26,7 @@ const Title = styled.h2`
   z-index: 9999;
   margin: 0px;
   text-align: center;
+
   @media screen and (max-width:400px) {
     font-size: 2rem;
   } 
@@ -36,6 +37,7 @@ const SectionText = styled.p`
   position: relative;
   font-size: 1.1rem;
   font-weight: 500;
+  color:white;
 `;
 
 const StyledInput = styled.a`
@@ -59,9 +61,7 @@ const StyledInput = styled.a`
     color: black;
 
   }
-
 `;
-
 
 function ContactSection() {
   return (
@@ -71,15 +71,12 @@ function ContactSection() {
           Contact
         </Title>
         <SectionText>
-         { `Any questions? Don't hesitate to contact me`}
+          {`Any questions? Don't hesitate to contact me`}
         </SectionText>
       </div>
-      
-        <StyledInput type="button" href={'mailto: jonathan@tixynft.com'}>
-          Contact me
-        </StyledInput>
-
-
+      <StyledInput type="button" href={'mailto: jonathan@tixynft.com'}>
+        Contact me
+      </StyledInput>
     </OuterDiv>
   )
 }
