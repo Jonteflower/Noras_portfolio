@@ -1,9 +1,8 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 import styled from 'styled-components'
-import SkillsComponent from './hexagonTile'
-import { BackendObjects, PlatformObjects, pyramidOne, pyramidTwo } from './tileObjects'
 import PyramidTile from './pyramidTile'
+import { BackendObjects, PlatformObjects, pyramidOne, pyramidTwo } from './tileObjects'
 
 const MotionBox = styled(motion.div)`
   width: fit-content;
