@@ -52,6 +52,7 @@ const StyledInput = styled.a`
   max-width: 500px;
   height: 48px;
   text-transform: uppercase;
+  color:white;
   background: linear-gradient(to left, #ffffff00 50%, white 50%) right;
     background-size: 200%;
     transition: .5s ease-out;

@@ -60,9 +60,9 @@ export const TermsWrap = styled.div`
 
 
 export const WebsiteRights = styled.small`
-  color: #FFFFFF75;
+  color: #FFFFFF80;
   margin-bottom: 10px;
-  font-size: 12px;
+  font-size: 13px;
   width: 80%;
   text-align: center;
 `;
