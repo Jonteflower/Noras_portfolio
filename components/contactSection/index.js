@@ -11,6 +11,7 @@ const OuterDiv = styled.section`
   height: 300px;
   gap: 20px;
   background-color: #ff4d5a;
+
   clip-path: polygon(0 35%,100% 0,100% 100%,0 100%);
   padding-top: 2rem;
   @media screen and (max-width:1000px) {
@@ -26,7 +27,7 @@ const Title = styled.h2`
   z-index: 9999;
   margin: 0px;
   text-align: center;
-
+  color: white;
   @media screen and (max-width:400px) {
     font-size: 2rem;
   } 

@@ -29,7 +29,7 @@ const StyledArticle = styled.article`
 
 `
 
-const BoxText = styled.span`
+const BoxText = styled.div`
     font-size: 1.2rem;
     width: 70%;
     line-height: 1.6rem;

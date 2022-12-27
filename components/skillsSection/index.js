@@ -23,6 +23,7 @@ const Title = styled.h2`
   margin-top: 6rem;
   margin-bottom: 10rem;
   z-index: 9999;
+  color: white;
   ::before{
     content: '';
     border-bottom: 18px solid #ff4d5a;

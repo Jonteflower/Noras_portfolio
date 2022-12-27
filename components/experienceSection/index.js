@@ -21,6 +21,7 @@ const Title = styled.h2`
   margin-bottom: 5rem;
   z-index: 9999;
   letter-spacing: 0.1rem;
+  color: white;
   ::before{
     content: '';
     border-bottom: 18px solid #ff4d5a;

@@ -6,11 +6,13 @@ const InlineText = styled.p`
   display: inline;
   width: 100%;
   text-align: center;
+  margin: auto;
 `
 
 const ReadOrHide = styled.span`
   color: #ffffff;
   cursor: pointer;
+  white-space: nowrap;
 `
 
 const ReadMore = ({ children }) => {
@@ -26,7 +28,7 @@ const ReadMore = ({ children }) => {
         if (text?.length > 100) {
             return (
                 < InlineText >
-                    {isReadMore ? text?.slice(0, 150) : text}
+                    {isReadMore ? text?.slice(0, 145) : text}
                     < ReadOrHide onClick={toggleReadMore}>
                         {isReadMore ? " ...read more" : " show less"}
                     </ ReadOrHide>
