@@ -14,7 +14,7 @@ function Footer({ scroll }) {
 
   return (
     <>
-      <FooterContainer position={scroll == 0 ? 'fixed' : 'absolute'}  color={ isLight} >
+      <FooterContainer position={scroll == 0 ? 'fixed' : 'absolute'}  color={ isLight}  >
         <SocialMedia>
           <SocialMediaWrap>
             <SocialIcons>
@@ -40,7 +40,6 @@ function Footer({ scroll }) {
           :
           <></>
         }
-       
       </FooterContainer>
     </>
   );

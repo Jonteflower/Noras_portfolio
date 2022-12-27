@@ -16,7 +16,8 @@ export const FooterContainer = styled.div`
   align-items: center;
   max-height:220px;
   z-index: 999;
-  height: 130px;
+  height: fit-content;
+  gap: 15px;
 
   @media screen and (max-width: 1000px) {
     width: 100%;
@@ -38,7 +39,7 @@ export const SocialMediaWrap = styled.div`
   width: 100%;
   max-width: 1000px;
   margin: auto;
-  height: 50px;
+  height: 40px;
   @media screen and (max-width: 1000px) {
     flex-direction: column;
     margin: 0px auto 0 auto;
@@ -114,6 +115,12 @@ export const SocialIconLink = styled.a`
 
   &:hover{
     color: ${props => props.color};
+  }
+  &:active{
+    color:inherit;
+  }
+  &:visited{
+    color:inherit;
   }
 
   @media screen and (max-width: 400px) {

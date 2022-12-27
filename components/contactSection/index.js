@@ -39,6 +39,9 @@ const SectionText = styled.p`
   font-size: 1.1rem;
   font-weight: 500;
   color:white;
+  @media screen and (max-width:400px) {
+    font-size: 1rem;
+  } 
 `;
 
 const StyledInput = styled.a`
