@@ -18,7 +18,7 @@ function Footer({ scroll }) {
         <SocialMedia>
           <SocialMediaWrap>
             <SocialIcons>
-              <SocialIconLink href='https:/discordapp.com/users/Jonteflower#1427' target='_blank' aria-label='Facebook' color={scroll == 0 ?  '#FF4D59': '#000000' }>
+              <SocialIconLink href='https://www.discordapp.com/users/Jonteflower#1427' target='_blank' aria-label='Discord' color={scroll == 0 ?  '#FF4D59': '#000000' }>
                 <FaDiscord />
               </SocialIconLink>
               <SocialIconLink href='https://www.instagram.com/jonteflower/' target='_blank' aria-label='Instagram' color={scroll == 0 ?  '#FF4D59': '#000000' }>

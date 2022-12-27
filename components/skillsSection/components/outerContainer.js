@@ -37,16 +37,20 @@ const AnimationContainer = styled.div`
 
 
 function SkillsContainer() {
-    const [ref, inView] = useInView({ threshold: 0})
+    const [ref, inView] = useInView({ threshold: 0 })
     const [showHexagon, setShowHexagon] = useState(true)
     const controlsPyramid = useAnimationControls()
     const controlsHexagon = useAnimationControls()
     const animationItems = shuffleArray(animationItemsList)
 
     useEffect(() => {
-        if (inView) {
-            controlsHexagon.start("visible");
+        if (typeof window !== "undefined") {
+            let width = window.innerWidth;
+            if (inView || width < 600) {
+                controlsHexagon.start("visible");
+            }
         }
+
     }, [inView]);
 
 
