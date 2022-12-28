@@ -17,6 +17,7 @@ export const FooterContainer = styled.div`
   max-height:220px;
   z-index: 999;
   height: fit-content;
+  min-height: 60px;
   gap: 15px;
 
   @media screen and (max-width: 1000px) {
@@ -66,6 +67,7 @@ export const WebsiteRights = styled.small`
   font-size: 13px;
   width: 80%;
   text-align: center;
+  line-height: 17px;
 `;
 
 export const TermsAndServices = styled.a`
@@ -109,7 +111,6 @@ export const Divider = styled.div`
   width: 80%;
   border-bottom: 1px solid #C5C5C5;
   height: 1px;
-
 `;
 
 export const SocialIconLink = styled.a`

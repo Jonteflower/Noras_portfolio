@@ -7,19 +7,19 @@ import { Suspense } from "react";
 
 const DynamicExperienceSection = dynamic(() => import('./experienceSection'), {
     ssr: false,
-    suspense: true,
+    Suspense: true,
 
 })
 
 const DynamicProjectsSection = dynamic(() => import('./founderSection'), {
     ssr: false,
-    suspense: true,
+    Suspense: true,
 
 })
 
 const DynamicContactSection = dynamic(() => import('./contactSection'), {
     ssr: false,
-    suspense: true,
+    Suspense: true,
 
 })
 

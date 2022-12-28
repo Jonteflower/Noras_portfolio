@@ -7,6 +7,8 @@ const InlineText = styled.p`
   width: 100%;
   text-align: center;
   margin: auto;
+  font-size: 1rem;
+
 `
 
 const ReadOrHide = styled.span`
@@ -14,7 +16,6 @@ const ReadOrHide = styled.span`
   cursor: pointer;
   white-space: nowrap;
 `
-
 const ReadMore = ({ children }) => {
     const text = children;
     const [isReadMore, setIsReadMore] = useState(true);

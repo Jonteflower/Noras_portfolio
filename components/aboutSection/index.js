@@ -11,10 +11,8 @@ const OuterDiv = styled.div`
   width: 100%;
   max-width:1200px;
   min-height:100%;
-    height: fit-content;
-  @media screen and (max-width:800px) {
-   
-  }
+  height: fit-content;
+  padding-bottom: 100px;
 `;
 
 const Title = styled.h1`
@@ -25,6 +23,7 @@ const Title = styled.h1`
   margin-bottom: 2.5rem;
   z-index: 9999;
   width: 100%;
+
   @media screen and (max-width:800px) {
     font-size: 3rem;
     margin-bottom: 2rem;

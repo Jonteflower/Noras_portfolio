@@ -9,14 +9,13 @@ const OuterDiv = styled.section`
   align-items:center;
   width: 100%;
   height: 300px;
-  gap: 20px;
+  gap: 10px;
   background-color: #282828;
-
   clip-path: polygon(0 35%,100% 0,100% 100%,0 100%);
   padding-top: 2rem;
+  
   @media screen and (max-width:1000px) {
-       gap: 5px;
-       padding-top: 4rem;
+    padding-bottom: 20px;
   }
 `;
 
@@ -38,37 +37,21 @@ const Title = styled.h2`
     margin: 0 auto;
     position: relative;
     left:1.8rem;
-    top: 3.2rem;
+    top: 3.1rem;
     z-index: -1;
   }
-
-    @media screen and (max-width:700px) {
-      font-size: 3.5rem;
-      
-      ::before{
-    content: '';
-    border-bottom: 18px solid #ff4d5a;
-    width: 14rem;
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    left:1.2rem;
-    top: 3.8rem;
-    z-index: -1;
-  }
-    }
 
     @media screen and (max-width:600px) {
       font-size: 2.5rem;
       ::before{
     content: '';
     border-bottom: 14px solid #ff4d5a;
-    width: 9.5rem;
+    width: 9rem;
     display: block;
     margin: 0 auto;
     position: relative;
-    left:1.2rem;
-    top: 2.85rem;
+    left:1.5rem;
+    top: 2.6rem;
     z-index: -1;
   }
     }

@@ -57,7 +57,7 @@ position: relative;
   align-items:center;
   width: 100%;
   height:100vh;
-  border-bottom: 0.5px solid #ffffff95;
+  //border-bottom: 0.5px solid #ffffff95;
   @media screen and (max-width:800px) {
     justify-content:center;
   }

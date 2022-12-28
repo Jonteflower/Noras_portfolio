@@ -10,12 +10,11 @@ function Footer({ scroll }) {
   const router = useRouter()
   const path = router.pathname
   path == '/about' ? scroll = 1 : scroll = scroll
-  const isLight = (scroll != 0  && path != '/about') ?  '#282828' : 'transparent'
-
+  const isLight = (scroll != 0 && path != '/about') ? '#282828' : 'transparent'
 
   return (
     <>
-      <FooterContainer position={scroll == 0 ? 'fixed' : 'absolute'}  color={ isLight}  >
+      <FooterContainer position={scroll == 0 ? 'fixed' : 'absolute'} color={isLight}  >
         <SocialMedia>
           <SocialMediaWrap>
             <SocialIcons>
@@ -38,12 +37,7 @@ function Footer({ scroll }) {
           </SocialMediaWrap>
         </SocialMedia>
         <Divider />
-        {
-          scroll == 0 ? 
-          <WebsiteRights> <a href = "mailto: jonathan@tixynft.com">jonathan@tixynft.com</a></WebsiteRights>
-          :
-          <></>
-        }
+        <WebsiteRights> <a href="mailto: jonathan@tixynft.com">jonathan@tixynft.com</a></WebsiteRights>
       </FooterContainer>
     </>
   );
