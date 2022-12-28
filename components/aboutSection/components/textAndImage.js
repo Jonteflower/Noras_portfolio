@@ -95,6 +95,7 @@ const Article = styled.article`
 
 
 function TextAndImage() {
+  
 
   return (
     <Container>
@@ -105,8 +106,7 @@ function TextAndImage() {
             fill
             alt={'Picture of me Jonathan'}
             style={{ objectFit: "contain" }}
-            placeholder="blur"
-            priority
+            priority={true}
 
           />
         </ImageContainer>

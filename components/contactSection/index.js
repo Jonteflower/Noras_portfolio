@@ -10,7 +10,7 @@ const OuterDiv = styled.section`
   width: 100%;
   height: 300px;
   gap: 20px;
-  background-color: #ff4d5a;
+  background-color: #282828;
 
   clip-path: polygon(0 35%,100% 0,100% 100%,0 100%);
   padding-top: 2rem;
@@ -25,12 +25,53 @@ const Title = styled.h2`
   font-size: 3rem;
   font-weight: 600;
   z-index: 9999;
-  margin: 0px;
-  text-align: center;
   color: white;
-  @media screen and (max-width:400px) {
-    font-size: 2rem;
-  } 
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+
+
+  ::before{
+    content: '';
+    border-bottom: 18px solid #ff4d5a;
+    width: 10.5rem;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    left:1.8rem;
+    top: 3.2rem;
+    z-index: -1;
+  }
+
+    @media screen and (max-width:700px) {
+      font-size: 3.5rem;
+      
+      ::before{
+    content: '';
+    border-bottom: 18px solid #ff4d5a;
+    width: 14rem;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    left:1.2rem;
+    top: 3.8rem;
+    z-index: -1;
+  }
+    }
+
+    @media screen and (max-width:600px) {
+      font-size: 2.5rem;
+      ::before{
+    content: '';
+    border-bottom: 14px solid #ff4d5a;
+    width: 9.5rem;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    left:1.2rem;
+    top: 2.85rem;
+    z-index: -1;
+  }
+    }
 `;
 
 

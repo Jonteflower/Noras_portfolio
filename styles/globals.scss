@@ -4,13 +4,23 @@ html,
   --swiper-theme-color:red;
 }
 
+#tsparticles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 0; /* if you use -1 you have to set to `"window"` the interactivity.detectsOn property */
+}
 
 #globalLoader {
   position: fixed;
   z-index: 9999;
   top: 50%;
   left: 50%;
-  background-color:  #121212;
+  background-color:  #08080e;
   transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
@@ -25,8 +35,8 @@ body {
   //font-family: 'Montserrat', sans-serif;
   padding: 0;
   margin: 0;
-  background: #121212;
-  //background: #08080e;
+  //background: #121212;
+  background: #08080e;
   scroll-behavior: auto;
   
   @media screen and (max-width: 600px) {
@@ -46,8 +56,9 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin: 0;
-  background: linear-gradient(180deg, #070f1b70 0%, rgba(20, 37, 63, 70) 42.09%),
-  linear-gradient(180deg, rgba(0, 0, 0, 70) 82.61%);
+  background: #08080e;
+  //background: linear-gradient(180deg, #070f1b70 0%, rgba(20, 37, 63, 70) 42.09%),
+  //linear-gradient(180deg, rgba(0, 0, 0, 70) 82.61%);
   padding-bottom: 70px;
 }
 

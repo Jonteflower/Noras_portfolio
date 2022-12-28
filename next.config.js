@@ -21,6 +21,6 @@ module.exports = {
   },
   images: {
     domains: ['firebasestorage.googleapis.com', 'upload.wikimedia.org'],
-}
+  }
   //future: { webpack5: true },
 }

@@ -18,7 +18,6 @@ const DynamicContactSection = dynamic(() => import('./contactSection'), {
 
 function Home() {
     const ref = useRef(null);
-
     const handleClick = () => {
         ref.current?.scrollIntoView({ behavior: 'smooth' });
     };

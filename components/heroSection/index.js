@@ -1,7 +1,9 @@
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import React from 'react';
 import styled from 'styled-components';
 import TextAnimation from './components/textAnimation';
+import {AiOutlineArrowDown} from 'react-icons/ai'
+import Stars from '../particles';
+
 
 const StyledButton = styled.div`
     position: relative;
@@ -48,6 +50,7 @@ const OuterDiv = styled.div`
 `;
 
 const Section = styled.section`
+position: relative;
   display: flex;
   flex-direction: column;
   justify-content:flex-start;
@@ -64,10 +67,11 @@ function HeroSection({ scrollToNext }) {
 
   return (
     <Section>
+      <Stars/>
       <OuterDiv>
         <TextAnimation line1={`Hi, I'm Jonathan`} line2={`and I'm a`}></TextAnimation>
         <StyledButton onClick={scrollToNext}>Learn more
-          <ArrowDownwardIcon></ArrowDownwardIcon>
+          <AiOutlineArrowDown style={{ fontSize: '15px'}} />
         </StyledButton>
       </OuterDiv>
     </Section>

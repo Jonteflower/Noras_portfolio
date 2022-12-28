@@ -119,18 +119,12 @@ export const SocialIconLink = styled.a`
   padding-right: 4px;
 
   &:hover{
-    color: ${props => props.color};
-  }
-  &:active{
-    color:inherit;
-  }
-  &:visited{
-    color:inherit;
+    color: #FF4D59;
   }
 
   @media screen and (max-width: 400px) {
     font-size: 20px;
     padding-left: 3px;
-  padding-right: 3px;
+    padding-right: 3px;
   }
 `;
