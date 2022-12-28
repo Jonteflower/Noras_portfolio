@@ -20,8 +20,8 @@ const Title = styled.h2`
   position: relative;
   font-size: 4.5rem;
   font-weight: 600;
-  margin-top: 6rem;
-  margin-bottom: 10rem;
+  margin-top: 3rem;
+  margin-bottom: 8rem;
   z-index: 9999;
   color: white;
   ::before{
