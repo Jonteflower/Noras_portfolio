@@ -43,16 +43,16 @@ const ButtonsInner = styled.div`
 
 const MiddleButton = styled.span`
     font-family: 'Poppins', sans-serif;
-    color: #FFFFFF;
+    color: #f1f1f1;
     font-weight: 400;
     height: 21px;
     width: auto;
     font-size: 16px;
     transition: all 0.1s ease-in-out;
+    border-bottom:2px solid #ff4d5a;
 
     &:hover {
-      color: #40D1B7;
-      border-bottom:2px solid #40D1B7;
+      color: #FFFFFF;
       cursor: pointer;
     }
 `;
