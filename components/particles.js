@@ -40,6 +40,7 @@ export default function Stars() {
           particles: {
             color: {
               value: "f1f1f1"
+              //value: ['#f1f1f1','#8F2E36', '']
             },
             number: {
               density: {
@@ -47,7 +48,7 @@ export default function Stars() {
                 area: 1080
               },
               limit: 0,
-              value: 500,
+              value: 150,
             },
             opacity: {
               animation: {
@@ -72,7 +73,12 @@ export default function Stars() {
                 minimumValue: 0.5
               },
               value: 1
-            }
+            },
+            move: {
+                enable: true,
+                speed:0.15,
+
+            },
           }
         }}
     />
