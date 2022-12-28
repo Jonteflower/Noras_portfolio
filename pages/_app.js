@@ -32,6 +32,7 @@ export default function MyApp({ Component, pageProps }) {
         <link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico" />
         <link rel="apple-touch-icon" type="image/png" href="logo192.png" />
         <meta name='Jonathan Nairn Tallen' content='Jonathans portfolio website'></meta>
+        <meta name="theme-color" content="#08080e" ></meta>
       </Head>
       <div id='globalLoader'>
         <img src={'https://samherbert.net/svg-loaders/svg-loaders/ball-triangle.svg'} alt='loading image'></img>

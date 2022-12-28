@@ -24,12 +24,12 @@ export const PlatformObjects = [
         title: 'Next.js'
     },
     {
-        image: '/images/coding/gcloud.webp',
+        image: '/images/coding/gcloud.svg',
         alt: 'Google cloud Logo',
         title: 'GCP'
     },
     {
-        image: '/images/coding/firebase.webp',
+        image: '/images/coding/firebase.svg',
         alt: 'Firebase logo',
         title: 'Firebase'
     },
@@ -48,7 +48,7 @@ export const BackendObjects = [
         title: 'node.js'
     },
     {
-        image: '/images/coding/python.webp',
+        image: '/images/coding/python.svg',
         alt: 'css Logo',
         title: 'python'
     },
