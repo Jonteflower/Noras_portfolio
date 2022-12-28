@@ -82,7 +82,6 @@ function SkillsComponent({ item }) {
                     fill
                     style={{objectFit:"contain"}}
                     alt={item.alt}
-                    
                 />
             </ImageContainer>
 
