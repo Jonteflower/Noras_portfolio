@@ -7,20 +7,19 @@ import { Suspense } from "react";
 
 const DynamicExperienceSection = dynamic(() => import('./experienceSection'), {
     ssr: false,
-    Suspense: true,
+    suspense: true,
 
 })
 
 const DynamicProjectsSection = dynamic(() => import('./founderSection'), {
     ssr: false,
-    Suspense: true,
+    suspense: true,
 
 })
 
 const DynamicContactSection = dynamic(() => import('./contactSection'), {
     ssr: false,
-    Suspense: true,
-
+    suspense: true,
 })
 
 
@@ -34,9 +33,15 @@ function Home() {
         <>
             <HeroSection scrollToNext={handleClick} />
             <SkillsSection scrollRef={ref} />
-            <DynamicProjectsSection />
-            <DynamicExperienceSection />
-            <DynamicContactSection />
+            <Suspense fallback="Loading...">
+                <DynamicProjectsSection />
+            </Suspense>
+            <Suspense fallback="Loading...">
+                <DynamicExperienceSection />
+            </Suspense>
+            <Suspense fallback="Loading...">
+                <DynamicContactSection />
+            </Suspense>
         </>
     )
 }
