@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "analyze": "ANALYZE=true next build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/bundle-analyzer": "^13.0.4",
+    "@next/bundle-analyzer": "^13.1.1",
     "framer-motion": "^7.6.2",
     "next": "^13.1.1",
     "react": "^18.2.0",

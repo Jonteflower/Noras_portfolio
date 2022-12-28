@@ -2,24 +2,17 @@ import React, { useRef } from 'react'
 import HeroSection from './heroSection'
 import SkillsSection from './skillsSection'
 import dynamic from 'next/dynamic'
-import { Suspense } from "react";
-
 
 const DynamicExperienceSection = dynamic(() => import('./experienceSection'), {
     ssr: false,
-    suspense: true,
-
 })
 
 const DynamicProjectsSection = dynamic(() => import('./founderSection'), {
     ssr: false,
-    suspense: true,
-
 })
 
 const DynamicContactSection = dynamic(() => import('./contactSection'), {
-    ssr: false,
-    suspense: true,
+    ssr: false
 })
 
 
@@ -33,15 +26,10 @@ function Home() {
         <>
             <HeroSection scrollToNext={handleClick} />
             <SkillsSection scrollRef={ref} />
-            <Suspense fallback="Loading...">
-                <DynamicProjectsSection />
-            </Suspense>
-            <Suspense fallback="Loading...">
-                <DynamicExperienceSection />
-            </Suspense>
-            <Suspense fallback="Loading...">
-                <DynamicContactSection />
-            </Suspense>
+            <DynamicProjectsSection />
+            <DynamicExperienceSection />
+            <DynamicContactSection />
+
         </>
     )
 }
