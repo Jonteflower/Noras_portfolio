@@ -11,6 +11,11 @@ const OuterDiv = styled.section`
   min-height:50vh;
   height: fit-content;
   gap: 20px;
+  margin-bottom: 5rem;
+  @media screen and (max-width:600px) {
+    margin-bottom: 2rem;
+  }
+
 `;
 
 const Title = styled.h2`
