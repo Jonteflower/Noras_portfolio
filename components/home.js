@@ -22,7 +22,6 @@ const DynamicContactSection = dynamic(() => import('./contactSection'), {
     suspense: true,
 })
 
-
 function Home() {
     const ref = useRef(null);
     const handleClick = () => {
@@ -33,15 +32,9 @@ function Home() {
         <>
             <HeroSection scrollToNext={handleClick} />
             <SkillsSection scrollRef={ref} />
-            <Suspense fallback="Loading...">
-                <DynamicProjectsSection />
-            </Suspense>
-            <Suspense fallback="Loading...">
-                <DynamicExperienceSection />
-            </Suspense>
-            <Suspense fallback="Loading...">
-                <DynamicContactSection />
-            </Suspense>
+            <ProjectsSection />
+            <DynamicExperienceSection />
+            <DynamicContactSection />
         </>
     )
 }
