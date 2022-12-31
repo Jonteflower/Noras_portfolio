@@ -3,10 +3,9 @@ import React, { useEffect, useState } from 'react'
 import { useInView } from 'react-intersection-observer'
 import styled from 'styled-components'
 import { animationItemsList } from './animationObjects'
-import PyramidSkills from './pyramidGrid'
 import TextSection from './textComponent'
 import SkillsHexagon from './hexagonGrid'
-
+import dynamic from 'next/dynamic'
 
 const OuterContainer = styled.div`
     position: relative;
@@ -34,6 +33,9 @@ const AnimationContainer = styled.div`
   } 
    
 `
+const PyramidSkills = dynamic(() => import('./pyramidGrid'), {
+    ssr: false,
+})
 
 
 function SkillsContainer() {
