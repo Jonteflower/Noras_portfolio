@@ -33,9 +33,11 @@ const AnimationContainer = styled.div`
   } 
    
 `
-const PyramidSkills = dynamic(() => import('./pyramidGrid'), {
+const PyramidSkillsDynamic = dynamic(() => import('./pyramidGrid'), {
     ssr: false,
 })
+
+
 
 
 function SkillsContainer() {
@@ -97,7 +99,7 @@ function SkillsContainer() {
                     showHexagon ?
                         <SkillsHexagon clickHandler={handleClick} animationItems={animationItems} motionRef={ref} controls={controlsHexagon}></SkillsHexagon>
                         :
-                        <PyramidSkills clickHandler={handleClick} animationItems={animationItems} motionRef={ref} controls={controlsPyramid}></PyramidSkills>
+                        <PyramidSkillsDynamic clickHandler={handleClick} animationItems={animationItems} motionRef={ref} controls={controlsPyramid}></PyramidSkillsDynamic>
                 }
             </AnimationContainer>
 
