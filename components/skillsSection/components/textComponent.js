@@ -88,11 +88,10 @@ function TextSection() {
                 <Image
                     src={personImage}
                     fill
-                    style={{ objectFit: "contain" }}
+                    //style={{ objectFit: "contain" }}
                     alt="silhouette of a person"
                 />
             </ImageContainer>
-
             <StyledArticle>
                 <BoxTitle>Full Stack Developer</BoxTitle>
                 <BoxText>
