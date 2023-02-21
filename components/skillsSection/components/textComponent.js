@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Image from 'next/image'
-
+import personImage from '../../../public/images/general/person.svg'
 
 const ColumnContainer = styled.div`
     position: relative;
@@ -81,17 +81,15 @@ const ImageContainer = styled.div`
 
 `
 
-
 function TextSection() {
     return (
         <ColumnContainer>
             <ImageContainer>
                 <Image
-                    src={'/images/general/person.svg'}
+                    src={personImage}
                     fill
                     style={{ objectFit: "contain" }}
                     alt="silhouette of a person"
-
                 />
             </ImageContainer>
 

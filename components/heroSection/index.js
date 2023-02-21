@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import TextAnimation from './components/textAnimation';
-import {AiOutlineArrowDown} from 'react-icons/ai'
+import { AiOutlineArrowDown } from 'react-icons/ai'
 import Stars from '../particles';
 
 
@@ -67,11 +67,11 @@ function HeroSection({ scrollToNext }) {
 
   return (
     <Section>
-      <Stars/>
+      <Stars />
       <OuterDiv>
         <TextAnimation line1={`Hi, I'm Jonathan`} line2={`and I'm a`}></TextAnimation>
         <StyledButton onClick={scrollToNext}>Learn more
-          <AiOutlineArrowDown style={{ fontSize: '15px'}} />
+          <AiOutlineArrowDown style={{ fontSize: '15px' }} />
         </StyledButton>
       </OuterDiv>
     </Section>
