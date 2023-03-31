@@ -95,7 +95,6 @@ const Article = styled.article`
 
 
 function TextAndImage() {
-  
 
   return (
     <Container>

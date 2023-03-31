@@ -97,9 +97,7 @@ function TextSection() {
                 <BoxText>
                     {
                         `
-                        I am passionate about solving complex problems by leveraging modern software stacks.
-                        I've built multiple full-stack web and mobile applications from the ground up by myself. 
-                        I also have experience in recruiting and leading developer teams. 
+                        Hello! I'm Jonathan, a passionate full-stack developer with a knack for solving complex problems using innovative software solutions. With extensive experience in both web and mobile platforms, I have successfully built, deployed, and managed multiple full-stack projects. I also have experience in recruiting and leading developer teams.
                         `
                     }
                 </BoxText>
