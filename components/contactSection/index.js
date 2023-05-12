@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-
 const OuterDiv = styled.section`
   display: flex;
   flex-direction: column;

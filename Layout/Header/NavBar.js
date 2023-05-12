@@ -4,30 +4,31 @@ import styled from 'styled-components';
 import { useRouter } from 'next/router'
 
 const HeaderContainer = styled.div`
+  position: sticky;
+  top: 0;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  position: absolute; 
-  top: 0;
-  left:0;
-  right: 0;
-  background-color:'#0D101600';
-  height:80px;
-  max-height:80px;
+  background-color: transparent;
+  height:64px;
+  max-height:64px;
   z-index: 100;
+  @media (min-width: 1000px)  {
+        min-width: 0px;
+    }
 `;
 
 const HeaderInner = styled.div`
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   width: 90%;
   max-width: 1200px;
   padding-right: 20px;
-
 `;
 
 const ButtonsInner = styled.div`
@@ -83,7 +84,6 @@ export default function NavMenu() {
     <>
       <HeaderContainer>
         <HeaderInner>
-
           <ButtonsInner>
             {path == '/about' ?
               <>
@@ -92,7 +92,6 @@ export default function NavMenu() {
                 </Title>
                 <MiddleButton><Link href='/'> Home</Link></MiddleButton>
               </>
-
               :
               <MiddleButton><Link href='/about'> About</Link></MiddleButton>}
           </ButtonsInner>

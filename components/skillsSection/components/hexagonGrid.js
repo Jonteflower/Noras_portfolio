@@ -5,7 +5,6 @@ import SkillsComponent from './hexagonTile'
 import { BackendObjects, frontEndObjects, PlatformObjects } from './tileObjects'
 
 const MotionBox = styled(motion.div)`
-
     width: fit-content;
     height: fit-content;
     margin: auto;

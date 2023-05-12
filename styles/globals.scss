@@ -21,12 +21,31 @@ html,
   top: 50%;
   left: 50%;
   background-color:  #08080e;
-  transform: translate(-50%, -50%);
+  //transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
   justify-content: center;
   align-items: center;
   display: flex;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+
+/* For Firefox */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
 }
 
 body {
@@ -38,10 +57,10 @@ body {
   //background: #121212;
   background: #08080e;
   scroll-behavior: auto;
-  
-  @media screen and (max-width: 600px) {
-    //width: fit-content;
-  }
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+
 }
 
 .content {
@@ -56,7 +75,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin: 0;
-  background: #08080e;
+  background-color: #08080e;
   //background: linear-gradient(180deg, #070f1b70 0%, rgba(20, 37, 63, 70) 42.09%),
   //linear-gradient(180deg, rgba(0, 0, 0, 70) 82.61%);
   padding-bottom: 96px;

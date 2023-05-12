@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import TextAnimation from './components/textAnimation';
 import { AiOutlineArrowDown } from 'react-icons/ai'
 import Stars from '../particles';
-
+import { useEffect } from 'react';
 
 const StyledButton = styled.div`
     position: relative;
@@ -64,16 +64,21 @@ position: relative;
 `;
 
 function HeroSection({ scrollToNext }) {
+  const [loaded, setLoaded] = useState(false)
 
   return (
     <Section>
-      <Stars />
-      <OuterDiv>
-        <TextAnimation line1={`Hi, I'm Jonathan`} line2={`and I'm a`}></TextAnimation>
-        <StyledButton onClick={scrollToNext}>Learn more
-          <AiOutlineArrowDown style={{ fontSize: '15px' }} />
-        </StyledButton>
-      </OuterDiv>
+      <Stars setLoaded={setLoaded}/>
+      {
+        loaded &&
+        <OuterDiv>
+          <TextAnimation line1={`Hi, I'm Jonathan`} line2={`and I'm a`}></TextAnimation>
+          <StyledButton onClick={scrollToNext}>Learn more
+            <AiOutlineArrowDown style={{ fontSize: '15px' }} />
+          </StyledButton>
+        </OuterDiv>
+      }
+
     </Section>
   )
 
