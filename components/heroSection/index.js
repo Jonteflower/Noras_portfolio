@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
+import { AiOutlineArrowDown } from 'react-icons/ai';
 import styled from 'styled-components';
-import TextAnimation from './components/textAnimation';
-import { AiOutlineArrowDown } from 'react-icons/ai'
 import Stars from '../particles';
-import { useEffect } from 'react';
+import TextAnimation from './components/textAnimation';
 
 const StyledButton = styled.div`
     position: relative;
@@ -50,13 +49,14 @@ const OuterDiv = styled.div`
 `;
 
 const Section = styled.section`
-position: relative;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content:flex-start;
   align-items:center;
   width: 100%;
   height:100vh;
+  padding-top: 64px;
   //border-bottom: 0.5px solid #ffffff95;
   @media screen and (max-width:800px) {
     justify-content:center;

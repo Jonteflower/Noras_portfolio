@@ -21,10 +21,9 @@ const Title = styled.h2`
   margin-top: 7rem;
   margin-bottom: 5rem;
   z-index: 9999;
-  color: white;
 
 
-  ::before{
+  &::before{
     content: '';
     border-bottom: 18px solid #ff4d5a;
     width: 17rem;
@@ -45,7 +44,7 @@ const Title = styled.h2`
     @media screen and (max-width:700px) {
       font-size: 3.5rem;
       margin-bottom: 0;
-      ::before{
+      &::before{
     content: '';
     border-bottom: 18px solid #ff4d5a;
     width: 14rem;
@@ -61,7 +60,7 @@ const Title = styled.h2`
     @media screen and (max-width:600px) {
       font-size: 2.5rem;
       margin-bottom: 2rem;
-      ::before{
+      &::before{
     content: '';
     border-bottom: 14px solid #ff4d5a;
     width: 9.5rem;

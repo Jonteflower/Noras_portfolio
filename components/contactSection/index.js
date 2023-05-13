@@ -20,51 +20,42 @@ const OuterDiv = styled.section`
 
 const Title = styled.h2`
   position: relative;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 600;
   z-index: 9999;
-  color: white;
-  margin: 0 0 1.5rem 0;
+  color: #f1f1f1;
+  margin: 0 auto;
   text-align: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 
-
-  ::before{
+  &::before{
     content: '';
     border-bottom: 18px solid #ff4d5a;
-    width: 10.5rem;
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    left:1.8rem;
-    top: 3.1rem;
-    z-index: -1;
-  }
-
-    @media screen and (max-width:600px) {
-      font-size: 2.5rem;
-      ::before{
-    content: '';
-    border-bottom: 14px solid #ff4d5a;
-    width: 9rem;
+    width: 95%;
     display: block;
     margin: 0 auto;
     position: relative;
     left:1.5rem;
-    top: 2.6rem;
+    top: 4rem;
+    z-index: -1;
+  }
+
+    @media screen and (max-width:600px) {
+      margin-top: 20px;
+      font-size: 2.5rem;
+      margin-bottom: -2rem;
+      &::before{
+    content: '';
+    border-bottom: 14px solid #ff4d5a;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    left:1.3rem;
+    top: 2.85rem;
     z-index: -1;
   }
     }
-`;
-
-
-const SectionText = styled.p`
-  position: relative;
-  font-size: 1.1rem;
-  font-weight: 500;
-  color:white;
-  @media screen and (max-width:400px) {
-    font-size: 1rem;
-  } 
 `;
 
 const StyledInput = styled.a`
@@ -92,21 +83,20 @@ const StyledInput = styled.a`
 `;
 
 function ContactSection() {
+
   return (
     <OuterDiv>
       <div>
         <Title>
-          Contact
+          Questions?
         </Title>
-        <SectionText>
-          {`Any questions? Don't hesitate to contact me`}
-        </SectionText>
       </div>
       <StyledInput type="button" href={'mailto: jonathan@tixynft.com'}>
         Contact me
       </StyledInput>
     </OuterDiv>
   )
+
 }
 
 export default ContactSection

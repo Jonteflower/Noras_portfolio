@@ -16,7 +16,7 @@ const ColumnContainer = styled.div`
     width: 100%;
     @media screen and (max-width:1200px) {
         align-items: flex-start;
-  }
+    }
 
   @media screen and (max-width:1100px) {
         align-items: center;
@@ -107,8 +107,7 @@ function TextSection() {
                 <ImageContainer>
                     <Image
                         src={personImage}
-                        width={300}
-                        height={200}
+                        layout='fill'
                         alt="silhouette of a person"
                     />
                 </ImageContainer>

@@ -18,6 +18,12 @@ function Footer({ scroll }) {
         <SocialMedia>
           <SocialMediaWrap>
             <SocialIcons>
+              <SocialIconLink href='https://github.com/Jonteflower' target='_blank' aria-label='Github'>
+                <FaGithub />
+              </SocialIconLink>
+              <SocialIconLink href='https://www.linkedin.com/in/jonathan-nairn-tallen-672161140/?originalSubdomain=se' target='_blank' aria-label='LinkedIn'>
+                <FaLinkedinIn />
+              </SocialIconLink>
               <SocialIconLink href='https://www.discordapp.com/users/Jonteflower#1427' target='_blank' aria-label='Discord' >
                 <FaDiscord />
               </SocialIconLink>
@@ -26,12 +32,6 @@ function Footer({ scroll }) {
               </SocialIconLink>
               <SocialIconLink href='https://twitter.com/jonathannairn' target='_blank' aria-label='Twitter' >
                 <FaTwitter />
-              </SocialIconLink>
-              <SocialIconLink href='https://www.linkedin.com/in/jonathan-nairn-tallen-672161140/?originalSubdomain=se' target='_blank' aria-label='LinkedIn'>
-                <FaLinkedinIn />
-              </SocialIconLink>
-              <SocialIconLink href='https://github.com/Jonteflower' target='_blank' aria-label='Github'>
-                <FaGithub />
               </SocialIconLink>
             </SocialIcons>
           </SocialMediaWrap>
