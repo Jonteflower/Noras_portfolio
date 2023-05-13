@@ -66,19 +66,17 @@ const SlideTitle = styled.h2`
 
 `
 
-
 function TextSection({ textObject }) {
 
     return (
         <ColumnContainer>
             <StyledArticle>
                 {
-                    textObject.title == 'Tixy-NFT' ?
+                    textObject.title != '' ?
 
-                        <a href={'https://www.tixynft.com/'}><SlideTitle>{textObject.title}</SlideTitle></a>
+                        <a href={textObject.link}><SlideTitle>{textObject.title}</SlideTitle></a>
                         :
                         <SlideTitle>{textObject.title}</SlideTitle>
-
                 }
                 <BoxText>
                     <ReadMore>

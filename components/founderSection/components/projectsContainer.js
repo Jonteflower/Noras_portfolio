@@ -19,11 +19,10 @@ const OuterContainer = styled.div`
 function SkillsContainer() {
     const [index, setIndex] = useState(0)
     const [textObject, setTextObject] = useState({})
-    
-    const tixyWebObject = {title: 'Tixy-NFT', text: 'Tixy-NFT is one of the fastest and most user-friendly ways of deploying, buying and selling NFTs. By leveraging our own encrypted custodian wallets together with Stripe we managed to revolutionize the way NFT transactions are made.'}
-    const tixyAppObject = {title: 'Tixy-NFT Flutter App', text:  `The Tixy Flutter app was built with Flutter right after the release of Tixy’s web app. Like the React web app, it uses Google Cloud to power its infrastructure which made it a perfect complement to the web-based app. `}
-    const logisticsObject = {title: 'Tixy-Logistics', text: `Tixy-Logistics leverages mathematical engineering together with machine learning to optimize task delegation for warehouse facilities. Currently being beta tested at a large logistical facility outside of Stockholm with promising results. `}
 
+    const tixyWebObject = { title: 'Tixy-NFT', text: 'Tixy-NFT is one of the fastest and most user-friendly ways of deploying, buying and selling NFTs. By leveraging our own encrypted custodian wallets together with Stripe we managed to revolutionize the way NFT transactions are made.', link: 'https://www.tixynft.com/' }
+    const tixyAppObject = { title: 'Tixy-NFT Flutter App', text: `The Tixy Flutter app was built with Flutter right after the release of Tixy’s web app. Like the React web app, it uses Google Cloud to power its infrastructure which made it a perfect complement to the web-based app. ` }
+    const logisticsObject = { title: 'AlgoFlow', text: `AlgoFlow optimizes existing warehouse resources with data-driven decision-making.Ai warehouse planning and Big Data Analytics`,  link: 'https://www.tixylogistics.com' }
 
     useEffect(() => {
         if (index == 0) {
@@ -42,7 +41,6 @@ function SkillsContainer() {
             <ImageSlider setIndex={setIndex}></ImageSlider>
             <TextSection textObject={textObject} ></TextSection>
         </OuterContainer>
-
     )
 }
 

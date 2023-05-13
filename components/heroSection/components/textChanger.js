@@ -25,9 +25,7 @@ const Wrapper = styled.span`
   width: auto;
   white-space: nowrap; 
   text-align: left;
-
 `
-
 
 export default function TextChanger({play}) {
   const [count, setCount] = useState(0);

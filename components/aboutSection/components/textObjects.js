@@ -14,5 +14,5 @@ export const fullLogisticsText = `
 When the gears of the world economy start to run slower new opportunities also present themselves!
 Companies are more than ever looking for effective cost-cutting measures. This means that the mathematical field of optimization can help companies reduce unnecessary spending. 
 However, the number of products producing practical value from the theoretical models in the optimization space is few and far in between. 
-\n Tixy-Logistics leverages, machine learning, and mathematical systems theory together with an efficient user interface to optimize decision-making and task delegation for logistical facilities. 
+\n AlgoFlow leverages, machine learning, and mathematical systems theory together with an efficient user interface to optimize decision-making and task delegation for logistical facilities. 
 `

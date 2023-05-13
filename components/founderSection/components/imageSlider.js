@@ -8,6 +8,8 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
+import LazyVideo from './LazyVideo';
+
 
 const SwiperContainer = styled.div`
   width: 100%;
@@ -27,15 +29,6 @@ const ImageContainer = styled.div`
     @media (max-width: 900px)  {
         width: 90%;
         height: 350px;
-    }
-`
-const VideoContainert = styled.div`
-  position: relative;
-  width: 100%;
-  height: 400px;
-  @media (max-width: 900px)  {
-        width: 90vw;
-        height: 300px;
     }
 `
 
@@ -60,7 +53,7 @@ function ImageSlider({ setIndex }) {
                 slidesPerView="auto"
                 navigation
                 pagination={{ clickable: true }}
-                modules={[ Pagination, EffectCoverflow]}
+                modules={[Pagination, EffectCoverflow]}
 
                 breakpoints={{
                     768: {
@@ -95,8 +88,7 @@ function ImageSlider({ setIndex }) {
                             <Image
                                 src="/images/websites/tixyLanding.webp"
                                 fill
-                                style={{objectFit:"contain"}}
-                                
+                                style={{ objectFit: "contain" }}
                                 alt='Image of my previous startup Tixy-NFT'
                             />
                         </ImageContainer>
@@ -106,21 +98,16 @@ function ImageSlider({ setIndex }) {
                     <SlideContainer>
                         <ImageContainer>
                             <Image
-                                src="/images/websites/logistics.webp"
+                                src="/images/websites/algoflow.webp"
                                 fill
-                                style={{objectFit:"contain"}}
-                                
+                                style={{ objectFit: "contain" }}
                                 alt={'Picture of Tixy Logistics webapp'}
                             />
                         </ImageContainer>
                     </SlideContainer>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <VideoContainert>
-                        <video muted autoPlay={true} loop style={{ width: '100%', height: '100%' }} alt='Video of the Tixy-NFT Flutter app'>
-                            <source src="./images/websites/tixyCropped.mp4" />
-                        </video>
-                    </VideoContainert>
+                        <LazyVideo />
                 </SwiperSlide>
             </Swiper>
         </SwiperContainer>

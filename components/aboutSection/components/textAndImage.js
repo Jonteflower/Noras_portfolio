@@ -122,7 +122,7 @@ function TextAndImage() {
           <ExpandedText fullText={fullTixyNftText} title={'Tixy-NFT'}></ExpandedText>
         </Article>
         <Article>
-          <ExpandedText fullText={fullLogisticsText} title={'Tixy-Logistics'}></ExpandedText>
+          <ExpandedText fullText={fullLogisticsText} title={'AlgoFlow'}></ExpandedText>
         </Article>
       </ColumnContainer>
     </Container >
