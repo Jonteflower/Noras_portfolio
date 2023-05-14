@@ -5,54 +5,60 @@ import dynamic from 'next/dynamic';
 import { useInView } from 'react-intersection-observer';
 
 const DynamicExperienceSection = dynamic(() => import('./experienceSection'), {
-  ssr: false,
-  loading: () => <div>Loading Experience Section...</div>,
+    ssr: false,
+    loading: () => <div>Loading Experience Section...</div>,
 });
 
 const DynamicProjectsSection = dynamic(() => import('./founderSection'), {
-  ssr: false,
-  loading: () => <div>Loading Projects Section...</div>,
+    ssr: false,
+    loading: () => <div>Loading Projects Section...</div>,
 });
 
 const DynamicContactSection = dynamic(() => import('./contactSection'), {
-  ssr: false,
-  loading: () => <div>Loading Contact Section...</div>,
+    ssr: false,
+    loading: () => <div>Loading Contact Section...</div>,
 });
 
 function Home() {
-  const ref = useRef(null);
-  const [skillsRef, skillsInView] = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
+    const ref = useRef(null);
 
-  const [experienceRef, experienceInView] = useInView({
-    triggerOnce: true,
-    threshold: 0,
-  });
+    const [heroRef, heroInView] = useInView({
+        triggerOnce: true,
+        threshold: 0,
+    });
 
-  const [projectsRef, projectsInView] = useInView({
-    triggerOnce: true,
-    threshold: 0,
-  });
+    const [skillsRef, skillsInView] = useInView({
+        triggerOnce: true,
+        threshold: 0,
+    });
 
-  const handleClick = () => {
-    ref.current?.scrollIntoView({ behavior: 'smooth' });
-  };
+    const [experienceRef, experienceInView] = useInView({
+        triggerOnce: true,
+        threshold: 0,
+    });
 
-  return (
-    <>
-      <HeroSection scrollToNext={handleClick} />
-      <SkillsSection scrollRef={ref} secondRef={skillsRef} />
-      {skillsInView && (
-        <DynamicExperienceSection scrollRef={experienceRef} />
-      )}
-      {experienceInView && (
-        <DynamicProjectsSection scrollRef={projectsRef} />
-      )}
-      {projectsInView && <DynamicContactSection />}
-    </>
-  );
+    const [projectsRef, projectsInView] = useInView({
+        triggerOnce: true,
+        threshold: 0,
+    });
+
+    const handleClick = () => {
+        ref.current?.scrollIntoView({ behavior: 'smooth' });
+    };
+
+    return (
+        <>
+            <HeroSection scrollToNext={handleClick} scrollRef={heroRef} />
+            {heroInView && <SkillsSection scrollRef={ref} secondRef={skillsRef} />}
+            {skillsInView && (
+                <DynamicExperienceSection scrollRef={experienceRef} />
+            )}
+            {experienceInView && (
+                <DynamicProjectsSection scrollRef={projectsRef} />
+            )}
+            {projectsInView && <DynamicContactSection />}
+        </>
+    );
 }
 
 export default Home;
