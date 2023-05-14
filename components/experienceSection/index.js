@@ -78,10 +78,10 @@ const Title = styled.h2`
 `;
 
 
-function ExperienceSection() {
+function ExperienceSection({scrollRef}) {
 
   return (
-    <OuterDiv>
+    <OuterDiv ref={scrollRef}>
       <Title >Experiences</Title>
       <SkillsContainer></SkillsContainer>
     </OuterDiv>

@@ -112,7 +112,7 @@ const Title = styled.h2`
 
 `;
 
-function SkillsSection({ scrollRef }) {
+function SkillsSection({ scrollRef, secondRef }) {
   const [ref, inView] = useInView({ threshold: 0 })
   const [showHexagon, setShowHexagon] = useState(true)
   const controlsPyramid = useAnimationControls()
@@ -164,7 +164,7 @@ function SkillsSection({ scrollRef }) {
 
   return (
     <OuterDiv ref={scrollRef}>
-      <Title>Developer</Title>
+      <Title ref={secondRef}>Developer</Title>
       <InnerContainer>
         <TextSection></TextSection>
         <AnimationContainer>

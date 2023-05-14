@@ -53,11 +53,10 @@ const UpperDiv = styled.div`
 `;
 
 
-function AboutSection({ }) {
+function AboutSection({scrollRef }) {
 
     return (
-        <>
-            <OuterDiv>
+            <OuterDiv ref={scrollRef}>
                 <UpperDiv>
                     <Title>
                         About me
@@ -65,7 +64,6 @@ function AboutSection({ }) {
                 </UpperDiv>
                 <TextAndImage></TextAndImage>
             </OuterDiv>
-        </>
     )
 
 }
