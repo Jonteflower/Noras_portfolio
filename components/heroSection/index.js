@@ -63,12 +63,12 @@ const Section = styled.section`
   }
 `;
 
-function HeroSection({ scrollToNext }) {
+function HeroSection({ scrollToNext, scrollRef }) {
   const [loaded, setLoaded] = useState(false)
 
   return (
-    <Section>
-      <Stars setLoaded={setLoaded}/>
+    <Section ref={scrollRef}>
+      <Stars setLoaded={setLoaded} />
       {
         loaded &&
         <OuterDiv>

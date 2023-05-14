@@ -12,7 +12,7 @@ const HeaderContainer = styled.div`
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  height:64px;
+  height:50px;
   max-height:64px;
   z-index: 100;
   @media (min-width: 1000px)  {

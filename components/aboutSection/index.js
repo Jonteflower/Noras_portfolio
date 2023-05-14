@@ -10,7 +10,7 @@ const OuterDiv = styled.div`
   box-sizing: border-box;
   width: 100%;
   max-width:1200px;
-  min-height:100%;
+  min-height:100vh;
   height: fit-content;
   padding-bottom: 100px;
 `;
@@ -19,7 +19,7 @@ const Title = styled.h1`
   position: relative;
   font-size: 3.5rem;
   font-weight: 500;
-  margin-top: 1.5rem;
+  margin-top: 0rem;
   margin-bottom: 2.5rem;
   z-index: 9999;
   width: 100%;

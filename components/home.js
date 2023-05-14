@@ -51,12 +51,14 @@ function Home() {
             <HeroSection scrollToNext={handleClick} scrollRef={heroRef} />
             {heroInView && <SkillsSection scrollRef={ref} secondRef={skillsRef} />}
             {skillsInView && (
-                <DynamicExperienceSection scrollRef={experienceRef} />
-            )}
-            {experienceInView && (
                 <DynamicProjectsSection scrollRef={projectsRef} />
             )}
-            {projectsInView && <DynamicContactSection />}
+
+            { projectsInView&& (
+                <DynamicExperienceSection scrollRef={experienceRef} />
+            )}
+
+            {experienceInView && <DynamicContactSection />}
         </>
     );
 }
