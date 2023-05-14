@@ -49,7 +49,7 @@ function Home() {
     return (
         <>
             <HeroSection scrollToNext={handleClick} scrollRef={heroRef} />
-            {heroInView && <SkillsSection scrollRef={ref} secondRef={skillsRef} />}
+            <SkillsSection scrollRef={ref} secondRef={skillsRef} />
             {skillsInView && (
                 <DynamicProjectsSection scrollRef={projectsRef} />
             )}
