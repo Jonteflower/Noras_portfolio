@@ -25,8 +25,6 @@ const Title = styled.h2`
   margin-top: 7rem;
   margin-bottom: 5rem;
   z-index: 9999;
-  
-
 
   &::before{
     content: '';

@@ -29,7 +29,7 @@ const Wrapper = styled.span`
 
 export default function TextChanger({play}) {
   const [count, setCount] = useState(0);
-  const items = ['Founder', 'Developer', 'Innovator'];
+  const items = ['Founder', 'CTO', 'Innovator'];
   const [item, setItem] = useState(items[0]);
 
   useInterval(
