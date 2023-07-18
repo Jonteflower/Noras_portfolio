@@ -37,7 +37,7 @@ function Footer({ scroll }) {
           </SocialMediaWrap>
         </SocialMedia>
         <Divider />
-        <WebsiteRights> <a href="mailto: jonathan@tixynft.com">jonathan@tixynft.com</a></WebsiteRights>
+        <WebsiteRights> </WebsiteRights>
       </FooterContainer>
     </>
   );

@@ -76,7 +76,7 @@ const Title = styled.h2`
 `;
 
 
-function ExperienceSection({scrollRef}) {
+function ExperienceSection({ scrollRef }) {
 
   return (
     <OuterDiv ref={scrollRef}>
