@@ -1,43 +1,43 @@
 import { useRouter } from 'next/router';
 import React from 'react';
-import { FaDiscord, FaInstagram, FaLinkedinIn, FaGithub, FaTwitter } from 'react-icons/fa';
+import { FaDiscord, FaGithub, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import {
-  Divider, FooterContainer, SocialIconLink, SocialIcons, SocialMedia,
-  SocialMediaWrap, WebsiteRights
+  FooterContainer, SocialIconLink, SocialIcons, SocialMedia,
+  SocialMediaWrap
 } from './Footer.elements';
 
 function Footer({ scroll }) {
-  const router = useRouter()
-  const path = router.pathname
-  path == '/about' ? scroll = 1 : scroll = scroll
-  const isLight = (scroll != 0 && path != '/about') ? '#282828' : 'transparent'
 
   return (
     <>
-      <FooterContainer position={scroll == 0 ? 'fixed' : 'absolute'} color={isLight}  >
+      <FooterContainer position={scroll == 0 ? 'fixed' : 'absolute'} background={scroll ? '#1a1a1a' : 'transparent'} >
         <SocialMedia>
           <SocialMediaWrap>
             <SocialIcons>
-              <SocialIconLink href='https://github.com/Jonteflower' target='_blank' aria-label='Github'>
+              <SocialIconLink
+                href='https://github.com/Jonteflower'
+                target='_blank' aria-label='Github' color={!scroll ? '#1a1a1a' : '#f1f1f1'}>
                 <FaGithub />
               </SocialIconLink>
-              <SocialIconLink href='https://www.linkedin.com/in/jonathan-nairn-tallen-672161140/?originalSubdomain=se' target='_blank' aria-label='LinkedIn'>
+              <SocialIconLink
+                href='https://www.linkedin.com/in/nora-bjork'
+                target='_blank' aria-label='LinkedIn' color={!scroll ? '#1a1a1a' : '#f1f1f1'}>
                 <FaLinkedinIn />
               </SocialIconLink>
-              <SocialIconLink href='https://www.discordapp.com/users/Jonteflower#1427' target='_blank' aria-label='Discord' >
+              <SocialIconLink
+                href='https://www.discordapp.com/users/Jonteflower#1427'
+                target='_blank' aria-label='Discord' color={!scroll ? '#1a1a1a' : '#f1f1f1'}>
                 <FaDiscord />
               </SocialIconLink>
-              <SocialIconLink href='https://www.instagram.com/jonteflower/' target='_blank' aria-label='Instagram' >
+              <SocialIconLink href='https://www.instagram.com/jonteflower/' target='_blank' aria-label='Instagram' color={!scroll ? '#1a1a1a' : '#f1f1f1'}>
                 <FaInstagram />
               </SocialIconLink>
-              <SocialIconLink href='https://twitter.com/jonathannairn' target='_blank' aria-label='Twitter' >
+              <SocialIconLink href='https://twitter.com/jonathannairn' target='_blank' aria-label='Twitter' color={!scroll ? '#1a1a1a' : '#f1f1f1'} >
                 <FaTwitter />
               </SocialIconLink>
             </SocialIcons>
           </SocialMediaWrap>
         </SocialMedia>
-        <Divider />
-        <WebsiteRights> </WebsiteRights>
       </FooterContainer>
     </>
   );

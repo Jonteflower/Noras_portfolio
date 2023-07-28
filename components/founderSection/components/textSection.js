@@ -53,11 +53,10 @@ const SlideTitle = styled.h2`
     font-weight: 500;
     line-height: 1;
     text-transform: uppercase;
-    color: #ffffff;
+    //color: #ffffff;
     text-align: center;
     width: fit-content;
     margin: auto;
-    border-bottom: 2px solid #ff4d5a; 
     padding-bottom: 2px;
 
     @media screen and (max-width:700px) {

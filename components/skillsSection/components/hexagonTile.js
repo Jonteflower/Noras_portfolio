@@ -2,12 +2,12 @@ import Image from 'next/image'
 import React from 'react'
 import styled from 'styled-components'
 
-/* //Alternative design
+//Alternative design
 const SkillsBox = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     border: double 3px transparent;
     border-image-slice: 1;
     border-width: 3px;
@@ -17,13 +17,14 @@ const SkillsBox = styled.div`
     background-clip: content-box, border-box;
     transition: transform 0.2s, opacity 1.2s;
     overflow: hidden;
-    font-size: 0.9rem;
     aspect-ratio: 8 / 6;
     box-sizing: border-box;
-    width: 100%;
-`
-*/
+    width: 130px;
+    @media (max-width: 400px)  {
+        width:31vw;
+    }
 
+`
 
 const BoxTitle = styled.span`
     font-size: 13px;
@@ -46,12 +47,13 @@ const ImageContainer = styled.div`
   width: 100%;
   margin-bottom: 8px;
   height:55%;
+  
   @media (max-width: 400px)  {
     margin-bottom: 3px;
     }
 `
 
-const HexagonContent = styled.div `
+const HexagonContent = styled.div`
    display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,18 +77,18 @@ const HexagonContent = styled.div `
 function SkillsComponent({ item }) {
 
     return (
-        <HexagonContent>
+        <SkillsBox>
             <ImageContainer>
                 <Image
                     src={item.image}
                     fill
-                    style={{objectFit:"contain"}}
+                    style={{ objectFit: "contain" }}
                     alt={item.alt}
                 />
             </ImageContainer>
 
             <BoxTitle>{item.title}</BoxTitle>
-        </HexagonContent>
+        </SkillsBox>
 
     )
 }

@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
 const OuterDiv = styled.section`
   display: flex;
@@ -9,53 +9,13 @@ const OuterDiv = styled.section`
   width: 100%;
   height: 300px;
   gap: 10px;
-  background-color: #282828;
+  background-color: #1a1a1a;
   clip-path: polygon(0 35%,100% 0,100% 100%,0 100%);
-  padding-top: 2rem;
+  padding-top: 3rem;
   
   @media screen and (max-width:1000px) {
     padding-bottom: 20px;
   }
-`;
-
-const Title = styled.h2`
-  position: relative;
-  font-size: 3.5rem;
-  font-weight: 600;
-  z-index: 9999;
-  color: #f1f1f1;
-  margin: 0 auto;
-  text-align: center;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
-
-  &::before{
-    content: '';
-    border-bottom: 18px solid #ff4d5a;
-    width: 95%;
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    left:1.5rem;
-    top: 4rem;
-    z-index: -1;
-  }
-
-    @media screen and (max-width:600px) {
-      margin-top: 20px;
-      font-size: 2.5rem;
-      margin-bottom: -2rem;
-      &::before{
-    content: '';
-    border-bottom: 14px solid #ff4d5a;
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    left:1.3rem;
-    top: 2.85rem;
-    z-index: -1;
-  }
-    }
 `;
 
 const StyledInput = styled.a`
@@ -66,10 +26,12 @@ const StyledInput = styled.a`
   font-size: 1rem;
   font-weight: 400;
   width: 80%;
-  max-width: 500px;
+  max-width: 300px;
   height: 48px;
   text-transform: uppercase;
   color:white;
+  margin-top: 24px;
+  
   background: linear-gradient(to left, #ffffff00 50%, white 50%) right;
     background-size: 200%;
     transition: .5s ease-out;
@@ -82,21 +44,57 @@ const StyledInput = styled.a`
   }
 `;
 
+export const Title = styled.h2`
+    position: relative;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+    z-index: 9999;
+    letter-spacing: 0.6px;
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    color:#f1f1f1;
+
+    @media screen and (max-width:1100px) {
+    margin-top: 3.5rem;
+    margin-bottom: 2.5rem;
+    margin-top: 1rem;
+    } 
+
+    @media screen and (max-width:700px) {
+        font-size: 3.5rem;
+        margin-bottom: 0;
+    }
+
+    @media screen and (max-width:600px) {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+`;
+
+export const BLockDiv = styled.div`
+   height:30px;
+`;
+
+
+
 function ContactSection() {
 
   return (
     <OuterDiv>
       <div>
+        <BLockDiv />
         <Title>
-          Questions?
+          Send me a message
         </Title>
       </div>
-      <StyledInput type="button" href={'mailto: jonathan@tixynft.com'}>
-        Contact me
+      <StyledInput type="button" href={'mailto: nora.bjork.jobb@gmail.com'}>
+        Contact
       </StyledInput>
     </OuterDiv>
   )
-
 }
 
 export default ContactSection

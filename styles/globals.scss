@@ -2,15 +2,15 @@ html,
 body {
   position: relative;
   box-sizing: border-box;
-  //font-family: 'Familjen Grotesk', sans-serif;
-  //font-family: 'Poppins', sans-serif;
-  font-family: 'Inter', sans-serif;
+  //font-family: 'Playfair Display', serif;
+  font-family: 'Nunito Sans', sans-serif;
+
   font-display: swap;
   padding: 0;
   margin: 0;
-  background: #08080e;
+  //background: #d3efda;
   scroll-behavior: auto;
-  color:#f1f1f1;
+  //color:#8f5b35;
   overflow: overlay;
   font-style: normal;
   min-height: 100%;
@@ -83,11 +83,15 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin: 0;
-  background-color: #08080e;
+  //background: #d3efda;
+  background-color: #f8f5ee;
   margin-top:-64px;
+  //margin-bottom: -64px;
+  //color:#8f5b35 !important;
+  color:black;
   //background: linear-gradient(180deg, #070f1b70 0%, rgba(20, 37, 63, 70) 42.09%),
   //linear-gradient(180deg, rgba(0, 0, 0, 70) 82.61%);
-  padding-bottom: 96px;
+  padding-bottom: 60px;
 }
 
 a {
@@ -104,14 +108,11 @@ a {
     color-scheme: dark;
   }
   body {
-    color: white;
+    //color: white;
     background: black;
   }
 }
 
-.h2 {
-  color: #f1f1f1
-}
 //Swiper 
 .swiper {
   width: 100%;

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const FooterContainer = styled.div`
   position: ${props => props.position};
-  background: ${props => props.color};
+  background: ${props => props.background};
   bottom:0;
   left:0;
   right:0;
@@ -60,27 +60,6 @@ export const TermsWrap = styled.div`
   }
 `;
 
-
-export const WebsiteRights = styled.small`
-  color: #FFFFFF80;
-  margin-bottom: 10px;
-  font-size: 13px;
-  width: 80%;
-  text-align: center;
-  line-height: 17px;
-`;
-
-export const TermsAndServices = styled.a`
-  color: #FFFFFF75;
-  font-size: 12px;
-  width: fit-content;
-  text-align: center;  
-  :hover{
-    cursor:pointer;
-    color: #FFFFFF;    
-  }
-`;
-
 export const SocialIcons = styled.div`
   display: flex;
   justify-content: space-between;
@@ -114,10 +93,11 @@ export const Divider = styled.div`
 `;
 
 export const SocialIconLink = styled.a`
-  color: #FFFFFF;
+  color: inherit;
   font-size: 25px;
   padding-left: 4px;
   padding-right: 4px;
+  color: ${props => props.color};
 
   &:hover{
     color: #FF4D59;

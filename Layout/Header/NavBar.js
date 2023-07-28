@@ -24,10 +24,10 @@ const HeaderInner = styled.div`
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
-  width: 90%;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1400px;
   padding-right: 20px;
 `;
 
@@ -36,43 +36,60 @@ const ButtonsInner = styled.div`
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  width:100%;
+  flex:1;
   height:100%;
   gap:24px;
 `;
 
 
-const MiddleButton = styled.span`
-    font-family: 'Poppins', sans-serif;
-    color: #f1f1f1;
-    font-weight: 400;
-    height: 21px;
-    width: auto;
+const MiddleButton = styled.button`
+   font-family: 'Playfair Display', serif;
+    color: black;
+    font-weight: 600;
+  
+    width: 80px;
     font-size: 16px;
-    transition: all 0.1s ease-in-out;
-    border-bottom:2px solid #ff4d5a;
+    transition: all 0.2s linear;
+    background-color: transparent;
+    border:none;
 
+    color:#1a1a1a;
+    
     &:hover {
       color: #FFFFFF;
       cursor: pointer;
+      background-color: #1a1a1a;
+      border-radius: 5px;
+      height: 34px;
     }
 `;
 
 
 const Title = styled.span`
   text-align: left;
-  flex: 1;
   position: relative;
   font-size: 2rem;
   font-weight: 500;
   margin: 0px;
+  font-family: 'Playfair Display', serif;
   @media (min-width: 480px)  {
         height: 0px;
         font-size: 0;
         width: 0px;
     }
+`;
+
+const NameLogo = styled.h2`
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0px;
+  color: black;
+  font-family: 'Playfair Display', serif;
+  //width: fit-content;
 
 `;
+
 
 
 
@@ -84,6 +101,8 @@ export default function NavMenu() {
     <>
       <HeaderContainer>
         <HeaderInner>
+          <NameLogo>Nora Björk</NameLogo>
+
           <ButtonsInner>
             {path == '/about' ?
               <>
@@ -93,7 +112,7 @@ export default function NavMenu() {
                 <MiddleButton><Link href='/'> Home</Link></MiddleButton>
               </>
               :
-              <MiddleButton><Link href='/about'> About</Link></MiddleButton>}
+              <MiddleButton><Link href='/about'> Resume</Link></MiddleButton>}
           </ButtonsInner>
         </HeaderInner>
       </HeaderContainer>

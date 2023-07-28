@@ -1,51 +1,27 @@
 export const frontEndObjects = [
     {
-        image: '/images/coding/html.webp',
+        image: '/images/coding/adobelogo.png',
         alt: 'html Logo',
-        title: 'html'
+        title: 'Adobe'
     },
     {
-        image: '/images/coding/css.webp',
-        alt: 'css Logo',
-        title: 'css'
+        image: '/images/coding/canvalogo.png',
+        alt: 'Google cloud Logo',
+        title: 'Canva'
     },
     {
-        image: '/images/coding/javascript.webp',
-        alt: 'javascript logo',
-        title: 'js'
+        image: '/images/coding/figmalogo.webp',
+        alt: 'Firebase logo',
+        title: 'Figma'
     },
 
 ]
 
 export const PlatformObjects = [
     {
-        image: '/images/coding/nextjs.svg',
-        alt: 'html Logo',
-        title: 'Next.js'
-    },
-    {
-        image: '/images/coding/gcloud.svg',
-        alt: 'Google cloud Logo',
-        title: 'GCP'
-    },
-    {
-        image: '/images/coding/firebase.svg',
-        alt: 'Firebase logo',
-        title: 'Firebase'
-    },
-    {
-        image: '/images/coding/git.webp',
-        alt: 'Git',
-        title: 'git'
-    },
-
-]
-
-export const BackendObjects = [
-    {
-        image: '/images/coding/node.webp',
-        alt: 'html Logo',
-        title: 'node.js'
+        image: '/images/coding/flutterlogo.png',
+        alt: 'css Logo',
+        title: 'flutter'
     },
     {
         image: '/images/coding/python.svg',
@@ -53,15 +29,26 @@ export const BackendObjects = [
         title: 'python'
     },
     {
-        image: '/images/coding/typescript.svg',
+        image: '/images/coding/javascript.webp',
         alt: 'javascript logo',
-        title: 'Ts'
+        title: 'js'
+    },
+
+    {
+        image: '/images/coding/javalogo.png',
+        alt: 'Git',
+        title: 'Java'
     },
 
 ]
 
+export const BackendObjects = [
 
-export const pyramidTwo = [
+    {
+        image: '/images/coding/react.webp',
+        alt: 'react logo',
+        title: 'React'
+    },
     {
         image: '/images/coding/html.webp',
         alt: 'html Logo',
@@ -75,9 +62,4 @@ export const pyramidTwo = [
 
 ]
 
-export const pyramidOne =
-{
-    image: '/images/coding/javascript.webp',
-    alt: 'javascript logo',
-    title: 'Js'
-}
+
