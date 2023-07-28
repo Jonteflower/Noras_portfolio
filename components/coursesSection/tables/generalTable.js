@@ -1,5 +1,4 @@
 
-//import { CircularProgress } from '@mui/material';
 import React, { useContext, useEffect, useState } from 'react';
 import { MarketTileContainer, OuterContainer, TableHeaderWrapper } from '../tableHelpers/tableComponents';
 import TableHeader from './tableHeader';
@@ -48,7 +47,7 @@ export default function GeneralTable({ data, setData, loading, headerSmall, head
       <OuterContainer>
         <MarketTileContainer>
           {
-            !loading ?
+            loading ?
               <LoadingSpinner/>
               :
               data?.map((item, index) => {

@@ -129,8 +129,8 @@ export default function CoursesSection() {
                     Completed courses
                 </PageTitle>
                 <RedButton >
-                    <a href="/data/Resume_Jonathan" download style={{ color: 'inherit', textDecoration: 'none' }}>
-                    Resume <FiDownload /> 
+                    <a href="/data/Resume_Jonathan.pdf" target="_blank" style={{ color: 'inherit', textDecoration: 'none' }}>
+                        Resume <FiDownload />
                     </a>
                 </RedButton>
             </RowWrap>
