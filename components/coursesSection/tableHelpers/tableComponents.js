@@ -15,21 +15,6 @@ export const OuterPageContainer = styled.div`
   }
 `;
 
-export const RowWrap = styled.div`
-    display: flex;
-    flex-direction:row;
-    justify-content:space-between;
-    align-items: center;
-    width:100%;
-    height: fit-content;
-    gap: 15px;
-    @media screen and (max-width: 1100px) {
-    flex-direction:column;
-    justify-content:flex-start;
-    align-items: flex-start;
-    gap:15px;
-    }
-`;
 
 // The most outer container
 export const TableHeaderWrapper = styled.div`
