@@ -15,7 +15,25 @@ const OuterDiv = styled.div`
   padding-bottom: 100px;
 `;
 
-const Title = styled.h1`
+
+const UpperDiv = styled.div`
+  width: 100%;
+  height:auto;
+  border-bottom: 0.5px solid #ffffff50;
+  margin-top: 5rem;
+
+  @media screen and (max-width:1100px) {
+    flex-direction: column;
+   width: 90%;
+  }
+
+  @media screen and (min-width:400px) {
+    flex-direction: column;
+  }
+
+`;
+
+const PageTitle = styled.h1`
   position: relative;
   font-size: 3.5rem;
   font-weight: 500;
@@ -36,31 +54,15 @@ const Title = styled.h1`
     }
 `;
 
-const UpperDiv = styled.div`
-  width: 100%;
-  height:auto;
-  border-bottom: 0.5px solid #ffffff50;
-  margin-top: 5rem;
-  @media screen and (max-width:1100px) {
-    flex-direction: column;
-   width: 90%;
-  }
-
-  @media screen and (min-width:400px) {
-    flex-direction: column;
-  }
-
-`;
-
 
 function AboutSection({scrollRef }) {
 
     return (
             <OuterDiv ref={scrollRef}>
                 <UpperDiv>
-                    <Title>
+                    <PageTitle>
                         About me
-                    </Title>
+                    </PageTitle>
                 </UpperDiv>
                 <TextAndImage></TextAndImage>
             </OuterDiv>

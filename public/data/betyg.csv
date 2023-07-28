@@ -1,0 +1,60 @@
+Skola ,Kursnamn,Kurskod,Hp,Betyg,Ämne,Datum
+Högskolan Kristianstad,Makroekonomisk teori,NE6024,15,G,Ekonomi,2022-06-10
+Kungl. Tekniska högskolan,Algebra och geometri,SF1624,7.5,D,Matematik,2018-10-19
+Kungl. Tekniska högskolan,Introduktion till maskinteknik,MJ1103,10.5,C,Maskinteknik,2019-01-16
+Kungl. Tekniska högskolan,Numeriska metoder och grundläggande programmering,SF1511,9,E,Matematik,2019-05-29
+Kungl. Tekniska högskolan,Flervariabelanalys,SF1626,7.5,E,Matematik,2019-06-03
+Kungl. Tekniska högskolan,Envariabelanalys,SF1625,7.5,E,Matematik,2019-06-07
+Kungl. Tekniska högskolan,Mekanik I,SG1130,9,E,Fysik,2019-08-19
+Kungl. Tekniska högskolan,Fysik I,SK1112,9,D,Fysik,2019-08-23
+Kungl. Tekniska högskolan,Differentialekvationer I,SF1633,6,E,Matematik,2019-10-21
+Kungl. Tekniska högskolan,Tillverkningsteknik,MG1026,6,E,Maskinteknik,2020-01-30
+Kungl. Tekniska högskolan,"Industriell ekonomi, grundkurs",ME1003,6,D,Maskinteknik,2020-05-25
+Kungl. Tekniska högskolan,Tillämpad termodynamik,MJ1112,9,E,Fysik,2020-08-13
+Kungl. Tekniska högskolan,Elektroteknik,MF1016,9,E,Fysik,2020-08-19
+Kungl. Tekniska högskolan,Produktframtagning - Konstruktion,MF1045,6,E,Maskinteknik,2020-12-07
+Kungl. Tekniska högskolan,Mekanik II,SG1140,6,D,Fysik,2020-12-10
+Kungl. Tekniska högskolan,Sannolikhetsteori och statistik,SF1915,6,E,Matematik,2020-12-17
+Kungl. Tekniska högskolan,Materiallära,MH1004,6,E,Maskinteknik,2021-02-26
+Kungl. Tekniska högskolan,Projektledning: Ledning och styrning av projekt,ME2015,6,E,Maskinteknik,2021-02-26
+Kungl. Tekniska högskolan,"Praktiskt jämställdhets- och mångfaldsarbete i vetenskapliga, tekniska och industriella miljöer",MH1023,6,C,Maskinteknik,2021-05-05
+Kungl. Tekniska högskolan,Kompletteringskurs i differentialekvationer och transformer,SF1632,3,C,Matematik,2021-05-31
+Kungl. Tekniska högskolan,Tillämpad programmering och datalogi,DD1321,9,E,Data,2021-06-08
+Kungl. Tekniska högskolan,Maskinkomponenter,MF1044,6,B,Maskinteknik,2021-06-11
+Kungl. Tekniska högskolan,"Examensarbete inom industriell produktion, grundnivå",MG110X,15,P,Maskinteknik,2021-06-14
+Kungl. Tekniska högskolan,"Markovprocesser, grundkurs",SF1904,3,E,Matematik,2021-08-20
+Kungl. Tekniska högskolan,Sannolikhetsteori,SF2940,7.5,E,Matematik,2021-10-22
+Kungl. Tekniska högskolan,Optimeringslära,SF1811,6,E,Matematik,2022-01-12
+Kungl. Tekniska högskolan,"Hållfasthetslära, grundkurs med projekt",SE1010,12,D,Fysik,2022-01-14
+Kungl. Tekniska högskolan,Robust konstruktion,MF2024,6,C,Data,2022-03-17
+Kungl. Tekniska högskolan,Datorintensiva metoder inom matematisk statistik,SF2955,7.5,D,Matematik,2022-08-16
+Kungl. Tekniska högskolan,Hållbar utveckling och forskningsmetodik inom matematik,SA2001,3,P,Maskinteknik,2022-10-13
+Kungl. Tekniska högskolan,Vetenskapsteori och vetenskaplig metodik (naturvetenskap),AK2030,4.5,E,Matematik,2022-10-26
+Kungl. Tekniska högskolan,Maskinkonstruktion,MF2101,6,D,Maskinteknik,2022-12-22
+Kungl. Tekniska högskolan,Systemteknik,SF2863,7.5,E,Matematik,2023-01-09
+Kungl. Tekniska högskolan,CAD 3D-modellering och visualisering,MF2019,6,B,Maskinteknik,2023-01-20
+Kungl. Tekniska högskolan,Regressionsanalys,SF2930,7.5,B,Matematik,2023-06-07
+Kungl. Tekniska högskolan,Tillämpade numeriska metoder,SF2520,7.5,-,Matematik,-
+Kungl. Tekniska högskolan,Tidsserieanalys,SF2943,7.5,-,Matematik,-
+Kungl. Tekniska högskolan,Moderna metoder för statistisk inlärning,SF2935,7.5,-,Matematik,-
+Kungl. Tekniska högskolan,Statistisk maskininlärning,SF2957,7.5,-,Matematik,-
+Linköpings universitet,Grunderna i AI,ETE318,2,G,Data,2023-01-24
+Linköpings universitet,Cybersäkerhet - grunder och medvetenhet,ETE352,3,-,Data,-
+Stockholms universitet,Organisering I,FE1203,7.5,C,Ekonomi,2017-09-27
+Stockholms universitet,Redovisning I,FE1403,7.5,B,Ekonomi,2017-10-28
+Stockholms universitet,Marknadsföring I,FE1303,7.5,D,Ekonomi,2017-11-28
+Stockholms universitet,Finansiering I,FE1103,7.5,B,Ekonomi,2018-01-12
+Stockholms universitet,Ekonomistyrning II,FE2403,7.5,C,Ekonomi,2018-02-12
+Stockholms universitet,Marknadsföring II,FE2303,7.5,D,Ekonomi,2018-03-15
+Stockholms universitet,Finansiering II,FE2103,7.5,B,Ekonomi,2018-04-27
+Stockholms universitet,Organisation II,FE2203,7.5,E,Ekonomi,2018-06-03
+Stockholms universitet,Grundläggande statistik för ekonomer,STE101,15,C,Ekonomi,2019-02-14
+Stockholms universitet,Introduktion till finansiella derivat,FE3134,7.5,D,Ekonomi,2021-02-17
+Stockholms universitet,Empirisk finansiell ekonomi,FE3824,7.5,C,Ekonomi,2021-03-22
+Stockholms universitet,Examensarbete i företagsekonomi för kandidatexamen,FE3931,15,A,Ekonomi,2021-06-03
+Stockholms universitet,Mikroteori med tillämpningar,EC1111,15,D,Ekonomi,2022-04-29
+Stockholms universitet,Webbutveckling I,IB917N,7.5,E,Ekonomi,2023-04-26
+Stockholms universitet,Förberedande kurs i matematik,MM1003,7.5,-,Matematik,-
+Umeå universitet,Datakommunikation,5EL131,7.5,5,Data,2023-06-02
+Uppsala universitet,Nätbaserad juridisk översiktskurs,2JF068,15,VG,Juridik,2023-01-13
+,,,449,,,

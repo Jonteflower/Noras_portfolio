@@ -26,9 +26,11 @@ const HeaderInner = styled.div`
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  width: 90%;
-  max-width: 1200px;
-  padding-right: 20px;
+  width: 90vw;
+  max-width: 1400px;
+  @media (min-width: 1400px)  {
+    padding-right: 20px;
+  }
 `;
 
 const ButtonsInner = styled.div`
@@ -74,8 +76,6 @@ const Title = styled.span`
 
 `;
 
-
-
 export default function NavMenu() {
   const router = useRouter()
   const path = router.pathname
@@ -85,15 +85,23 @@ export default function NavMenu() {
       <HeaderContainer>
         <HeaderInner>
           <ButtonsInner>
-            {path == '/about' ?
+            {path === '/' ?
               <>
-                <Title>
-                  About me
-                </Title>
-                <MiddleButton><Link href='/'> Home</Link></MiddleButton>
+                <MiddleButton><Link href='/about'> About</Link></MiddleButton>
+                <MiddleButton><Link href='/resume'> Resume</Link></MiddleButton>
               </>
               :
-              <MiddleButton><Link href='/about'> About</Link></MiddleButton>}
+              path === '/about' ?
+              <>
+                <MiddleButton><Link href='/'> Home</Link></MiddleButton>
+                <MiddleButton><Link href='/resume'> Resume</Link></MiddleButton>
+              </>
+              :
+              <>
+                <MiddleButton><Link href='/'> Home</Link></MiddleButton>
+                <MiddleButton><Link href='/about'> About</Link></MiddleButton>
+              </>
+            }
           </ButtonsInner>
         </HeaderInner>
       </HeaderContainer>

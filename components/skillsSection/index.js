@@ -33,7 +33,7 @@ const InnerContainer = styled.div`
     justify-content: space-between;
     height: auto;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1300px;
    
     @media screen and (max-width:1100px) {
       flex-direction: column;
@@ -42,6 +42,7 @@ const InnerContainer = styled.div`
   } 
    
 `
+
 const AnimationContainer = styled.div`
   width: fit-content;
  
