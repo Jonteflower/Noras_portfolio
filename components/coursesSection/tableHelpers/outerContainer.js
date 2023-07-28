@@ -12,7 +12,7 @@ const StyledOuterContainer = styled(motion.section)`
   min-height:100vh;
   height: fit-content;
   padding-top: 60px;
-  padding-bottom: 100px;
+  margin-bottom: 64px;
 `;
 
 const MotionVariant4 = {

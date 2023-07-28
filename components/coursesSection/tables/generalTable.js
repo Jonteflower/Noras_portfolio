@@ -1,10 +1,12 @@
 
-import { CircularProgress } from '@mui/material';
+//import { CircularProgress } from '@mui/material';
 import React, { useContext, useEffect, useState } from 'react';
 import { MarketTileContainer, OuterContainer, TableHeaderWrapper } from '../tableHelpers/tableComponents';
 import TableHeader from './tableHeader';
 import LanguageContext from '../../../stores/languageContext';
 import TableRow from './tableRow';
+import LoadingSpinner from '../../utils/loadingSpinner';
+
 
 function combineObjectValues(obj) {
   // Extract the values into an array
@@ -46,8 +48,8 @@ export default function GeneralTable({ data, setData, loading, headerSmall, head
       <OuterContainer>
         <MarketTileContainer>
           {
-            loading ?
-              <CircularProgress sx={{ mt: 4 }} />
+            !loading ?
+              <LoadingSpinner/>
               :
               data?.map((item, index) => {
                 const keyVal = combineObjectValues(item)

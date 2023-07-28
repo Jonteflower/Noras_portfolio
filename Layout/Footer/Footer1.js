@@ -10,7 +10,7 @@ function Footer({ scroll }) {
   const router = useRouter()
   const path = router.pathname
   path != '/' ? scroll = 1 : scroll = scroll
-  const isLight = (scroll != 0 && path == '/') ? '#282828' : 'transparent'
+  const isLight = (scroll != 0 && path == '/') ? '#1a1a1a' : 'transparent'
 
   return (
     <>

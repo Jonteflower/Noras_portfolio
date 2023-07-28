@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 export const FooterContainer = styled.div`
   position: ${props => props.position};
   background: ${props => props.color};
@@ -17,7 +16,7 @@ export const FooterContainer = styled.div`
   max-height:220px;
   z-index: 999;
   height: fit-content;
-  min-height: 60px;
+  min-height: 80px;
   gap: 15px;
 
   @media screen and (max-width: 1000px) {

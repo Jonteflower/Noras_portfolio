@@ -9,7 +9,7 @@ const OuterDiv = styled.section`
   width: 100%;
   height: 300px;
   gap: 10px;
-  background-color: #282828;
+  background-color: #1a1a1a;
   clip-path: polygon(0 35%,100% 0,100% 100%,0 100%);
   padding-top: 2rem;
   
@@ -70,6 +70,7 @@ const StyledInput = styled.a`
   height: 48px;
   text-transform: uppercase;
   color:white;
+  margin-bottom: 1.5rem;
   background: linear-gradient(to left, #ffffff00 50%, white 50%) right;
     background-size: 200%;
     transition: .5s ease-out;

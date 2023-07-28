@@ -1,5 +1,3 @@
-//import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-//import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { sortByBools, sortByString } from './sortFunctions';
