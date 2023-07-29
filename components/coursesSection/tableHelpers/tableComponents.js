@@ -15,7 +15,6 @@ export const OuterPageContainer = styled.div`
   }
 `;
 
-
 // The most outer container
 export const TableHeaderWrapper = styled.div`
     width: 100%;
@@ -66,6 +65,11 @@ export const OuterContainer = styled.div`
         padding-bottom: 15px;
     
     }
+
+    @media screen and (max-width:800px) {
+    min-width: 1000px;
+  }
+
 `;
 
 export const MarketTileContainer = styled.div`
@@ -86,7 +90,6 @@ export const MarketTileContainer = styled.div`
     }
 `;
 
-
 export const RowData = styled.span`
      white-space: nowrap;
     overflow: hidden;
@@ -103,11 +106,12 @@ export const RowData = styled.span`
     min-width: 70px;
     transition: all .4s;
     @media screen and (max-width:800px) {
-    font-size: 15px;
-    line-height: 20px;
-    width: fit-content;
-    padding: 0px;
-    min-width: 70px;
+      font-size: 15px;
+      line-height: 20px;
+      width: fit-content;
+      padding: 0px;
+      min-width: 70px;
+
     }
 `;
 
@@ -134,7 +138,6 @@ export const LeftTable = styled.div`
   }
 `;
 
-
 export const TableHeaderContainer = styled.div`
   display: flex;
   flex-direction:row;
@@ -148,6 +151,12 @@ export const TableHeaderContainer = styled.div`
     padding:0;
     min-width: 1200px;
   }
+
+  @media screen and (max-width:800px) {
+    padding:0;
+    min-width: 1000px;
+  }
+
 `;
 
 export const OuterTableRow = styled.div`

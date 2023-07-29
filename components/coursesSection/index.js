@@ -6,6 +6,68 @@ import fetch from 'node-fetch';
 import { parse } from 'papaparse';
 import styled from 'styled-components';
 import { FiDownload } from 'react-icons/fi';
+import Image from 'next/image';
+
+const PageTitle = styled.h1`
+    white-space: nowrap;
+    position: relative;
+    font-size: 3.5rem;
+    font-weight: 400;
+    z-index: 9999;
+    //width: 100%;
+    margin: 0;
+
+    @media screen and (max-width:800px) {
+        font-size: 3rem;
+        text-align: center;
+        white-space: normal;
+    }
+    @media screen and (max-width:400px) {
+        font-size: 2.5rem;
+    }
+`;
+
+const RowWrap = styled.div`
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;  // Adjust the items to take equal space around them
+    align-items: center; // Vertically align items in the center
+    width:100%;
+    height: fit-content;
+    margin-top: 2rem;
+    //margin-bottom: 0.5rem;
+
+    @media screen and (max-width: 1100px) {
+    flex-direction:column;
+    //justify-content:flex-end;
+    align-items: flex-start;
+    gap:15px;
+    transition: all 3s ease-in-out;
+    }
+`;
+
+const ImageWrap = styled.div`
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+    width:100%;
+    height: fit-content;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+    @media screen and (max-width: 1100px) {
+        flex-direction:row-reverse;
+        justify-content: space-between;
+        transition: all 3s ease-in-out;
+        margin-top: 0.5rem;
+        min-height: 42px;        
+    }
+    @media screen and (max-width: 700px) {
+        justify-content: center;        
+    }
+
+`;
 
 export const RedButton = styled.button`
     position: relative;
@@ -25,7 +87,8 @@ export const RedButton = styled.button`
     background: linear-gradient(55deg,  #ff4d5a 50%, #ffffff00 50%) right;
     background-size: 300%;
     transition: .6s ease-out;
-    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 
   &:hover {
     cursor: pointer;
@@ -33,54 +96,53 @@ export const RedButton = styled.button`
     background-position: left;
   }
 
-    @media screen and (max-width:600px) {
-      width: 180px;
-      font-size: 1.2rem;
-    }
+  @media screen and (max-width:600px) {
+      width: 160px;
+      font-size: 1rem;
+  }
+
 `
-
-const PageTitle = styled.h1`
-    position: relative;
-    font-size: 3.5rem;
-    font-weight: 500;
-    z-index: 9999;
-    width: 100%;
-    margin: 0;
-
-    @media screen and (max-width:800px) {
-    font-size: 3rem;
-    margin-bottom: 2rem;
-    }
-    @media screen and (max-width:400px) {
-        font-size: 2.5rem;
-        margin-bottom: 1.3rem;
-
-    display: none;
-    }
-`;
-
-
-const RowWrap = styled.div`
-    display: flex;
+const ImageView = styled.div`
+    margin-left: 80px;
     flex-direction:row;
-    justify-content:space-between;
+    justify-content:center; 
     align-items: center;
-    width:100%;
-    height: fit-content;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    @media screen and (max-width: 1100px) {
-    flex-direction:column;
-    justify-content:flex-start;
-    align-items: flex-start;
-    gap:15px;
+    align-self: flex-start; 
+    margin-bottom: -30px;
+    opacity: ${props => props.isVisible ? 1 : 0};
+    animation: ${props => props.isVisible ? 'none' : 'fadeOut 2s forwards'};
+
+    @keyframes fadeOut {
+        0%   {opacity: 1; display: block;}
+        80%  {opacity: 0; display: block;}
+        100% {opacity: 0; display: none;}
+    }
+
+    @media screen and (max-width: 600px) {
+        margin-bottom: -20px;
+        display:${props => props.isDisplay ? 'flex' : 'none'};
     }
 `;
-
 
 export default function CoursesSection() {
     const [courses, setCourses] = useState([])
     const [loading, setLoading] = useState(true)
+    const [isVisible, setIsVisible] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setIsVisible(false);
+        }, 3000);
+
+        return () => clearTimeout(timer);
+    }, []);
+
+    useEffect(() => {
+        if ('scrollRestoration' in window.history) {
+            window.history.scrollRestoration = 'manual';
+        }
+        window.scrollTo(0, 0);
+    }, []);
 
     async function loadData() {
         try {
@@ -128,16 +190,25 @@ export default function CoursesSection() {
                 <PageTitle>
                     Completed courses
                 </PageTitle>
-                <RedButton >
-                    <a href="/data/Resume_Jonathan.pdf" target="_blank" style={{ color: 'inherit', textDecoration: 'none' }}>
-                        Resume <FiDownload />
-                    </a>
-                </RedButton>
+                <ImageWrap>
+                    <ImageView isVisible={isVisible}>
+                        <Image
+                            src={'/images/general/Sort_logo.webp'}
+                            width={180}
+                            height={100}
+                        />
+                    </ImageView>
+                    <RedButton>
+                        <a href="/data/Resume_Jonathan.pdf" target="_blank" style={{ color: 'inherit', textDecoration: 'none' }}>
+                            Resume <FiDownload />
+                        </a>
+                    </RedButton>
+                </ImageWrap>
             </RowWrap>
             <GeneralTable
                 data={courses} setData={setCourses} loading={loading} longText={'Kursnamn'}
                 headerLarge={headerLargeCourses} headerSmall={headerSmallCourses}
             />
         </OuterPageContainer>
-    )
+    );
 }

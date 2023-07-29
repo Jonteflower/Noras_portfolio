@@ -2,14 +2,14 @@ export const headerLargeCourses = [
     {
         name: 'Skola',
         type: 'string',
-        flex: 1.2,
+        flex: 1.5,
         swe: 'Skola',
         eng: 'University'
     },
     {
         name: 'Kursnamn',
         type: 'string',
-        flex: 1.2,
+        flex: 1.5,
         swe: 'Kursnamn',
         eng: 'Course'
     },
@@ -23,7 +23,7 @@ export const headerLargeCourses = [
     {
         name: 'Hp',
         type: 'string',
-        flex: 0.6,
+        flex: 0.5,
         swe: 'HP',
         eng: 'ECT'
     },
@@ -41,7 +41,7 @@ export const headerSmallCourses = [
     {
         name: 'Skola',
         type: 'string',
-        flex: 1.2,
+        flex: 1.5,
         swe: 'Skola',
         eng: 'University'
     },
