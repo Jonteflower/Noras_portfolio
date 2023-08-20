@@ -31,8 +31,7 @@ const Title = styled.h1`
     @media screen and (max-width:400px) {
         font-size: 2.5rem;
         margin-bottom: 1.3rem;
-
-    display: none;
+        display: none;
     }
 `;
 
