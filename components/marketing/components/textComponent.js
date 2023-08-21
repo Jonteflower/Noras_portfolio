@@ -74,8 +74,6 @@ const SkillsRow = styled.div`
 
 `
 
-
-
 const ColumnContainer = styled.div`
     position: relative;
     display: flex;
