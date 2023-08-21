@@ -44,7 +44,6 @@ const ButtonsInner = styled.div`
 
 const MiddleButton = styled.button`
    font-family: 'Playfair Display', serif;
-    color: black;
     font-weight: 600;
   
     width: 80px;
@@ -53,8 +52,6 @@ const MiddleButton = styled.button`
     background-color: transparent;
     border:none;
 
-    color:#1a1a1a;
-    
     &:hover {
       color: #FFFFFF;
       cursor: pointer;
@@ -84,7 +81,6 @@ const NameLogo = styled.h2`
   font-size: 1.2rem;
   font-weight: 600;
   margin: 0px;
-  color: black;
   font-family: 'Playfair Display', serif;
   //width: fit-content;
 

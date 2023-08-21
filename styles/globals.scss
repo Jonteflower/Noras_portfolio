@@ -2,8 +2,7 @@ html,
 body {
   position: relative;
   box-sizing: border-box;
-  //font-family: 'Playfair Display', serif;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;  
 
   font-display: swap;
   padding: 0;
@@ -83,12 +82,12 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin: 0;
-  //background: #d3efda;
-  background-color: #f8f5ee;
+  background: #11041D;
+  //background-color: #f8f5ee;
   margin-top:-64px;
   //margin-bottom: -64px;
   //color:#8f5b35 !important;
-  color:black;
+  color: #f1f1f1;
   //background: linear-gradient(180deg, #070f1b70 0%, rgba(20, 37, 63, 70) 42.09%),
   //linear-gradient(180deg, rgba(0, 0, 0, 70) 82.61%);
   padding-bottom: 60px;

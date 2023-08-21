@@ -4,6 +4,12 @@ import SkillsSection from './skillsSection';
 import dynamic from 'next/dynamic';
 import { useInView } from 'react-intersection-observer';
 
+const DynamicMarketingSection = dynamic(() => import('./marketing'), {
+    ssr: false,
+    loading: () => <div>Loading Experience Section...</div>,
+});
+
+
 const DynamicExperienceSection = dynamic(() => import('./experienceSection'), {
     ssr: false,
     loading: () => <div>Loading Experience Section...</div>,
@@ -52,6 +58,10 @@ function Home() {
             <SkillsSection scrollRef={ref} secondRef={skillsRef} />
             {skillsInView && (
                 <DynamicProjectsSection scrollRef={projectsRef} />
+            )}
+            
+             {skillsInView && (
+                <DynamicMarketingSection scrollRef={projectsRef} />
             )}
 
             { projectsInView&& (

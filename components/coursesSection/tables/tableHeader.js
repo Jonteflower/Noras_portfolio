@@ -10,7 +10,7 @@ const rotationStyle = (rotation) => ({
 });
 
 function TableHeader({ language, itemArray, setItemArray, handleClick, keyArr, iconRotation, isDisabled}) {
-  const color = { light: '#FF4D59', dark: '#FF4D5999' };
+  const color = { light: '#68B8A9', dark: '#68B8A999' };
 
   return (
     <TableHeaderContainer>

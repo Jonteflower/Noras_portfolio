@@ -44,7 +44,7 @@ function ProjectSection({scrollRef}) {
 
   return (
     <OuterDiv ref={scrollRef}>
-      <SectionTitle>Projects</SectionTitle>
+      <SectionTitle>Tech</SectionTitle>
       <SkillsContainer></SkillsContainer>
     </OuterDiv>
   )

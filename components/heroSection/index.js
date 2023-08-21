@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image'; // Import the Image component
 import { AiOutlineArrowDown } from 'react-icons/ai';
 import styled from 'styled-components';
 import TextAnimation from './components/textAnimation';
@@ -11,8 +12,8 @@ const Section = styled.section`
   justify-content:flex-start;
   align-items:center;
   width: 100%;
-  height:100vh;
-  padding-top: 64px;
+  aspect-ratio:3/2;
+  //padding-top: 64px;
   @media screen and (max-width:800px) {
     justify-content:center;
   }
@@ -37,12 +38,11 @@ const OuterDiv = styled.div`
 
 const BlockDiv = styled.div`
   width: 100%;
-  height:22vh;
+  height:25vh;
 
   @media screen and (max-width:800px) {
     justify-content:flex-start;
     height:0px;
-   
   }
 
 `;
@@ -75,21 +75,25 @@ const StyledButton = styled.div`
    
 `
 
-
-
 function HeroSection({ scrollToNext, scrollRef }) {
   return (
     <Section ref={scrollRef}>
+      {/* Add the Image component here for the background */}
+      <Image
+        src="/images/background.jpg" // Replace this with your image path
+        alt="Background Image"
+        layout="fill" // Ensures the image covers the entire container
+        objectFit="contain" // Ensures image covers the entire viewport without being cropped
+        priority={true} // Loads the image with high priority
+      />
       <OuterDiv>
         <BlockDiv></BlockDiv>
         <TextAnimation line1={`Hello,`} line2={` my name is Nora`}></TextAnimation>
         <HeroText>
-          Short text with details about you, what you do or your professional career.
-          <br />
-          You can add more information on the about page.
-
+          And im a systems engineer. With a passion for, tech, 
+          <br />design and buisiness development.
         </HeroText>
-        <StyledButton onClick={scrollToNext}>View Projects
+        <StyledButton onClick={scrollToNext}>Learn More
           <AiOutlineArrowDown style={{ fontSize: '15px' }} />
         </StyledButton>
       </OuterDiv>
@@ -98,4 +102,3 @@ function HeroSection({ scrollToNext, scrollRef }) {
 }
 
 export default HeroSection;
-

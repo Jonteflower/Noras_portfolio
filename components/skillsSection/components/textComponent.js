@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 import styled from 'styled-components';
-import { HeroText } from '../../reuseable';
+import { ThinText } from '../../reuseable';
 
 
 const ColumnContainer = styled.div`
@@ -53,10 +53,10 @@ const BoxTitle = styled.h2`
     transition: all 0.2s;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #474131;
+
     text-align: left;
     width: 100%;
-    font-family: 'Playfair Display', serif;
+    //font-family: 'Playfair Display', serif;
     line-height: 150%;
     margin: 0;
 
@@ -84,11 +84,11 @@ function TextSection() {
             >
                 <StyledArticle>
                     <BoxTitle>I have experience working with</BoxTitle>
-                    <HeroText textAlign={'left'} width={'100%'}>
+                    <ThinText textAlign={'left'} width={'100%'}>
                         All modern design frameworks, programming languages
                         <br />
-                        and designing and building websites from the ground up.
-                    </HeroText>
+                        both individually and within high performing teams
+                    </ThinText>
                 </StyledArticle>
             </motion.div>
         </ColumnContainer>

@@ -20,10 +20,24 @@ function SkillsContainer() {
     const [index, setIndex] = useState(0)
     const [textObject, setTextObject] = useState({})
 
-    const tixyWebObject = { title: 'Tixy-NFT', text: 'Tixy-NFT is one of the fastest and most user-friendly ways of deploying, buying and selling NFTs. By leveraging our own encrypted custodian wallets together with Stripe we managed to revolutionize the way NFT transactions are made.', link: 'https://www.tixynft.com/' }
-    const tixyAppObject = { title: 'Tixy-NFT Flutter App', text: `The Tixy Flutter app was built with Flutter right after the release of Tixy’s web app. Like the React web app, it uses Google Cloud to power its infrastructure which made it a perfect complement to the web-based app. ` }
-    const logisticsObject = { title: 'AlgoFlow', text: `AlgoFlow optimizes existing warehouse resources with data-driven decision-making.Ai warehouse planning and Big Data Analytics`,  link: 'https://www.tixylogistics.com' }
+    const tixyWebObject = {
+        title: 'Tixy',
+        text: 'Tixy was part of the prestigious STING accelerator program, and I was the head of content strategy, design, and was heavily involved in the product development.',
+        link: 'https://www.tixynft.com/'
+      };
+      
+      const tixyAppObject = {
+        title: 'Tixy Flutter App',
+        text: "I collaborated with Tixy's CTO to design and build the Flutter app."
+      };
+      
+      const logisticsObject = {
+        title: 'AlgoFlow',
+        text: "I collaborated with the Logtech startup AlgoFlow, where I designed and implemented parts of the front-end and UX for the platform.",
+        link: 'https://www.tixylogistics.com'
+      };
 
+    
     useEffect(() => {
         if (index == 0) {
             setTextObject(tixyWebObject)

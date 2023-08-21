@@ -53,27 +53,6 @@ const ImageContainer = styled.div`
     }
 `
 
-const HexagonContent = styled.div`
-   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  position: relative;
-  width: 130px;
-  aspect-ratio: calc(1/0.866);
-  background:#1a1a1a;
-  box-sizing: border-box;
-  padding: 0;
-  clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
-  -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
-  @media (max-width: 400px)  {
-        width:31vw;
-        margin:0;
-        padding: 0;
-    }
-`
-
 function SkillsComponent({ item }) {
 
     return (

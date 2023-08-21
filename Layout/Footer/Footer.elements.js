@@ -100,7 +100,7 @@ export const SocialIconLink = styled.a`
   color: ${props => props.color};
 
   &:hover{
-    color: #FF4D59;
+    color: #68B8A9;
   }
 
   @media screen and (max-width: 400px) {
