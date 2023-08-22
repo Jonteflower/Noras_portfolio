@@ -3,19 +3,15 @@ import HeroSection from './heroSection';
 import SkillsSection from './skillsSection';
 import dynamic from 'next/dynamic';
 import { useInView } from 'react-intersection-observer';
+import ContactSection from './contactSection';
+
 
 const DynamicMarketingSection = dynamic(() => import('./marketing'), {
     ssr: false,
     loading: () => <div>Loading Experience Section...</div>,
 });
 
-
-const DynamicExperienceSection = dynamic(() => import('./experienceSection'), {
-    ssr: false,
-    loading: () => <div>Loading Experience Section...</div>,
-});
-
-const DynamicProjectsSection = dynamic(() => import('./founderSection'), {
+const DynamicProjectsSection = dynamic(() => import('./techSection'), {
     ssr: false,
     loading: () => <div>Loading Projects Section...</div>,
 });
@@ -38,7 +34,7 @@ function Home() {
         threshold: 0,
     });
 
-    const [experienceRef, experienceInView] = useInView({
+    const [marketingRef, marketingInView] = useInView({
         triggerOnce: true,
         threshold: 0,
     });
@@ -59,16 +55,10 @@ function Home() {
             {skillsInView && (
                 <DynamicProjectsSection scrollRef={projectsRef} />
             )}
-            
-             {skillsInView && (
-                <DynamicMarketingSection scrollRef={projectsRef} />
-            )}
-
             { projectsInView&& (
-                <DynamicExperienceSection scrollRef={experienceRef} />
+                <DynamicMarketingSection scrollRef={marketingRef} />
             )}
-
-            {experienceInView && <DynamicContactSection />}
+            {marketingInView && <DynamicContactSection />}
         </>
     );
 }

@@ -12,7 +12,6 @@ export const LanguageContextProvider = ({ children }) => {
       if (newlanguage != null){
         setlanguage(newlanguage);
       }
-
     };
 
     const context = { language, handlelanguage}

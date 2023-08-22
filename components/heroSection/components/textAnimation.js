@@ -3,27 +3,15 @@ import React from 'react';
 import styled from 'styled-components';
 //Text Animation
 
-const LargeText = styled(motion.span)`
-   //color: #FFFFFF;
-   font-family: 'Playfair Display', serif;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%; /* 76.8px */
-    margin:0px;
-   @media screen and (max-width:600px) {
-    font-size: 2.5rem;
-    line-height: 2.7rem;
-    text-align: center;
-  }
+const StyledSpan = styled(motion.span)`
+
 `;
 
 const TextBox = styled(motion.h3)`
       //color: #FFFFFF;
-      font-family: 'Playfair Display', serif;
     font-size: 64px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 120%; /* 76.8px */
     margin:0px;
    @media screen and (max-width:600px) {
@@ -64,21 +52,21 @@ function TextAnimation({ line1, line2, }) {
         >
             {line1.split("").map((char, index) => {
                 return (
-                    <LargeText key={char + "" + index} variants={letter}>
+                    <StyledSpan key={char + "" + index} variants={letter}>
                         {char}
-                    </LargeText>
+                    </StyledSpan>
                 )
             })}
 
 
             {line2.split("").map((char, index) => {
                 return (
-                    <LargeText
+                    <StyledSpan
                         key={char + "" + index}
                         variants={letter}
                     >
                         {char}
-                    </LargeText>
+                    </StyledSpan>
                 )
             })}
 

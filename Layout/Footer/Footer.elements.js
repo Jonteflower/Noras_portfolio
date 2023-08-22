@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import { neonGreen } from '../../components/reuseable';
 
 export const FooterContainer = styled.div`
   position: ${props => props.position};
@@ -88,7 +88,7 @@ export const Divider = styled.div`
   align-items: center;
   box-sizing: border-box;
   width: 80%;
-  border-bottom: 1px solid #C5C5C5;
+  border-bottom: 1px solid #ffffff99;
   height: 1px;
 `;
 
@@ -100,7 +100,7 @@ export const SocialIconLink = styled.a`
   color: ${props => props.color};
 
   &:hover{
-    color: #68B8A9;
+    color: ${neonGreen};
   }
 
   @media screen and (max-width: 400px) {

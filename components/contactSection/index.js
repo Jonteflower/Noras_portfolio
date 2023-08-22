@@ -1,17 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import { neonGreen } from '../reuseable';
+import { NumberedHeader } from '../reuseable';
+import { greyText } from '../reuseable';
+import { GreenSpan } from '../reuseable';
 const OuterDiv = styled.section`
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content:flex-start;
   align-items:center;
   width: 100%;
-  height: 300px;
+  height: 400px;
   gap: 10px;
-  background-color: #1a1a1a;
-  clip-path: polygon(0 35%,100% 0,100% 100%,0 100%);
+  max-width: 600px;
+  //background-color: #1a1a1a;
   padding-top: 3rem;
+  max-width: 1200px;
   
   @media screen and (max-width:1000px) {
     padding-bottom: 20px;
@@ -22,79 +26,103 @@ const StyledInput = styled.a`
   text-align: center;
   padding: 12px;
   background-color: transparent;
-  border: 2px solid white;
-  font-size: 1rem;
+  border: 1.5px solid ${neonGreen};
+  font-size: 0.9rem;
   font-weight: 400;
   width: 80%;
-  max-width: 300px;
+  max-width: 200px;
   height: 48px;
   text-transform: uppercase;
-  color:white;
+  color:${neonGreen};
   margin-top: 24px;
-  
-  background: linear-gradient(to left, #ffffff00 50%, white 50%) right;
-    background-size: 200%;
-    transition: .5s ease-out;
+  border-radius: 3px;
+  background: linear-gradient(to left, #ffffff00 50%, ${`${neonGreen}90`} 50%) right;
+  background-size: 200%;
+  transition: .5s ease-out;
 
   &:hover {
     cursor: pointer;
     background-position: left;
     color: black;
-
+    color: #f1f1f1;
   }
 `;
 
-export const Title = styled.h2`
-    position: relative;
-    font-size: 3rem;
-    font-weight: 500;
-    margin-top: 7rem;
-    margin-bottom: 5rem;
-    z-index: 9999;
-    letter-spacing: 0.6px;
-    font-family: 'Playfair Display', serif;
-    margin: 0;
-    padding: 0;
-    color:#f1f1f1;
+const ThinText = styled.p`
+  font-size: 1.15rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%; /* 150% */
+  text-align: ${props => props.textAlign ?? 'center'};
+  margin: 0px;
+  letter-spacing: 0.5px;
+  color: ${greyText};
+  width: 100%;
+ 
 
-    @media screen and (max-width:1100px) {
-    margin-top: 3.5rem;
-    margin-bottom: 2.5rem;
-    margin-top: 1rem;
-    } 
 
-    @media screen and (max-width:700px) {
-        font-size: 3.5rem;
-        margin-bottom: 0;
-    }
+  @media screen and (max-width:1100px) {
+    font-size: 1rem;
+    text-align: left;
+    letter-spacing: 0.4px;
+  } 
 
-    @media screen and (max-width:600px) {
-        font-size: 2.5rem;
-        margin-bottom: 2rem;
-    }
-`;
-
-export const BLockDiv = styled.div`
-   height:30px;
 `;
 
 
+const Title = styled.p`
+  font-size: clamp(40px, 5vw, 60px);
+  color:#ccd6f6;
+  margin: 0px 0px 10px;
+  font-weight: 600;
+  line-height: 1.1;
 
-function ContactSection() {
+  @media screen and (max-width:1100px) {
+    font-size: 1rem;
+    text-align: left;
+    letter-spacing: 0.4px;
+  } 
+
+`;
+
+
+const TextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  width: 100%;
+  max-width: 500px;
+  height: fit-content;
+  gap: 10px;
+  
+  @media screen and (max-width:1000px) {
+    padding-bottom: 20px;
+  }
+`;
+
+
+
+export default function ContactSection() {
 
   return (
     <OuterDiv>
-      <div>
-        <BLockDiv />
-        <Title>
-          Send me a message
-        </Title>
-      </div>
-      <StyledInput type="button" href={'mailto: nora.bjork.jobb@gmail.com'}>
-        Contact
-      </StyledInput>
+      <ThinText>
+      <GreenSpan>
+      04.  What's Next?
+      </GreenSpan>
+      </ThinText>
+      <Title>
+        Get In Touch
+      </Title>
+      <TextContainer>
+        <ThinText>
+          If you have any questions or feel that I could be a valuable addition to your team, please don't hesitate to shoot me an email or reach out through my socials.
+        </ThinText>
+        <StyledInput type="button" href={'mailto: nora.bjork.jobb@gmail.com'}>
+          Say Hello
+        </StyledInput>
+      </TextContainer>
     </OuterDiv>
   )
 }
-
-export default ContactSection

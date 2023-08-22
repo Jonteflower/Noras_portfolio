@@ -2,16 +2,16 @@ import { motion } from 'framer-motion';
 import React from 'react';
 import styled from 'styled-components';
 import { ThinText } from '../../reuseable';
+import { greyText } from '../../reuseable';
+import { GreenSpan } from '../../reuseable';
 
 
 const ColumnContainer = styled.div`
-    position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-evenly;
-    min-height: 431px;
-    height: auto;
+    height: 100%;
     gap:15px;
     width: 100%;
 
@@ -25,7 +25,6 @@ const ColumnContainer = styled.div`
         width:100%;
         gap:20px;
         min-height: 0px;
-      
     } 
 
 `
@@ -38,34 +37,12 @@ const StyledArticle = styled.div`
     width: 100%;
     max-width: 45vw;
     gap: 30px;
+    //color: ${greyText};
+
     @media screen and (max-width:1100px) {
       width:95%;
       max-width: 90vw;
-      text-align: center;
       gap: 20px;
-    } 
-`
-
-const BoxTitle = styled.h2`
-    font-size: 3.5rem;
-    font-weight: 500;
-    line-height: 120%;
-    transition: all 0.2s;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-
-    text-align: left;
-    width: 100%;
-    //font-family: 'Playfair Display', serif;
-    line-height: 150%;
-    margin: 0;
-
-    @media screen and (max-width:1100px) {
-    text-align: center;
-    font-size: 1.5rem;
-    padding-bottom: 12px;
-    margin: 0;
-    //white-space: nowrap;
     } 
 `
 
@@ -83,11 +60,12 @@ function TextSection() {
                 variants={textVariants}
             >
                 <StyledArticle>
-                    <BoxTitle>I have experience working with</BoxTitle>
                     <ThinText textAlign={'left'} width={'100%'}>
-                        All modern design frameworks, programming languages
-                        <br />
-                        both individually and within high performing teams
+                        Hello! My name is Nora, and I enjoy creating things that reside at the intersection of people and technology. <br /><br />
+
+                        I've graduated with degrees in both finance and systems engineering and have previously worked within the startup space. There, I helped launch the <GreenSpan>world's first fraud and scalping-proof ticketing service</GreenSpan> based on <GreenSpan>Blockchain technology</GreenSpan>.
+                        <br /><br />
+                        Additionally, I have experience working as a freelance designer and content creator, writing <GreenSpan>SEO</GreenSpan>-optimized articles and building an online presence through <GreenSpan>community building</GreenSpan>. I was also responsible for <GreenSpan>accounting</GreenSpan> in my startup venture with Tixy.
                     </ThinText>
                 </StyledArticle>
             </motion.div>

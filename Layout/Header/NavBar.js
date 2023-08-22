@@ -43,19 +43,18 @@ const ButtonsInner = styled.div`
 
 
 const MiddleButton = styled.button`
-   font-family: 'Playfair Display', serif;
-    font-weight: 600;
+    font-weight: 500;
   
     width: 80px;
     font-size: 16px;
-    transition: all 0.2s linear;
+    transition: all 0.1s linear;
     background-color: transparent;
     border:none;
 
     &:hover {
-      color: #FFFFFF;
+      color: #1a1a1a;
       cursor: pointer;
-      background-color: #1a1a1a;
+      background-color: #f1f1f1;
       border-radius: 5px;
       height: 34px;
     }
@@ -82,6 +81,7 @@ const NameLogo = styled.h2`
   font-weight: 600;
   margin: 0px;
   font-family: 'Playfair Display', serif;
+  padding-left: 20px;
   //width: fit-content;
 
 `;

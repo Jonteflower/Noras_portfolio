@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import SkillsContainer from './components/projectsContainer';
+import { NumberedHeader } from '../reuseable';
 
 const OuterDiv = styled.section`
   display: flex;
@@ -17,31 +18,19 @@ const OuterDiv = styled.section`
   }
 
 `;
-const Title = styled.h2`
-  position: relative;
-  font-size: 5rem;
-  font-weight: 500;
-  margin-top: 7rem;
-  margin-bottom: 5rem;
-  z-index: 9999;
-  letter-spacing: 0.6px;
 
-  @media screen and (max-width:1100px) {
-    margin-top: 3.5rem;
-    margin-bottom: 2.5rem;
-    margin-top: 1rem;
-    } 
+const TitleDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items:flex-start;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
 
-    @media screen and (max-width:700px) {
-      font-size: 3.5rem;
-      margin-bottom: 0;
-    }
 
-    @media screen and (max-width:600px) {
-      font-size: 2.5rem;
-      margin-bottom: 2rem;
-    }
 `;
+
 
 
 
@@ -49,7 +38,9 @@ function ExperienceSection({ scrollRef }) {
 
   return (
     <OuterDiv ref={scrollRef}>
-      <Title >Experiences</Title>
+      <TitleDiv>
+        <NumberedHeader number={2}>Experiences</NumberedHeader>
+      </TitleDiv>
       <SkillsContainer></SkillsContainer>
     </OuterDiv>
   )

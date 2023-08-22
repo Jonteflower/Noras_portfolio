@@ -2,25 +2,11 @@ import { useAnimationControls } from 'framer-motion';
 import { React, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import styled from 'styled-components';
-import { SectionTitle } from '../reuseable';
 import { animationItemsList } from './components/animationObjects';
 import SkillsHexagon from './components/hexagonGrid';
 import TextSection from './components/textComponent';
-
-const OuterDiv = styled.section`
-  display: flex;
-  flex-direction: column;
-  justify-content:center;
-  align-items:center;
-  width: 100%;
-  min-height:760px;
-  height: fit-content;
-  margin-bottom: 150px;
-  gap: 50px;
-  @media screen and (max-width:1200px) {
-       //box-sizing: border-box;
-  }
-`;
+import { OuterSection } from '../reuseable';
+import { NumberedHeader } from '../reuseable';
 
 const InnerContainer = styled.div`
     position: relative;
@@ -28,7 +14,8 @@ const InnerContainer = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    height: auto;
+    //height:880px;
+    height: max-content;
     width: 100%;
     max-width: 1400px;
    
@@ -73,17 +60,15 @@ function SkillsSection({ scrollRef, secondRef }) {
   }
 
   return (
-    <OuterDiv ref={scrollRef}>
-      <SectionTitle ref={secondRef}>My Skills</SectionTitle>
+    <OuterSection ref={scrollRef}>
+      <NumberedHeader ref={secondRef} number={1}>About me</NumberedHeader>
       <InnerContainer>
         <TextSection></TextSection>
         <AnimationContainer>
           <SkillsHexagon animationItems={animationItems} motionRef={ref} controls={controlsHexagon}></SkillsHexagon>
-
         </AnimationContainer>
-
       </InnerContainer>
-    </OuterDiv>
+    </OuterSection>
   )
 }
 

@@ -1,8 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
 import styled from 'styled-components'
-
+import { neonGreen, neonPurple } from '../../reuseable'
 //Alternative design
+
+
 const SkillsBox = styled.div`
     display: flex;
     flex-direction: column;
@@ -11,7 +13,7 @@ const SkillsBox = styled.div`
     border: double 3px transparent;
     border-image-slice: 1;
     border-width: 3px;
-    background-image: linear-gradient(#1a1a1a, #1a1a1a),radial-gradient(circle at top left, #51a2e9, #ff4d5a);
+    background-image: linear-gradient(#11041D, #11041D),radial-gradient(circle at top left, ${neonGreen}, ${neonPurple});
     border-radius: 10px;
     background-origin: border-box;
     background-clip: content-box, border-box;
@@ -19,16 +21,16 @@ const SkillsBox = styled.div`
     overflow: hidden;
     aspect-ratio: 8 / 6;
     box-sizing: border-box;
-    width: 130px;
-    @media (max-width: 400px)  {
-        width:31vw;
+    width: 120px;
+    @media (max-width: 500px)  {
+        width:28vw;
     }
 
 `
 
 const BoxTitle = styled.span`
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 16px;
     transition: all 0.2s;
     letter-spacing: 1px;
@@ -39,7 +41,6 @@ const BoxTitle = styled.span`
         text-align: center;
         line-height: 16px;
     }
-
 `
 
 const ImageContainer = styled.div`

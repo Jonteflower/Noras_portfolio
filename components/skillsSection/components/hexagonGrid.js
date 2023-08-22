@@ -8,7 +8,6 @@ const MotionBox = styled(motion.div)`
     width: fit-content;
     height: fit-content;
     margin: auto;
-
 `
 
 const RowContainer = styled.div`
@@ -21,7 +20,7 @@ const RowContainer = styled.div`
     gap:10px;
     width: auto;
     @media (max-width: 480px)  {
-        gap:0px;
+        gap:10px;
     }
    
 `
