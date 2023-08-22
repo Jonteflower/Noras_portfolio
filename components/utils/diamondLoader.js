@@ -26,7 +26,7 @@ const Loader = styled.div`
     inset: -15px;
     margin: auto;
     background: ${neonGreen};
-    animation: ${diamondLoader} 1.7s linear infinite;
+    animation: ${diamondLoader} 1.7s linear;
   }
 
   &:after {

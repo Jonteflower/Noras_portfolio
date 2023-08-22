@@ -29,7 +29,7 @@ export default function MyApp({ Component, pageProps }) {
         <title>Nora Björk</title>
         <meta name="description" content="Swedish full stack developer and startup founder" />
         <link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico" />
-        <link rel="apple-touch-icon" type="image/png" href="logo192.png" />
+        <link rel="apple-touch-icon" type="image/png" href="appleIcon.png" />
         <meta name='Nora Björk' content='Nora Björks website'></meta>
         <meta name="theme-color" content="#11041D" ></meta>
       </Head>
