@@ -1,30 +1,12 @@
 import styled from "styled-components";
+
+
 export const neonGreen = '#64FFDA'
 export const neonPurple = '#710E71'
 export const greyText = '#8892B0'
 
-
 export const GreenSpan = styled.span`
   color: ${neonGreen};
-`;
-
-export const HeroText = styled.p`
-  font-size: 1.3rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-  text-align: ${props => props.textAlign ?? 'center'};
-  width: 100%;
-  margin: 0px;
-  margin-top: -15px;
-  z-index: 100;
-  max-width: ${props => props.width ?? '900px'};
-
-  @media screen and (max-width:1100px) {
-    font-size: 1rem;
-    text-align: center;
-  } 
-
 `;
 
 export const ThinText = styled.p`

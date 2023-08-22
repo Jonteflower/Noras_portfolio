@@ -158,10 +158,6 @@ const SkillsText = styled.p`
     } 
 `
 
-const textVariants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { duration: 0.5, delay: 0.3 } },
-};
 
 const ImageContainer = styled.div`
     position: relative;
@@ -200,6 +196,11 @@ const ImageContainerInner = styled.div`
     }
    
 `
+const textVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 0.5, delay: 0.3 } },
+};
+
 
 function TextSection({ marketingObject, index }) {
     const isEven = index % 2 === 0;
@@ -213,7 +214,7 @@ function TextSection({ marketingObject, index }) {
                             src={marketingObject.image}
                             style={{ objectFit: "contain" }}
                             fill
-                            alt={'Picture of me Jonathan'}
+                            alt={'Picture of one of my marketing Projects'}
                             priority={true}
                         />
                     </ImageContainerInner>

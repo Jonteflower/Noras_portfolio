@@ -103,10 +103,10 @@ const TextContainer = styled.div`
 
 
 
-export default function ContactSection() {
+export default function ContactSection({scrollRef}) {
 
   return (
-    <OuterDiv>
+    <OuterDiv ref={scrollRef}>
       <ThinText>
       <GreenSpan>
       04.  What&apos;s Next?

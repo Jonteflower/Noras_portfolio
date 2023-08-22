@@ -28,10 +28,10 @@ function Footer({ scroll }) {
                 target='_blank' aria-label='Discord' color={!scroll ? '#f1f1f1' : '#f1f1f1'}>
                 <FaDiscord />
               </SocialIconLink>
-              <SocialIconLink href='https://www.instagram.com/jonteflower/' target='_blank' aria-label='Instagram' color={!scroll ? '#f1f1f1' : '#f1f1f1'}>
+              <SocialIconLink href='https://www.instagram.com/bjorknora/' target='_blank' aria-label='Instagram' color={!scroll ? '#f1f1f1' : '#f1f1f1'}>
                 <FaInstagram />
               </SocialIconLink>
-              <SocialIconLink href='https://twitter.com/jonathannairn' target='_blank' aria-label='Twitter' color={!scroll ? '#f1f1f1' : '#f1f1f1'} >
+              <SocialIconLink href='https://twitter.com/Norabjork' target='_blank' aria-label='Twitter' color={!scroll ? '#f1f1f1' : '#f1f1f1'} >
                 <FaTwitter />
               </SocialIconLink>
             </SocialIcons>

@@ -19,36 +19,34 @@ const InnerContainer = styled.div`
   } 
    
 `
+const marketingObjects = [
+  {
+    title: "Content Writing",
+    text: "I wrote SEO optimizing content for TIXY where the goal was to attract more traction through our SEO strategy. This involved heavy research into the events, ticketing and blockchain industry.  ",
+    image: "/images/marketing/writing.jpg",
+    skills: [ "Research", "Keywords", "Design","SEO"]
+  },
+  {
+    title: "Guerilla marketing",
+    text: "With Tixy i helped develop a campaign where we through QR code posters managed to attract many users around the Loola Palooza event in Stockholm. With posters scattered outised the entrances. ",
+    image: "",
+    image: "/images/marketing/palooza.png",
+    skills: [ "Canva", "Photoshop", "Marketing"]
+  },
+  {
+    title: "Sustainable Branding",
+    text: "Leveraging student groups, we organized the Stoppa Miljösvinnet campaign, utilizing digital merchandise in place of physical goods.",
+    image: "",
+    image: "/images/marketing/sustainability.png",
+    skills: [ "Canva", "Blockchain", "Sustainability"]
+  }
+]
 
-export default function MarketingSection({ scrollRef, secondRef }) {
-
-  const marketingObjects = [
-    {
-      title: "Content Writing",
-      text: "I wrote SEO optimizing content for TIXY where the goal was to attract more traction through our SEO strategy. This involved heavy research into the events, ticketing and blockchain industry.  ",
-      image: "/images/marketing/writing.jpg",
-      skills: [ "Research", "Keywords", "Design","SEO"]
-    },
-    {
-      title: "Guerilla marketing",
-      text: "With Tixy i helped develop a campaign where we through QR code posters managed to attract many users around the Loola Palooza event in Stockholm. With posters scattered outised the entrances. ",
-      image: "",
-      image: "/images/marketing/palooza.png",
-      skills: [ "Canva", "Photoshop", "Marketing"]
-    },
-    {
-      title: "Sustainable Branding",
-      text: "Leveraging student groups, we organized the Stoppa Miljösvinnet campaign, utilizing digital merchandise in place of physical goods.",
-      image: "",
-      image: "/images/marketing/sustainability.png",
-      skills: [ "Canva", "Blockchain", "Sustainability"]
-    }
-  ]
-
+export default function MarketingSection({ scrollRef, inViewRef }) {
 
   return (
     <OuterSection ref={scrollRef}>
-      <NumberedHeader ref={secondRef} number={3} >Marketing</NumberedHeader>
+      <NumberedHeader ref={inViewRef} number={3} >Marketing</NumberedHeader>
       {marketingObjects.map((item, index) => {
         return (
           <InnerContainer key={item.image}>

@@ -1,19 +1,18 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import HeroSection from './heroSection';
-import SkillsSection from './skillsSection';
+import AboutSection from './aboutSection';
 import dynamic from 'next/dynamic';
 import { useInView } from 'react-intersection-observer';
-import ContactSection from './contactSection';
-
+import NavMenu from '../Layout/Header/NavBar';
 
 const DynamicMarketingSection = dynamic(() => import('./marketing'), {
     ssr: false,
     loading: () => <div>Loading Experience Section...</div>,
 });
 
-const DynamicProjectsSection = dynamic(() => import('./techSection'), {
+const DynamicTechSection = dynamic(() => import('./techSection'), {
     ssr: false,
-    loading: () => <div>Loading Projects Section...</div>,
+    loading: () => <div>Loading Tech Section...</div>,
 });
 
 const DynamicContactSection = dynamic(() => import('./contactSection'), {
@@ -21,46 +20,69 @@ const DynamicContactSection = dynamic(() => import('./contactSection'), {
     loading: () => <div>Loading Contact Section...</div>,
 });
 
+function delay(delay) {
+    return new Promise(res => setTimeout(res, delay));
+}
+
 function Home() {
-    const ref = useRef(null);
+    const contactScrollRef = useRef(null)
+    const marketingScrollRef = useRef(null)
+    const aboutScrollRef = useRef(null)
+    const techScrollRef = useRef(null);
+    const [scrollPressed, setScrollPressed] = useState(false)
 
-    const [heroRef, heroInView] = useInView({
+    const [inViewAboutRef, aboutInView] = useInView({
         triggerOnce: true,
         threshold: 0,
     });
 
-    const [skillsRef, skillsInView] = useInView({
+    const [inViewMarketingRef, marketingInView] = useInView({
         triggerOnce: true,
         threshold: 0,
     });
 
-    const [marketingRef, marketingInView] = useInView({
+    const [inViewTechRef, techInView] = useInView({
         triggerOnce: true,
         threshold: 0,
     });
 
-    const [projectsRef, projectsInView] = useInView({
-        triggerOnce: true,
-        threshold: 0,
-    });
-
-    const handleClick = () => {
-        ref.current?.scrollIntoView({ behavior: 'smooth' });
+    const scrollToRef = async (ref, offset = 0) => {
+        setScrollPressed(true);
+        await delay(100);
+    
+        if (ref.current) {
+            let topPosition = ref.current.getBoundingClientRect().top + window.pageYOffset + offset;
+            window.scrollTo({ top: topPosition, behavior: 'smooth' });
+        }
     };
 
+    const scrollToAbout = () => scrollToRef(aboutScrollRef, 50); // Adjust offset as needed
+    const scrollToTech = () => scrollToRef(techScrollRef, -40); // Adjust offset as needed
+    const scrollToMarketing = () => scrollToRef(marketingScrollRef, -40); // Adjust offset as needed
+    const scrollToContact = () => scrollToRef(contactScrollRef, -10); // Adjust offset as needed
+
+    console.log(aboutInView)
     return (
         <>
-            <HeroSection scrollToNext={handleClick} scrollRef={heroRef} />
-            <SkillsSection scrollRef={ref} secondRef={skillsRef} />
-            {skillsInView && (
-                <DynamicProjectsSection scrollRef={projectsRef} />
+            <NavMenu
+                aboutScroll={scrollToAbout}
+                techScroll={scrollToTech}
+                marketingScroll={scrollToMarketing}
+                contactScroll={scrollToContact}
+            />
+            <HeroSection scrollToNext={scrollToAbout} /> {/* scrollToNext should scroll to About Section */}
+            <AboutSection scrollRef={aboutScrollRef} inViewRef={inViewAboutRef} />
+            {(aboutInView || scrollPressed) && (
+                <DynamicTechSection scrollRef={techScrollRef} inViewRef={inViewTechRef} />
             )}
-            { projectsInView&& (
-                <DynamicMarketingSection scrollRef={marketingRef} />
+            {(techInView|| scrollPressed) && (
+                <DynamicMarketingSection scrollRef={marketingScrollRef} inViewRef={inViewMarketingRef} />
             )}
-            {marketingInView && <DynamicContactSection />}
+            {(marketingInView || scrollPressed || scrollPressed) && (
+                <DynamicContactSection scrollRef={contactScrollRef} inViewRef={contactScrollRef} />
+            )}
         </>
-    );
+    ); 
 }
 
 export default Home;

@@ -28,7 +28,6 @@ const StyledArticle = styled.article`
     }
 
 `
-
 const BoxText = styled.div`
     font-size: 1.2rem;
     width: 70%;
@@ -49,7 +48,7 @@ const BoxText = styled.div`
 `
 
 const SlideTitle = styled.h2`
-     font-size: 1.8rem;
+    font-size: 1.8rem;
     font-weight: 500;
     line-height: 1;
     text-transform: uppercase;

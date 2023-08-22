@@ -3,11 +3,11 @@ import { NumberedHeader } from '../reuseable';
 import SkillsContainer from './components/projectsContainer';
 import { OuterSection } from '../reuseable';
 
-function ProjectSection({scrollRef}) {
+function ProjectSection({scrollRef, inViewRef}) {
 
   return (
-    <OuterSection ref={scrollRef} >
-      <NumberedHeader number={2}>Tech Projects</NumberedHeader>
+    <OuterSection ref={inViewRef} >
+      <NumberedHeader number={2} ref={scrollRef}>Tech Projects</NumberedHeader>
       <SkillsContainer></SkillsContainer>
     </OuterSection>
   )

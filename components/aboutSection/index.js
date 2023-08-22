@@ -1,70 +1,75 @@
-import React from 'react';
+import { useAnimationControls } from 'framer-motion';
+import { React, useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
 import styled from 'styled-components';
-import TextAndImage from './components/textAndImage';
+import { animationItemsList } from './components/animationObjects';
+import SkillsHexagon from './components/hexagonGrid';
+import TextSection from './components/textComponent';
+import { OuterSection } from '../reuseable';
+import { NumberedHeader } from '../reuseable';
 
-const OuterDiv = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content:flex-start;
-  align-items:center;
-  box-sizing: border-box;
-  width: 100%;
-  max-width:1200px;
-  min-height:100vh;
-  height: fit-content;
-  padding-bottom: 100px;
-`;
-
-const Title = styled.h1`
-  position: relative;
-  font-size: 3.5rem;
-  font-weight: 500;
-  margin-top: 0rem;
-  margin-bottom: 2.5rem;
-  z-index: 9999;
-  width: 100%;
-
-  @media screen and (max-width:800px) {
-    font-size: 3rem;
-    margin-bottom: 2rem;
-    }
-    @media screen and (max-width:400px) {
-        font-size: 2.5rem;
-        margin-bottom: 1.3rem;
-        display: none;
-    }
-`;
-
-const UpperDiv = styled.div`
-  width: 100%;
-  height:auto;
-  border-bottom: 0.5px solid #ffffff50;
-  margin-top: 5rem;
+const InnerContainer = styled.div`
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    //height:880px;
+    height: max-content;
+    width: 100%;
+    max-width: 1400px;
+   
+    @media screen and (max-width:1100px) {
+      flex-direction: column;
+      justify-content: center;
+      gap: 0px;
+  } 
+   
+`
+const AnimationContainer = styled.div`
+  width: 65%;
+ 
   @media screen and (max-width:1100px) {
-    flex-direction: column;
-   width: 90%;
+      width: 100%;
+      padding-top: 30px;
+  } 
+   
+`
+
+function SkillsSection({ scrollRef, inViewRef }) {
+  const [ref, inView] = useInView({ threshold: 0 })
+  const controlsHexagon = useAnimationControls()
+  const animationItems = shuffleArray(animationItemsList)
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      let width = window.innerWidth;
+      if (inView || width < 600) {
+        controlsHexagon.start("visible");
+      }
+    }
+
+  }, [inView]);
+
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array
   }
 
-  @media screen and (min-width:400px) {
-    flex-direction: column;
-  }
-
-`;
-
-
-function AboutSection({scrollRef }) {
-
-    return (
-            <OuterDiv ref={scrollRef}>
-                <UpperDiv>
-                    <Title>
-                        About me
-                    </Title>
-                </UpperDiv>
-                <TextAndImage></TextAndImage>
-            </OuterDiv>
-    )
-
+  return (
+    <OuterSection ref={scrollRef}>
+      <NumberedHeader ref={inViewRef} number={1}>About me</NumberedHeader>
+      <InnerContainer>
+        <TextSection></TextSection>
+        <AnimationContainer>
+          <SkillsHexagon animationItems={animationItems} motionRef={ref} controls={controlsHexagon}></SkillsHexagon>
+        </AnimationContainer>
+      </InnerContainer>
+    </OuterSection>
+  )
 }
 
-export default AboutSection
+export default SkillsSection;

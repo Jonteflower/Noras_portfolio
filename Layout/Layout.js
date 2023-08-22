@@ -26,8 +26,6 @@ export default function Layout({ children }) {
 
   return (
     <div className="content">
-
-      <NavMenu />
       {children}
       <Footer scroll={isLight} />
     </div>

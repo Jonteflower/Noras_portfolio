@@ -15,7 +15,7 @@ export const FooterContainer = styled.div`
   justify-content: space-around;
   align-items: center;
   max-height:220px;
-  z-index: 999;
+  z-index: 10;
   height: fit-content;
   min-height: 60px;
   gap: 15px;

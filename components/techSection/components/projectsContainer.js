@@ -28,7 +28,7 @@ function SkillsContainer() {
       
       const tixyAppObject = {
         title: 'Tixy Flutter App',
-        text: "I collaborated with Tixy's CTO to design and build the Flutter app."
+        text: "I collaborated with Tixy's CTO to design and build the Flutter app. Where i had to leverage Figma for the mockups and work within the Material design system for the built in components."
       };
       
       const logisticsObject = {

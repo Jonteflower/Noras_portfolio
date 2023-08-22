@@ -3,7 +3,6 @@ body {
   position: relative;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;  
-
   font-display: swap;
   padding: 0;
   margin: 0;
@@ -40,31 +39,20 @@ body {
 
 }
 
-
 :root {
   --swiper-theme-color:red;
 }
 
-#tsparticles {
+#globalLoader {
   position: absolute;
+  z-index: 20;
   top: 0;
   left: 0;
-  bottom: 0;
-  right: 0;
-  padding: 0;
-  margin: 0;
-  z-index: 0; /* if you use -1 you have to set to `"window"` the interactivity.detectsOn property */
-}
-
-#globalLoader {
-  position: fixed;
-  z-index: 9999;
-  top: 50%;
-  left: 50%;
-  background-color:  #08080e;
+  right:0;
+  background-color:  #11041D;
   //transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   justify-content: center;
   align-items: center;
   display: flex;

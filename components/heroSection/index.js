@@ -1,12 +1,13 @@
+import { motion } from 'framer-motion';
 import Image from 'next/image'; // Import the Image component
 import React from 'react';
 import { AiOutlineArrowDown } from 'react-icons/ai';
 import styled from 'styled-components';
-import { HeroText, neonGreen } from '../reuseable';
-import TextAnimation from './components/textAnimation';
+import { neonGreen } from '../reuseable';
+
 
 const Section = styled.section`
-position: relative;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content:flex-start;
@@ -58,6 +59,7 @@ const StyledButton = styled.div`
     align-items: center;
     justify-content: center;
     border: 2px solid ${neonGreen};
+    background-color: ${`${neonGreen}25`};
     border-radius: 5px;
     color: ${neonGreen};
     font-size: 1.1rem;
@@ -87,6 +89,40 @@ const ImageContainer = styled.div`
   }
 `;
 
+const HeroText = styled.p`
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-align: ${props => props.textAlign ?? 'center'};
+  width: 100%;
+  margin: 0px;
+  margin-top: -15px;
+  z-index: 1;
+  max-width: ${props => props.width ?? '900px'};
+
+  @media screen and (max-width:1100px) {
+    font-size: 1rem;
+    text-align: center;
+  } 
+
+`;
+
+const HeroTitle = styled.h2`
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 76.8px */
+  margin:0px;
+  color:#f1f1f1;
+  z-index: 1;
+  @media screen and (max-width:600px) {
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+    text-align: center;
+    line-height: 130%;
+  }
+`
 
 function HeroSection({ scrollToNext, scrollRef }) {
   return (
@@ -100,12 +136,11 @@ function HeroSection({ scrollToNext, scrollRef }) {
           priority={true} // Loads the image with high priority
         />
       </ImageContainer>
-
       <OuterDiv>
         <BlockDiv></BlockDiv>
-        <TextAnimation line1={`Hello,`} line2={` my name is Nora`}></TextAnimation>
-        <HeroText>
-          And im a systems engineer. With a passion for, tech,
+        <HeroTitle> Hello, my name is Nora</HeroTitle>
+        <HeroText >
+          And im a systems engineer. With a passion for tech,
           <br />design and buisiness development.
         </HeroText>
         <StyledButton onClick={scrollToNext}>Learn More
