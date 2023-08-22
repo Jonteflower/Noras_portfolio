@@ -44,18 +44,29 @@ body {
 }
 
 #globalLoader {
-  position: absolute;
-  z-index: 20;
+  position: fixed;
   top: 0;
   left: 0;
-  right:0;
-  background-color:  #11041D;
-  //transform: translate(-50%, -50%);
   width: 100vw;
   height: 100vh;
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
+  background-color: #11041D; // Assuming you want the same background color as the loader
+  z-index: 9999; // Ensure it's on top of everything else
+}
+
+.fade-out {
+  animation: fadeOut 0.8s forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 .content {

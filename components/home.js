@@ -61,7 +61,6 @@ function Home() {
     const scrollToMarketing = () => scrollToRef(marketingScrollRef, -40); // Adjust offset as needed
     const scrollToContact = () => scrollToRef(contactScrollRef, -10); // Adjust offset as needed
 
-    console.log(aboutInView)
     return (
         <>
             <NavMenu

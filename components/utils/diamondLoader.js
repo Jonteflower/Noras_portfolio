@@ -3,6 +3,7 @@ import styled, { keyframes } from 'styled-components';
 import { neonGreen } from '../reuseable';
 
 
+
 const diamondLoader = keyframes`
   0%, 10% {
     transform: translate(-64px, -64px) rotate(-45deg);
@@ -52,9 +53,11 @@ const InnerText = styled.span`
 
 const DiamondLoader = () => {
   return (
-    <Loader>
-      <InnerText>N</InnerText>
-    </Loader>
+    <>
+      <Loader>
+        <InnerText>N</InnerText>
+      </Loader>
+    </>
   );
 }
 

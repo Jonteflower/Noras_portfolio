@@ -2,18 +2,33 @@ import Head from "next/head";
 import React, { useEffect } from 'react';
 import '../styles/globals.scss';
 import DiamondLoader from "../components/utils/diamondLoader";
-
+import { keyframes, css } from "styled-components";
 
 export default function MyApp({ Component, pageProps }) {
   const getLayout = Component.getLayout || ((page) => page);
+  const fadeOut = keyframes`
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  `;
 
   function stopLoading() {
     const loader = document.getElementById('globalLoader');
     if (loader) {
-      // Add a delay to ensure the DiamondLoader completes one animation cycle
+
+      // Then hide it after animation
+      setTimeout(() => {
+        loader.classList.add('fade-out');
+        //loader.style.display = 'none';
+      }, 1650);
+
       setTimeout(() => {
         loader.style.display = 'none';
-      }, 1650);  // DiamondLoader animation duration is 2 seconds
+      }, 2150);
+
     }
   }
 
