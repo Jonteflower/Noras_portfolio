@@ -233,9 +233,9 @@ function TextSection({ marketingObject, index }) {
                 </InnerContainer>
                 <SkillsRow flexDirection={isEven ? 'row-reverse' : 'row'}>
                     {
-                        marketingObject.skills.map((item) => {
+                        marketingObject.skills.map((item, index) => {
                             return (
-                                <SkillsText textAlign={isEven ? 'right' : "left"} > {item}</SkillsText>
+                                <SkillsText key={index} textAlign={isEven ? 'right' : "left"} > {item}</SkillsText>
                             )
                         })
                     }

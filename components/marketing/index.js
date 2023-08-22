@@ -51,8 +51,8 @@ export default function MarketingSection({ scrollRef, secondRef }) {
       <NumberedHeader ref={secondRef} number={3} >Marketing</NumberedHeader>
       {marketingObjects.map((item, index) => {
         return (
-          <InnerContainer >
-            <TextSection marketingObject={item} index={index}></TextSection>
+          <InnerContainer key={item.image}>
+            <TextSection key={item.image} marketingObject={item} index={index}></TextSection>
           </InnerContainer>)
       })}
 

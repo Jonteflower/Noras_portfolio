@@ -63,7 +63,7 @@ function TextSection() {
                     <ThinText textAlign={'left'} width={'100%'}>
                         Hello! My name is Nora, and I enjoy creating things that reside at the intersection of people and technology. <br /><br />
 
-                        I've graduated with degrees in both finance and systems engineering and have previously worked within the startup space. There, I helped launch the <GreenSpan>world's first fraud and scalping-proof ticketing service</GreenSpan> based on <GreenSpan>Blockchain technology</GreenSpan>.
+                        I&apos;ve graduated with degrees in both finance and systems engineering and have previously worked within the startup space. There, I helped launch the <GreenSpan>world&apos;s first fraud and scalping-proof ticketing service</GreenSpan> based on <GreenSpan>Blockchain technology</GreenSpan>.
                         <br /><br />
                         Additionally, I have experience working as a freelance designer and content creator, writing <GreenSpan>SEO</GreenSpan>-optimized articles and building an online presence through <GreenSpan>community building</GreenSpan>. I was also responsible for <GreenSpan>accounting</GreenSpan> in my startup venture with Tixy.
                     </ThinText>

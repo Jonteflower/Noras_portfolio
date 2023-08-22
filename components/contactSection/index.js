@@ -109,7 +109,7 @@ export default function ContactSection() {
     <OuterDiv>
       <ThinText>
       <GreenSpan>
-      04.  What's Next?
+      04.  What&apos;s Next?
       </GreenSpan>
       </ThinText>
       <Title>
@@ -117,7 +117,7 @@ export default function ContactSection() {
       </Title>
       <TextContainer>
         <ThinText>
-          If you have any questions or feel that I could be a valuable addition to your team, please don't hesitate to shoot me an email or reach out through my socials.
+          If you have any questions or feel that I could be a valuable addition to your team, please don&apos;t hesitate to shoot me an email or reach out through my socials.
         </ThinText>
         <StyledInput type="button" href={'mailto: nora.bjork.jobb@gmail.com'}>
           Say Hello
