@@ -45,8 +45,8 @@ const ButtonsInner = styled.div`
   flex:1;
   height:100%;
   gap:24px;
-`;
 
+`;
 
 const MiddleButton = styled.button`
     font-weight: 500;
@@ -58,29 +58,13 @@ const MiddleButton = styled.button`
     padding: 0.5rem 0.7rem;
     border-radius: 5px;
     transition: 0.1s ease-in;
-    background: transparent
-    ;
+    background: transparent;
     &:hover {
       cursor: pointer;
       background-color: #f1f1f1;
       border-radius: 5px;
       background-color: ${`${neonGreen}50`};
 
-    }
-`;
-
-
-const Title = styled.span`
-  text-align: left;
-  position: relative;
-  font-size: 2rem;
-  font-weight: 500;
-  margin: 0px;
-  font-family: 'Playfair Display', serif;
-  @media (min-width: 480px)  {
-        height: 0px;
-        font-size: 0;
-        width: 0px;
     }
 `;
 
@@ -121,12 +105,21 @@ const NumberedHeader = styled.p`
     font-weight: 400;
   }
 
+  @media (max-width: 768px) {
+   display:none;
+  }
+
+
   white-space: normal;  // Allow the text to wrap to the next line if necessary
 `;
 
 export default function NavMenu({ aboutScroll, techScroll, marketingScroll, contactScroll }) {
   const router = useRouter();
-  const path = router.pathname;
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  }
 
   const [lastScrollTop, setLastScrollTop] = useState(0);  // store the last scroll position
   const [navVisible, setNavVisible] = useState(true);     // determine if navbar is visible
@@ -155,6 +148,7 @@ export default function NavMenu({ aboutScroll, techScroll, marketingScroll, cont
       <HeaderContainer style={{ transform: navVisible ? 'translateY(0)' : 'translateY(-100%)', transition: 'transform 0.3s ease-in-out' }}>
         <HeaderInner>
           <NameLogo>Nora Björk</NameLogo>
+
           <ButtonsInner>
             <NumberedHeader number={1} onClick={aboutScroll}>About</NumberedHeader>
             <NumberedHeader number={2} onClick={techScroll}>Tech</NumberedHeader>
@@ -164,6 +158,7 @@ export default function NavMenu({ aboutScroll, techScroll, marketingScroll, cont
               <a href='/images/general/resume.png' target="_blank" rel="noopener noreferrer">Resume</a>
             </MiddleButton>
           </ButtonsInner>
+
         </HeaderInner>
       </HeaderContainer>
     </NavbarWrapper>

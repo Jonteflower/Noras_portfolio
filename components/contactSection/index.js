@@ -1,9 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { neonGreen } from '../reuseable';
-import { NumberedHeader } from '../reuseable';
-import { greyText } from '../reuseable';
-import { GreenSpan } from '../reuseable';
+import { GreenSpan, greyText, neonGreen } from '../reuseable';
+
+
 const OuterDiv = styled.section`
   display: flex;
   flex-direction: column;
@@ -19,6 +18,7 @@ const OuterDiv = styled.section`
   
   @media screen and (max-width:1000px) {
     padding-bottom: 20px;
+    max-width: 90vw;
   }
 `;
 
@@ -62,9 +62,7 @@ const ThinText = styled.p`
 
 
   @media screen and (max-width:1100px) {
-    font-size: 1rem;
-    text-align: left;
-    letter-spacing: 0.4px;
+    font-size: 0.9rem;
   } 
 
 `;
@@ -78,7 +76,7 @@ const Title = styled.p`
   line-height: 1.1;
 
   @media screen and (max-width:1100px) {
-    font-size: 1rem;
+    font-size: 1.6rem;
     text-align: left;
     letter-spacing: 0.4px;
   } 
