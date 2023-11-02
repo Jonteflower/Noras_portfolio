@@ -6,7 +6,6 @@ import LanguageContext from '../../../stores/languageContext';
 import TableRow from './tableRow';
 import LoadingSpinner from '../../utils/loadingSpinner';
 
-
 function combineObjectValues(obj) {
   // Extract the values into an array
   let valuesArray = Object.values(obj);

@@ -19,6 +19,9 @@ const TitleText = styled.a`
         font-size: 1.2rem;
         line-height: 1.4rem;
         min-width: 70px;
+        text-align: left;
+        padding-left: 10px;
+        width: 100%;
     }
 
     &:hover {

@@ -19,8 +19,8 @@ const StyledIconButton = styled.button`
 `;
 
 const StyledIcon = styled(AiOutlineRight)`
-  color: ${props => props.isDisabled ? '#FF4D5999' : '#FF4D99'};
-  font-size: 16px;
+  color: ${props => props.isDisabled ? '#FF4D59 ' : '#FF4D59 '};
+  font-size: 18px;
   transition: transform 0.3s;
   transform: ${props => `rotate(${props.iconRotation}deg)`};
 `;

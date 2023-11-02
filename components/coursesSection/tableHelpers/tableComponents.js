@@ -67,8 +67,8 @@ export const OuterContainer = styled.div`
     }
 
     @media screen and (max-width:800px) {
-    min-width: 1000px;
-  }
+      min-width: 1000px;
+    }
 
 `;
 
@@ -91,7 +91,7 @@ export const MarketTileContainer = styled.div`
 `;
 
 export const RowData = styled.span`
-     white-space: nowrap;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: 1.15rem;
@@ -100,21 +100,21 @@ export const RowData = styled.span`
     letter-spacing: 0.4px;
     text-align: ${props => props.aligned};
     max-width: 100%;
-
     color: ${props => props.color ? props.color : '#F1F1F1'} ;
     flex: ${props => props.flex};
     min-width: 70px;
     transition: all .4s;
+
     @media screen and (max-width:800px) {
       font-size: 15px;
       line-height: 20px;
       width: fit-content;
       padding: 0px;
-      min-width: 70px;
+      text-align: left;
+      padding-left: 10px;
 
     }
 `;
-
 
 export const ButtonDiv = styled.div`
   display: flex;
